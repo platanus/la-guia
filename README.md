@@ -15,3 +15,4 @@ Todos estamos invitados a aportar en la construcción de esta guia maestra, porq
 ### Back
 
 * En todos los proyectos usamos [Rails 4.2](/herramientas/rails)
+* En proyectos Rails nos basamos en este [template](https://github.com/platanus/rails_template)
