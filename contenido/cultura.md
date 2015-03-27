@@ -31,8 +31,8 @@ Estos días los dedicamos a trabajar para los productos de clientes y los nuestr
 
 * Separamos el día en 2, mañana y tarde
 * Nos gusta estar en dos proyectos al mismo tiempo (mañana  y tarde)
-* Usamos el **calendario de Google** para organizarnos y son editables por cualquiera
-* Para todos los proyectos usamos **Toggl** para trackear los tiempos.
+* Usamos el [calendario de Google](http://calendar.platan.us) para organizarnos y son editables por cualquiera
+* Para todos los proyectos usamos [Toggl](http://toggl.com) para trackear los tiempos.
 
 ### Viernes de "Investment Day"
 
