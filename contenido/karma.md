@@ -1,2 +1,2 @@
-Karma [:earth_americas:](https://github.com/karma-runner/karma)
+Karma [:link:](https://github.com/karma-runner/karma)
 =========

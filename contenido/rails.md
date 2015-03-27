@@ -1,4 +1,4 @@
-Rails [:earth_americas:](https://github.com/rails/rails)
+Rails [:link:](https://github.com/rails/rails)
 =========
 
 * En proyectos Rails nos basamos en este [template](https://github.com/platanus/rails_template)

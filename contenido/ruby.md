@@ -1,2 +1,2 @@
-Ruby [:earth_americas:](https://github.com/ruby/ruby)
+Ruby [:link:](https://github.com/ruby/ruby)
 =========
