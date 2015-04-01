@@ -1,7 +1,7 @@
 Platanus - La Guía
 =========
 
-Acá encontrarás una suerte de mandamientos, lineamientos, acuerdos y todo lo necesario para que podamos comunicarnos de la mejor forma posible.
+Acá encontrarás una suerte de mandamientos, lineamientos, acuerdos y todo lo necesario para que podamos comunicarnos de la mejor forma posible. Es importante que todos compartamos una misma [cultura](/contenido/cultura.md).
 
 Todos estamos invitados a aportar en la construcción de esta guia maestra, porque eres parte de Platanus!
 
