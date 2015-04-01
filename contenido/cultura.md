@@ -10,7 +10,7 @@ Cultura Platanus
 * Pregunta pregunta pregunta! Todo lo que quieras en el chat "techi" de Hipchat.
   * No eres un heroe solitario al resolver en 1 hora un problema que un compañero te hubiera ayudado en 5 minutos
   * Jamás serás criticado por no saber algo
-  * Recibirás la [piedra de la verguenza](http://i86.photobucket.com/albums/k87/dieguish20006/Los%20simpsons/1211846403_f.jpg) cuando no reconozcas ignorancia.
+  * Recibirás la [piedra de la verguenza](https://thelonious9.files.wordpress.com/2011/08/piedra.jpg) cuando no reconozcas ignorancia.
 * Comparte tu conocimiento
 
 ### Weekly Meeting
