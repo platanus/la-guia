@@ -45,3 +45,11 @@ end
 ```
 
 y eso es todo! el atributo `:specialties` será reconocido como una relación `has_and_belongs_to_many` y la gema hará el resto.
+
+##### Filtrar por múltiples valores usando select2
+
+Se debe agregar el atributo `multiple: true` al filtro, de esta manera:
+
+```ruby
+filter :specialities, multiple: true
+```
