@@ -38,24 +38,52 @@ Estos días los dedicamos a trabajar para los productos de clientes y los nuestr
 
 Los viernes los invertimos en hacer de Platanus una **mejor empresa**.
 
-¿Cómo mejorar cada uno?
+El objetivo de este día es:
 
-* Fortalecer habilidades que tengamos más débiles
+* Fortalecer habilidades personales y grupales
 * Aprender nuevas técnicas, patrones y estratégias
 * Revisar y mejorar las buenas prácticas
+* Conocer más y mejor al resto del equipo
 
-Este [Trello](https://trello.com/b/uXKddtNE/platanus) nos ayuda a anotar y encontrar ideas. Suscríbete para que te lleguen las notificaciones y así puedas aportar lo más posible.
+Generalmente el trabajo se traduce en:
 
 * Aportar en los inicializadores de aplicaciones
 * Aportar en nuestras [Guías](http://www.github.com/platanus/la-guia)
-* Definir estándares y mejores prácticas
 * Un post para nuestro [blog](http://cb.platan.us)
-* Preparar un workshop
+* Preparar o participar de un workshop
 * Aportar en cualquiera de nuestras librerías open-source
 
-Algunos consejos:
+####El Trello de Platanus
 
-* Esperamos que **todos** seamos muy activos en este Trello. Es la mejor forma que tenemos que para recibir y compartir conocimiento
-* Prefiere trabajar en pareja
-* Trata de ir cambiando con quien trabajas
+Para organizarnos, usamos el [Trello de Platanus](https://trello.com/b/uXKddtNE/platanus).
+
+#####Inbox
+
+En esta columna nacen las tarjetas. Todos pueden agregar una nueva y/o comentar las que ya existen. Al agregar una tarjeta, tú pasas a ser el responsable y por lo tanto debes agregar tu cara.
+
+El rol del responsable es describir de la mejor forma posible la tarjeta, de modo que quede adecuada para pasar a la siguiente columna. Necesitas buscar apoyo y ayuda en el resto del equipo para lograr una buena definición.
+
+
+#####Listo para Trabajar
+
+El responsable de la tarjeta será el encargado de mover la tarjeta a esta columna. Debe estar absolutamente claro el objetivo y los resultados que persigue esta tarjeta, por lo tanto debe tener un buen título, una buena descripción y especificar los diferentes outputs. Además debes asignar el nuevo responsable (puede ser el mismo).
+
+En esta columna, el responsable representa el **ejecutador** (voluntario)
+
+#####En Proceso
+
+Cada viernes debes mover una tarjeta, con tu cara, de la columna anterior. Busca un compañero y ejecútala.
+
+Al final del día no debe quedar ninguna tarjeta en esta columna. Debes decidir si mover la tarjeta a la siguiente columna (si corresponde) o moverla de vuelta a la columna anterior.
+
+#####Code Review
+
+Luego de terminar un trabajo, alguien lo tiene que revisar. El responsable sigue siendo el "ejecutador", pero en los comentarios debe haber un link al Pull Request con la persona asignada.
+
+Una vez terminada la revisión, el responsable debe decidir si aún falta trabajo y moverla a "Listo para Trabajar", o si está terminada, moverla a la columna siguiente.
+
+#####Live
+
+Acá quedarán las tarjetas finalizadas. Es responsabilidad del ejecutador mover las tarjetas para acá.
+
 
