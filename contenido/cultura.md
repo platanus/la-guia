@@ -72,9 +72,13 @@ En esta columna, el responsable representa el **ejecutador** (voluntario)
 
 #####En Proceso
 
-Cada viernes debes mover una tarjeta, con tu cara, de la columna anterior. Busca un compañero y ejecútala.
+Cada viernes debes mover una tarjeta, con tu cara, desde la columna Listo para Trabajar o desde Standby. Busca un compañero y ejecútala. Siempre debes preferir sacar tarjetas desde StandBy porque el trabajo a medias no sirve!
 
-Al final del día no debe quedar ninguna tarjeta en esta columna. Debes decidir si mover la tarjeta a la siguiente columna (si corresponde) o moverla de vuelta a la columna anterior.
+Al final del día no debe quedar ninguna tarjeta en esta columna. Debes decidir si mover la tarjeta a Code Review (si corresponde) o moverla a la columna StandBy.
+
+######StandBy
+
+Las tarjetas de esta columna tienen trabajo que quedó pendiente. Si moviste una tarjeta a esta columna, escribe un checklist que muestre claramente lo que ya se hizo y lo que falta por hacer.
 
 #####Code Review
 
