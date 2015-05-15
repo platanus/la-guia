@@ -49,7 +49,7 @@ Generalmente el trabajo se traduce en:
 
 * Aportar en los inicializadores de aplicaciones
 * Aportar en nuestras [Guías](http://www.github.com/platanus/la-guia)
-* Un post para nuestro [blog](http://cb.platan.us)
+* Un post para nuestro [blog](http://cb.platan.us), [guia del blog](blog.md)
 * Preparar o participar de un workshop
 * Aportar en cualquiera de nuestras librerías open-source
 
