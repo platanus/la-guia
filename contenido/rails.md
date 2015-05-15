@@ -1,7 +1,7 @@
 Rails [:link:](https://github.com/rails/rails)
 =========
 
-* En proyectos Rails nos basamos en este [template](https://github.com/platanus/rails_template)
+* Inicializamos nuestros proyectos con [potassium](https://github.com/platanus/potassium)
 * El deploy se hace con [negroku](https://github.com/platanus/negroku)
 * Cuando nuestros proyectos incluyen una API Rails, utilizamos la gema [simple_token_authentication](https://github.com/gonzalo-bulnes/simple_token_authentication) para manejar la autenticación. Más información en este [blog post](http://cb.platan.us/rails/authentication/restmod/angular/2015/03/13/usando-angular-auth-lib-con-simple-token-authentication-gem.html)
 * Las interfaces de administración las contruimos usando [Active Admin](/contenido/activeadmin.md)
