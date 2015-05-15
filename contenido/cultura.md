@@ -76,7 +76,7 @@ Cada viernes debes mover una tarjeta, con tu cara, desde la columna Listo para T
 
 Al final del día no debe quedar ninguna tarjeta en esta columna. Debes decidir si mover la tarjeta a Code Review (si corresponde) o moverla a la columna StandBy.
 
-######StandBy
+#####StandBy
 
 Las tarjetas de esta columna tienen trabajo que quedó pendiente. Si moviste una tarjeta a esta columna, escribe un checklist que muestre claramente lo que ya se hizo y lo que falta por hacer.
 
