@@ -18,7 +18,7 @@ Los mensajes de commit:
   * **fix**: La corrección de un bug
   * **chore**: Cambios al proceso de build y herramientas auxiliares
   * **test**: Agrega tests
-  * **style**: Cambios que no afectan el significado del código (espacios, identación, etc.)
+  * **style**: Cambios que no afectan el significado del código (espacios, indentación, etc.)
 
 #### Contexto
 
