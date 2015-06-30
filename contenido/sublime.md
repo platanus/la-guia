@@ -14,8 +14,16 @@ Sublime Text
 
 ![⌘+⇧+l](http://i.imgur.com/thBg30o.gif)
 
+* `⌘`+`j` une la selección en una sola linea.
+
+![⌘+j](http://i.imgur.com/daTBTgv.gif)
+
 ## Extensiones
 ### Genéricas
+
+* **[EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)**: Nos ayuda a mantener un estilo de código (espacios o tabs, sangrado, etc) consistente en los proyectos de Platanus.
+* **[SublimeLinter](http://www.sublimelinter.com/en/latest/)**: Framework para aplicar linting al código.
+
 * **[SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)**: Agrega múltiples funciones para manejar archivos y carpetas a la sidebar.
 * **[Unicode Character Highlighter](https://packagecontrol.io/packages/Unicode%20Character%20Highlighter)**: Destaca caracteres como el [espacio duro](https://es.wikipedia.org/wiki/Espacio_duro) que OSX inserta al usar `⌥` + `ESPACIO` para hacer más facil su eliminación.
 
@@ -41,6 +49,9 @@ Sublime Text
 * **[AutoPrefixer](https://github.com/sindresorhus/sublime-autoprefixer)**: Agrega automáticamente prefijos propietarios a propiedades de CSS.
 
 ![AutoPrefixer](http://i.imgur.com/YjhceOp.gif)
+
 ### JavaScript
+
+* **[SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)**: Hace linting directamente en el editor usando JSHint (y archivos .jshintrc).
 * **[AngularJS](https://github.com/angular-ui/AngularJS-sublime-package)**: Agrega "ir a definición", autocompletado de funciones, entre otras cosas.
 * **[AngularJS Snippets (John Papa)](http://www.johnpapa.net/angularjs-snippets-for-sublime-visual-studio-and-webstorm/)**: Agrega snippets basados en la [guía de estilo](https://github.com/johnpapa/angular-styleguide) para AngularJs de John Papa.
