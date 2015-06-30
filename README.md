@@ -12,3 +12,4 @@ Todos estamos invitados a aportar en la construcción de esta guia maestra, porq
 * Para unit testing usamos [Karma](/contenido/karma.md)
 * En el Back todos los proyectos usamos [Rails 4.2](/contenido/rails.md)
 * Para el versionamiento de código usamos [Git](/contenido/git.md) y Github
+* Para desarrollar usamos [Sublime Text 3](/contenido/sublime.md) y Atom, entre otros.
