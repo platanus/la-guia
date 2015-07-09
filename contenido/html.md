@@ -4,7 +4,7 @@ HTML - Guía de estilo
 ## `<!DOCTYPE html>`
 
 ## Body
-* Para evitar problemas de encoding usamos `<meta charset="UTF-8">`
+* Usamos UTF-8 (`<meta charset="UTF-8">`) en nuestras aplicaciones
 * `<meta http-equiv="X-UA-Compatible" content="IE=Edge">` para evitar que IE decida usar la "[vista de compatibilidad](http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e)"
 
 ##Formato General
