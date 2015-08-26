@@ -5,14 +5,14 @@ Para administrar el blog, se usara el board **platanus** en trello y se debe seg
 
 #### Empezar a escribir un borrador
 
-Crea el draft, commitealo en un nuevo branch y has push al branch.
+Crea el draft, commitealo en un nuevo branch y haz push del branch.
 
 En la linea de comando puedes hacer
 
 ```shell
 $ jekyll draft <titulo>
 $ git checkout -b <branch-titulo>
-$ git commit -a -m "adds the <titulo> draft"
+$ git commit -a -m "draft(post): <titulo>"
 $ git push origin <branch-titulo>
 ```
 
@@ -22,10 +22,18 @@ Escribelo usando markdown y agrega algunos tags que hagan referencia al contenid
 
 #### Un poco de feedback
 
-Cuando estes listo para recibir feedback, mueve la tarjeta a la columna **Code Review** y has un pull request a master. Este es el momento para compartir el link al PR para que otros puedan comentar. Puedes compartirlo por mail y por chat si quieres.
+Cuando estes listo para recibir feedback, mueve la tarjeta a la columna **Review** y has un pull request a master. Este es el momento para compartir el link al PR para que otros puedan comentar. Compartelo por mail y por slack pare todos sepan.
 
-#### Últimos detalles
+> Asignale el PR a alguien para que debe definir el estado de "listo para publicar" aceptando el PR.
 
-Haz los cambios necesario en el branch de acuerdo al feedback recibido. Cuando este listo para ser publicado haz `squash` de los commits y asignale el PR a alguien para que sepa que esta listo para ser publicado.
+Haz los cambios necesario en el branch de acuerdo al feedback recibido. Cuando este listo para ser publicado haz `squash` de los commits para que el asignado al PR pueda hacer el merge.
 
-Para mas informacion ve el [Readme](https://github.com/platanus/blog/blob/master/README.MD) del blog
+#### Metadata
+
+1. Usar la propiedad `tags` para describir el post (no `categories`)
+1. En la propiedad `authors` puedes usar un string o un arreglo. Usa el *Github username* para identificar quien escribió el post.
+1. Usa la propiedad `excerpt` *(opcional)* para escribir una frase que describa de que se trata el post. Esto es lo que se muestra en la pagina principal debajo del titulo del post.
+
+  > El campo `excerpt` es generado automáticamente tomando las primeras lineas del post. Es especialmente util agregarlo manualmente cuando tu post parte con un título o una imagen, porque eso es todo lo que se mostrarará en el index.
+
+Para mas información ve el [Readme](https://github.com/platanus/blog/blob/master/README.MD) del blog
