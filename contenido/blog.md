@@ -36,4 +36,8 @@ Haz los cambios necesarios en el branch de acuerdo al feedback recibido. Cuando 
 
   > El campo `excerpt` es generado automáticamente tomando las primeras lineas del post. Es especialmente util agregarlo manualmente cuando tu post parte con un título o una imagen, porque eso es todo lo que se mostrarará en el index.
 
+#### Publicación
+
+Una vez aceptado el PR, el encargado de publicaciones hará el paso del post desde `_drafts` a `_posts`, con lo que quedara publicado.
+
 Para mas información ve el [Readme](https://github.com/platanus/blog/blob/master/README.MD) del blog
