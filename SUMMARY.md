@@ -10,13 +10,16 @@
   * [HTML](code/html.md)
   * [Ruby](code/ruby.md)
   * [Javascript](code/javascript.md)
+
 * Frameworks
   * [Rails](code/rails.md)
   * [ActiveAdmin](code/activeadmin.md)
   * [Angular](code/angular.md)
   * [Ionic](code/ionic.md)
+
 * Testing
-  * [Karma](code/karma.md)
+  * [Karma](testing/karma.md)
+  * [Jasmine](testing/jasmine.md)
   * [Rspec](code/rspec.md)
 
 * Tools
