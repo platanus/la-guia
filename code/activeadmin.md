@@ -53,3 +53,6 @@ Se debe agregar el atributo `multiple: true` al filtro, de esta manera:
 ```ruby
 filter :specialities, multiple: true
 ```
+
+
+{% getPostsByTag 'activeadmin', 'ruby' %}{% endgetPostsByTag %}

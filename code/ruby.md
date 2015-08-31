@@ -1,2 +1,4 @@
 Ruby
 ====
+
+{% getPostsByTag 'ruby' %}{% endgetPostsByTag %}

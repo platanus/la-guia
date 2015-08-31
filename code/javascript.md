@@ -1,2 +1,4 @@
 Javascript
 ==========
+
+{% getPostsByTag 'javascript' %}{% endgetPostsByTag %}
