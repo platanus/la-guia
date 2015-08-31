@@ -20,7 +20,7 @@
 * Testing
   * [Karma](testing/karma.md)
   * [Jasmine](testing/jasmine.md)
-  * [Rspec](code/rspec.md)
+  * [Rspec](testing/rspec.md)
 
 * Tools
   * [Sublime Text 3](tools/sublime.md)
