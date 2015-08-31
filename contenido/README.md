@@ -1,2 +1,0 @@
-Colabora en la guía
-=========

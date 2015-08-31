@@ -1,5 +1,5 @@
-ActiveAdmin [:link:](https://github.com/activeadmin/activeadmin)
-=========
+ActiveAdmin
+===========
 
 * Para integrar Devise Invitable usamos [esta gema](https://github.com/platanus/admin-invitable). Más información en este [blog post](http://cb.platan.us/invitar-administradores-con-admin-invitable-gem)
 * Para mejorar la interacción en ActiveAdmin le agregamos [ActiveAdminAddons](https://github.com/platanus/activeadmin_addons)

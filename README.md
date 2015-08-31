@@ -1,5 +1,5 @@
 Platanus - La Guía
-=========
+==================
 
 Acá encontrarás una suerte de mandamientos, lineamientos, acuerdos y todo lo necesario para que podamos comunicarnos de la mejor forma posible. Es importante que todos compartamos una misma [cultura](/contenido/cultura.md).
 

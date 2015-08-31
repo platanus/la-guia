@@ -1,5 +1,7 @@
-Commits en Git
-=======
+Git
+===
+
+### Commits en Git
 
 Los mensajes de commit:
 
@@ -31,3 +33,7 @@ Los mensajes de commit:
   * sin punto (.) al final
 
 Nota: Esto es un extracto/traducción de [este documento](https://github.com/ajoslin/conventional-changelog/blob/master/CONVENTIONS.md), que es más completo, pero que por el momento no es una práctica que sigamos completamente en Platanus.
+
+### Branches y Pull-requests
+
+Salvo cosas muy insignificantes, los features los hacemos en un nuevo branch y hacemos un pull-request hacia master.

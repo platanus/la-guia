@@ -1,5 +1,5 @@
-Trello [:link:](http://trello.com)
-=========
+Trello
+======
 
 En cada proyecto decidimos qué columnas usar, pero en general nos basamos en algo parecido a:
 

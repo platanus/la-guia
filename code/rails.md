@@ -1,5 +1,5 @@
-Rails [:link:](https://github.com/rails/rails)
-=========
+Rails
+=====
 
 * Inicializamos nuestros proyectos con [potassium](https://github.com/platanus/potassium)
 * El deploy se hace con [negroku](https://github.com/platanus/negroku)
