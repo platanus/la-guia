@@ -1,10 +1,18 @@
 {
   "gitbook": "2.2.0",
   "title": "Platanus - La Guia",
-  "plugins" : ["platanus-blog"],
+  "links": {
+    "sidebar": {
+      "Platanus": "https://platan.us"
+    }
+  },
+  "plugins" : ["platanus-blog", "github", "ungrey"],
   "pluginsConfig": {
     "platanusBlog": {
       "url": "http://cb.platan.us/posts-by-tag.json"
+    },
+    "github": {
+      "url": "https://github.com/platanus/la-guia"
     }
   }
 }
