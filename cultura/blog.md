@@ -1,7 +1,7 @@
 Blog - Codigo Banana
 ====================
 
-Para administrar el blog, se usara el board **platanus** en trello y se debe seguir el flujo de tareas descrito en seccion [trello de platanus](cultura.md#el-trello-de-platanus) de la guia de cultura.
+Para administrar el blog, se usara el board **platanus** en trello y se debe seguir el flujo de tareas descrito en seccion [trello de platanus](trello.md) de la guia de cultura.
 
 #### Empezar a escribir un borrador
 

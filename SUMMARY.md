@@ -27,3 +27,4 @@
   * [Atom](tools/atom.md)
   * [Git](tools/git.md)
   * [Bower](tools/bower.md)
+  * [Trello](tools/trello.md)
