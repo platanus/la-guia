@@ -3,7 +3,7 @@ The Platanus Week
 
 ### Weekly Meeting
 
-* **Cuando:** Lunes a las 9.00am (hora chilena)
+* **Cuando:** Lunes a las 10.00am (hora chilena)
 * **Donde:** [Hangout](https://plus.google.com/hangouts/_/platan.us/weekly-planning)
 
 Nos juntamos **todos** con cámara prendida, para vernos las caras y tener una buena conversación que nos ayude a partir la semana. No hay una pauta pre-establecida, pero normalmente hablamos de:
