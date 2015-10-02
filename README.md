@@ -1,15 +1,18 @@
 # Platanus - La Guía
 
-## Contributing
+La guía esta escrita en archivos markdown y se usa una estructura particular para usar Gitbook para generar un sitio estatico con la guía.
 
-Para contribuir a la guia puedes instalarla localmente.
+
+## Local development
+
+Es muy importante que esta guía la hagamos todos. Para contribuir a la guía puedes instalarla localmente.
 Para eso vas a necesitar el CLI de gitbook
 
 ```
 npm install -g gitbook-cli
 ```
 
-Luego en root de la guia debes instalar sus dependencias
+Luego en root de la guía debes instalar sus dependencias
 
 ```
 gitbook install
@@ -21,17 +24,9 @@ Luego puede levantar un server local para probar
 gitbook serve
 ```
 
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-
 ## Credits
 
-Thank you [contributors](https://github.com/platanus/la-guia/graphs/contributors)!
+Thank you [contributors](https://github.com/platanus/la-guía/graphs/contributors)!
 
 <img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="250"/>
 
