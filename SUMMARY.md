@@ -18,6 +18,7 @@
   * [Ionic](code/ionic.md)
 
 * Testing
+  * [Angular](testing/angular.md)
   * [Karma](testing/karma.md)
   * [Jasmine](testing/jasmine.md)
   * [Rspec](testing/rspec.md)
