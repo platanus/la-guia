@@ -14,3 +14,24 @@ Todos estamos invitados a aportar en la construcción de esta guia maestra, porq
 * Para el versionamiento de código usamos [Git](/tools/git.md) y Github
 * Para desarrollar usamos [Sublime Text 3](/tools/sublime.md) y Atom, entre otros.
 * Seguimos las siguientes guías de estilos para [HTML](/code/html.md), CSS y JavaScript.
+
+## Contributing
+
+Para contribuir a la guia puedes instalarla localmente
+Para eso vas a requerir install `gitbook-cli`
+
+```
+npm install -g gitbook-cli
+```
+
+Luego en root de la guia debes instalar sus dependencias
+
+```
+gitbook install
+```
+
+Luego puede levantar un server local para probar
+
+```
+gitbook serve
+```
