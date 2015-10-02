@@ -14,5 +14,8 @@
     "github": {
       "url": "https://github.com/platanus/la-guia"
     }
+  },
+  "structure": {
+    "readme": "INTRO.md"
   }
 }

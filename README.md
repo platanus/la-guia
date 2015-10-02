@@ -1,24 +1,9 @@
-Platanus - La Guía
-==================
-
-Acá encontrarás una suerte de mandamientos, lineamientos, acuerdos y todo lo necesario para que podamos comunicarnos de la mejor forma posible. Es importante que todos compartamos una misma [cultura](/cultura/README.md).
-
-Todos estamos invitados a aportar en la construcción de esta guia maestra, porque eres parte de Platanus!
-
-* Para organizar nuestro trabajo usamos [Trello](/tools/trello.md)
-* Para el Front de todos los proyectos usamos [Angular 1.3](/code/angular.md)
-* En los proyectos móviles usamos [Ionic](/code/ionic.md) usando este [generador](https://github.com/platanus/generator-platanus-ionic)
-* Usamos [Bower](/tools/bower.md) como gestor de paquetes
-* Para unit testing usamos [Karma](/testing/karma.md)
-* En el Back todos los proyectos usamos [Rails 4.2](/code/rails.md)
-* Para el versionamiento de código usamos [Git](/tools/git.md) y Github
-* Para desarrollar usamos [Sublime Text 3](/tools/sublime.md) y Atom, entre otros.
-* Seguimos las siguientes guías de estilos para [HTML](/code/html.md), CSS y JavaScript.
+# Platanus - La Guía
 
 ## Contributing
 
-Para contribuir a la guia puedes instalarla localmente
-Para eso vas a requerir install `gitbook-cli`
+Para contribuir a la guia puedes instalarla localmente.
+Para eso vas a necesitar el CLI de gitbook
 
 ```
 npm install -g gitbook-cli
@@ -35,3 +20,23 @@ Luego puede levantar un server local para probar
 ```
 gitbook serve
 ```
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Credits
+
+Thank you [contributors](https://github.com/platanus/la-guia/graphs/contributors)!
+
+<img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="250"/>
+
+La Guia is maintained by [platanus](http://platan.us).
+
+## License
+
+La Guia is © 2015 platanus, spa. It is free software and may be redistributed under the terms specified in the LICENSE file.
