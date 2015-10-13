@@ -30,3 +30,6 @@
   * [Git](tools/git.md)
   * [Bower](tools/bower.md)
   * [Trello](tools/trello.md)
+
+* Deployment
+  * [Mobile resources](deployment/mobile-resources.md)
