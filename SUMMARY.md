@@ -10,6 +10,7 @@
 * Languages
   * [HTML](code/html.md)
   * [Ruby](code/ruby.md)
+  * [Node](code/node.md)
   * [Javascript](code/javascript.md)
 
 * Frameworks
