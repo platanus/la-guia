@@ -3,9 +3,9 @@ Manejo de APIs
 
 Para el input y output de las APIs que creamos usamos root objects.
 
-## Qué es un root object
+## Qué son los root objects
 
-Son wrappers que encapsulan al request que accedemos. Nos permiten extender el request/response que se transmite sin romper funcionalidad existente. Un ejemplo de api rootless es este:
+Son wrappers que encapsulan los requests y responses que utilizamos, permitiéndonos extenderlos sin romper funcionalidad existente. Un ejemplo de api rootless es este:
 
 ```json
 {
@@ -15,7 +15,7 @@ Son wrappers que encapsulan al request que accedemos. Nos permiten extender el r
 }
 ```
 
-Con root, esa respuesta viene encapsulada en un objecto `user` que nos da la flexibilidad de agregar otros objectos en la misma respuesta sin romper la compatibilidad con los clientes que consumen la API.
+Con un root, esa respuesta viene encapsulada en un objecto `user` que nos da la flexibilidad de agregar otros objectos en la misma respuesta sin romper la compatibilidad con los clientes que consumen la API.
 
 ```json
 {
