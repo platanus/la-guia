@@ -55,4 +55,6 @@ El código resulta bastante similar al manejo de formularios, que envuelven al r
 
 ## Restmod
 
-En proceso
+Para manejar root objects desde Restmod [la guía del proyecto tiene las indicaciones correspondientes](https://github.com/platanus/angular-restmod/blob/master/docs/guides/integration.md#q2).
+
+El soporte para enviar requests con root objects será incluído en el siguiente release.
