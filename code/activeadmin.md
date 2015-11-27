@@ -54,5 +54,8 @@ Se debe agregar el atributo `multiple: true` al filtro, de esta manera:
 filter :specialities, multiple: true
 ```
 
+#### Personalizando la interfaz
+
+En el blog hemos publicado un post con tips para mejorar la interfaz de ActiveAdmin: [link-al-post].
 
 {% getPostsByTag 'activeadmin', 'ruby' %}{% endgetPostsByTag %}
