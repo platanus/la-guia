@@ -7,6 +7,6 @@ Rails
 * Las interfaces de administración las contruimos usando [Active Admin](/code/activeadmin.md)
 * Para resolver el problema de autenticar usuarios que no pueden registrarse libremente en una aplicación utilizamos [devise_invitable](http://cb.platan.us/rails/active%20admin/devise/2015/03/18/invitar-usuarios-con-devise.html)
 * Para manejar "Enum attributes" utilizamos la gema [enumerize](https://github.com/brainspec/enumerize)
-* Como estrategia para el manejo de attachments en nuestras APIs, usamos la gema [paperclip_upload](https://github.com/platanus/paperclip_upload)
+* Como estrategia para el manejo de attachments en nuestras APIs, usamos la gema [rails_pallet](https://github.com/platanus/rails_pallet)
 
 {% getPostsByTag 'rails', 'ruby' %}{% endgetPostsByTag %}
