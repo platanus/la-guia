@@ -13,6 +13,34 @@ para manejar la autenticación. Más información en este [blog post](https://cb
 
 [blog post]: https://cb.platan.us/usando-angular-auth-lib-con-simple-token-authentication-gem
 
+## Getting started
+
+### Proyecto existente
+
+Si vas a empezar a trabajar en un projecto Rails que alguien ya creó.
+
+```shell
+git clone platanus/<project-name>
+cd <project-name>
+./bin/setup
+```
+
+### Proyecto nuevo
+
+Para empezar un projecto nuevo, asegurate de tener instalada la última version de [potassium][potassium]
+
+```shell
+gem install potassium
+```
+
+Luego crear un nuevo projecto con potassium contestando las preguntas.
+
+```shell
+potassium create <project-name>
+cd <project-name>
+./bin/setup
+```
+
 ## Deployment
 
 Los projectos rails se publican en [heroku][heroku-dashboard] en la cuenta de Platanus. La aplicación debe ser creada esta cuenta antes de hacer un deploy.
