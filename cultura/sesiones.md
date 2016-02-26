@@ -1,0 +1,8 @@
+Las Sesiones
+============
+* Nuestras sesiones de código duran 4 horas porque consideramos que esa es la mínima unidad de tiempo razonable para dedicarle a un proyecto en particular. Esto incluye pensar / preguntar cómo hacerlo, buscar inspiración, escribir código, hacer búsquedas online, aprender lo necesario y alguna pausa muy corta, pero no incluye salidas al banco, peleas con la polola/señora, el almuerzo, etc.
+* Intentamos no distraernos durante una sesión y enfocarnos en transformar cada tarjeta de Trello en un Pull Request. Esto implica que usamos branches de Git para cada feature.
+* Si una tarjeta de Trello requiere más de una sesión, esa es la prueba de que es una tarea muy grande y debemos separarla en más tarjetas. Al terminar la sesión dejamos lo que hicimos como una tarjeta y lo que falta como otra.
+* Se entiende que llegar al final del día con el Toggl marcando 8h de productividad es muy dificil. Hay que entenderlo como la meta, más que eso tampoco es bueno.
+* Al terminar una sesión, todos los cambios al código deben quedar *comiteados* en Github, **incluso si no alcanzamos a terminar.**
+* Para subir cambios no terminados: hacer un commit con la descripción del feature final que se está construyendo, en un branch distinto de master, claro. Luego, en otra sesión, puedes continuar haciendo `git commit --fixup <commit>` donde <commit> es el *hash* del commit original.  Cuando termines el feature, haces `git rebase -i --autosquash <commit-1>` (donde <commmit-1> es el commit anterior al original), se te abre un editor, lo cierras y listo. Más información en [este link](http://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html)
