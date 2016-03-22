@@ -20,33 +20,26 @@ libremente en una aplicación utilizamos [devise_invitable][]
 Para empezar un projecto nuevo, asegurate de tener instalada la última version
 de [potassium][]
 
-```shell
-gem install potassium
-```
+    gem install potassium
+
 
 Luego crea un nuevo projecto con potassium contestando las preguntas y finalmente corre el script de setup:
 
-```shell
-potassium create <project-name>
-```
+    potassium create <project-name>
 
 ### Proyecto existente
 
 Si vas a empezar a trabajar en un projecto Rails que alguien ya creó.
 
-```shell
-git clone platanus/<project-name>
-cd <project-name>
-./bin/setup
-```
+    git clone platanus/<project-name>
+    cd <project-name>
+    bin/setup
 
 Si necesita agregar funcionalidad a un projecto existente puedes usar
 el command `install <recipe>` de potassium
 
-```shell
-cd <project-name>
-potassium install pudnit
-```
+    cd <project-name>
+    potassium install pudnit
 
 {% getPostsByTag 'rails', 'ruby' %}{% endgetPostsByTag %}
 
