@@ -33,4 +33,5 @@
   * [Trello](tools/trello.md)
 
 * Deployment
+  * [Rails](deployment/rails.md)
   * [Mobile resources](deployment/mobile-resources.md)
