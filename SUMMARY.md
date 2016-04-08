@@ -33,6 +33,7 @@
   * [Trello](tools/trello.md)
 
 * [Open Source](open_source/README.md)
+  * [Angular](open_source/angular.md)
 
 * Deployment
   * [Rails](deployment/rails.md)
