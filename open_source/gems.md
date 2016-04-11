@@ -12,7 +12,7 @@ Con esto se va a generar un `Rakefile` que nos va a dar algunas tasks para simpl
 - rake build
 - rake relase
 
-*Spec*
+#### Spec `gemname.gemspec`
 
 En el gemspec debemos llenar al menos los siguientes campos
 
@@ -34,18 +34,18 @@ spec = Gem::Specification.new do |s|
 Las gemas deben ser publicadas en [rubygems.org](https://rubygems.org). Usamos la linea de comando para esto. La primera vez nos va a pedir nuestras credenciales de rubygems
 
 ```bash
-# This is like tag, push, publish
+# This will tag, push, publish
 rake release
 ```
 
-**IMPORTANTE:** Las publicaremos con nuestro usuario personal pero debemos agregar como owner al usuario de [platanus](https://rubygems.org/profiles/platanus).
+> **IMPORTANTE:** Las publicaremos con nuestro usuario personal pero debemos agregar como owner al usuario de [platanus](https://rubygems.org/profiles/platanus).
 
 ```bash
 # Agregar un owner a una gem
 gem owner GEM_NAME --add rubygems@platan.us
 ```
 
-#### Un listado de librerías Platanus
+## Un listado de librerías Platanus
 
 - [Activeadmin Addons](https://github.com/platanus/activeadmin_addons)
 - [Potassium](https://github.com/platanus/potassium)
