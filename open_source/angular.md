@@ -1,5 +1,4 @@
-Angular (Open Source)
-=======================
+# Angular (Open Source)
 
 - Para no partir de cero, usamos este [Generador](https://github.com/platanus/generator-angular-library)
 - Invierte tiempo en buscar un buen nombre (compartelo con el equipo)
