@@ -34,6 +34,7 @@
 
 * [Open Source](open_source/README.md)
   * [Angular](open_source/angular.md)
+  * [Gems](open_source/gems.md)
 
 * Deployment
   * [Rails](deployment/rails.md)
