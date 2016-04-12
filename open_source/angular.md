@@ -61,14 +61,16 @@ Cuando quieras publicar una nueva version de una libreria simplemente debes hace
 
 ## Un listado de librerías Platanus
 
-- [Restmod](https://github.com/platanus/angular-restmod)
-- [Angular Pallet Bundle](https://github.com/platanus/angular-pallet-bundle)
-- [Angular Rut](https://github.com/platanus/angular-rut)
-- [Angular Push](https://github.com/platanus/angular-push)
-- [Angular Auth](https://github.com/platanus/angular-auth)
-- [Angular Pretty Load](https://github.com/platanus/angular-pretty-load)
-- [Angular Keep Values](https://github.com/platanus/angular-keep-values)
-- [Angular Validate](https://github.com/platanus/angular-validate)
-- [Angular Doc Preview](https://github.com/platanus/angular-doc-preview)
-- [Angular Progress](https://github.com/platanus/angular-progress)
-- [Angular Pallet](https://github.com/platanus/angular-pallet)
+{% packagesTable %}{% endpackagesTable %}
+  {% npmPackage 'angular-restmod' %}{% endnpmPackage %}
+  {% npmPackage 'angular-pallet-bundle' %}{% endnpmPackage %}
+  {% npmPackage 'angular-rut' %}{% endnpmPackage %}
+  {% npmPackage 'platanus-angular-push', github='platanus/angular-auth', name="Angular Push" %}{% endnpmPackage %}
+  {% npmPackage 'angular-auth' %}{% endnpmPackage %}
+  {% npmPackage 'angular-pretty-load' %}{% endnpmPackage %}
+  {% npmPackage 'angular-keep-values' %}{% endnpmPackage %}
+  {% npmPackage 'angular-validate' %}{% endnpmPackage %}
+  {% npmPackage 'angular-doc-preview' %}{% endnpmPackage %}
+  {% npmPackage 'angular-progress' %}{% endnpmPackage %}
+  {% npmPackage 'angular-pallet' %}{% endnpmPackage %}
+{% finishPackagesTable %}{% endfinishPackagesTable %}

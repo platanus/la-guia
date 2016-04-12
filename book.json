@@ -6,7 +6,7 @@
       "Platanus": "https://platan.us"
     }
   },
-  "plugins" : ["platanus-blog", "github", "ungrey"],
+  "plugins" : ["platanus-blog", "github", "ungrey", "packages"],
   "pluginsConfig": {
     "platanusBlog": {
       "url": "http://cb.platan.us/posts-by-tag.json"

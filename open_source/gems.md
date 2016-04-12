@@ -47,6 +47,8 @@ gem owner GEM_NAME --add rubygems@platan.us
 
 ## Un listado de librerías Platanus
 
-- [Activeadmin Addons](https://github.com/platanus/activeadmin_addons)
-- [Potassium](https://github.com/platanus/potassium)
-- [Paperclip Upload](https://github.com/platanus/paperclip_upload)
+{% packagesTable %}{% endpackagesTable %}
+  {% rubyGem 'activeadmin_addons' %}{% endrubyGem %}
+  {% rubyGem 'potassium' %}{% endrubyGem %}
+  {% rubyGem 'paperclip_upload' %}{% endrubyGem %}
+{% finishPackagesTable %}{% endfinishPackagesTable %}
