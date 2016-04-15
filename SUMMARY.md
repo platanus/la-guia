@@ -32,6 +32,10 @@
   * [Bower](tools/bower.md)
   * [Trello](tools/trello.md)
 
+* [Open Source](open_source/README.md)
+  * [Angular](open_source/angular.md)
+  * [Gems](open_source/gems.md)
+
 * Deployment
   * [Rails](deployment/rails.md)
   * [Mobile resources](deployment/mobile-resources.md)
