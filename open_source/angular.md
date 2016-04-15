@@ -62,15 +62,18 @@ Cuando quieras publicar una nueva version de una libreria simplemente debes hace
 ## Un listado de librerías Platanus
 
 {% packagesTable %}{% endpackagesTable %}
-  {% npmPackage 'angular-restmod' %}{% endnpmPackage %}
-  {% npmPackage 'angular-pallet-bundle' %}{% endnpmPackage %}
-  {% npmPackage 'angular-rut' %}{% endnpmPackage %}
-  {% npmPackage 'platanus-angular-push', github='platanus/angular-auth', name="Angular Push" %}{% endnpmPackage %}
-  {% npmPackage 'angular-auth' %}{% endnpmPackage %}
-  {% npmPackage 'angular-pretty-load' %}{% endnpmPackage %}
-  {% npmPackage 'angular-keep-values' %}{% endnpmPackage %}
-  {% npmPackage 'angular-validate' %}{% endnpmPackage %}
-  {% npmPackage 'angular-doc-preview' %}{% endnpmPackage %}
-  {% npmPackage 'angular-progress' %}{% endnpmPackage %}
-  {% npmPackage 'angular-pallet' %}{% endnpmPackage %}
+  {% npmBowerPackage 'angular-doc-preview' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-inflector', github='iobaixas/angular-inflector' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-keep-values' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-pallet-bundle' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-pallet' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-pretty-load' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-progress' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-restmod' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-rut' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'angular-validate' %}{% endnpmBowerPackage %}
+  {% npmPackage 'generator-platanus-angular-library', github='platanus/generator-angular-library' %}{% endnpmPackage %}
+  {% npmPackage 'generator-platanus-ionic' %}{% endnpmPackage %}
+  {% npmBowerPackage 'platanus-angular-auth', github='platanus/angular-auth' %}{% endnpmBowerPackage %}
+  {% npmBowerPackage 'platanus-angular-push', github='platanus/angular-push', name="Angular Push" %}{% endnpmBowerPackage %}
 {% finishPackagesTable %}{% endfinishPackagesTable %}

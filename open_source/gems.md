@@ -49,6 +49,12 @@ gem owner GEM_NAME --add rubygems@platan.us
 
 {% packagesTable %}{% endpackagesTable %}
   {% rubyGem 'activeadmin_addons' %}{% endrubyGem %}
-  {% rubyGem 'potassium' %}{% endrubyGem %}
+  {% rubyGem 'admin_invitable', github='platanus/admin-invitable' %}{% endrubyGem %}
+  {% rubyGem 'cangrejo', github='platanus/cangrejo-gem'%}{% endrubyGem %}
   {% rubyGem 'paperclip_upload' %}{% endrubyGem %}
+  {% rubyGem 'pincers' %}{% endrubyGem %}
+  {% rubyGem 'potassium' %}{% endrubyGem %}
+  {% rubyGem 'punto_pagos_rails' %}{% endrubyGem %}
+  {% rubyGem 'push_to_sns' %}{% endrubyGem %}
+  {% rubyGem 'rails_pallet' %}{% endrubyGem %}
 {% finishPackagesTable %}{% endfinishPackagesTable %}
