@@ -71,7 +71,38 @@ Luego de esto puedes ejecutar los comandos de la siguiente manera
     heroku logs --remote staging
     heroku config:set KEY=value --remote production
 
-> El remote staging queda configurado como por defecto, asique puedes omitirlo.
+> El remote staging queda configurado como por defecto, así que puedes omitirlo.
+
+Antes de poder hacer un deploy se debe configurar en Heroku es la base de datos, o DATABASE_URL, si el proyecto usa MySQL, sólo basta con añadirla así:
+
+    heroku config:set DATABASE_URL=MY_URL --remote staging
+
+Si en staging preferimos usar el addon de Heroku para Postgres, primero hay que cambiar la configuración de la base de datos a esto:
+
+```ruby
+# config/database.yml
+staging:
+  adapter: postgresql
+  encoding: unicode
+  url: <%= ENV.fetch("DATABASE_URL", "") %>
+  pool: <%= [Integer(ENV.fetch("MAX_THREADS", 5)), Integer(ENV.fetch("DB_POOL", 5))].max %>
+```
+
+Y luego crear la base de datos mediante la línea de comandos:
+
+    heroku addons:create heroku-postgresql:hobby-dev -a nombre-de-nuestra-aplicacion
+
+Esto genera un URL en la configuración ambiental del proyecto que podemos ver con `heroku config`
+
+    HEROKU_POSTGRESQL_CHARCOAL_URL: URL_DE_LA_DB_QUE_CREO_HEROKU
+
+Debemos asignar el valor de esta URL hacia DATABASE_URL para que el deploy funcione:
+
+    heroku config:set DATABASE_URL=URL_DE_LA_DB_QUE_CREO_HEROKU --remote staging
+
+Una vez hecho esto, ya podemos hacer deploys mediante un push del branch que tenemos configurado en Heroku (por defecto es master):
+
+    git push heroku master
 
 {% getPostsByTag 'heroku' %}{% endgetPostsByTag %}
 
