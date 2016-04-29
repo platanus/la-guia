@@ -6,8 +6,7 @@ Utilizaremos los [pipelines][heroku-pipelines] de heroku para manejar diferente 
 
 ## Creación de la app en heroku
 
-Al crear un proyecto rails con potassium, si tienes acceso a la cuenta de heroku,
-las aplicaciones seran creadas por el mismo commando `create` de potassium.
+Al crear un proyecto rails con potassium, si tienes acceso a la cuenta de heroku, las aplicaciones seran creadas por el mismo commando `create` de potassium.
 [Como generar una aplicacion rails?](../code/rails.md)
 
 > Para crear la aplicación se deben usar la cuenta *owner* que es tiene permisos para crear nuevas aplicaciones. Para esto debes installar el [heroku-toolbelt][] y la gema [potassium][].
@@ -20,12 +19,9 @@ y crear la aplicación
 
     potassium create <app-name>
 
-Esto creará una aplicacion para cada **stage**, creará el **pipeline** y hará
-la asociación entre las apps y el stage. Todo esto esta definido en la
-[receta heroku][heroku-recipe] de potassium.
+Esto creará una aplicacion para cada **stage**, creará el **pipeline** y hará la asociación entre las apps y el stage. Todo esto esta definido en la [receta heroku][heroku-recipe] de potassium.
 
-Si tienes un proyecto que todavia no tiene sus aplicaciones creadas en heroku,
-puedes ejecutar nuevamente la receta con el comando `install`
+Si tienes un proyecto que todavia no tiene sus aplicaciones creadas en heroku, puedes ejecutar nuevamente la receta con el comando `install`
 
     potassium install heroku
 
@@ -48,8 +44,7 @@ braches en los que los tests estan pasando.
 
 ##### Continuous integration
 
-Los test de la aplicación ejecutados por el servicio CircleCi. Para esto debes
-habilitar el repositorio en https://circleci.com/add-projects.
+Los test de la aplicación ejecutados por el servicio CircleCi. Para esto debes habilitar el repositorio en https://circleci.com/add-projects.
 
 ##### Continuous delivery
 
@@ -67,12 +62,9 @@ Luego debes hacer login con tu cuenta de heroku.
 
     heroku login
 
-Para acceder mas facil a las aplicaciones en heroku desde tu proyecto, el heroku
-toolbelt usa los remotes de github para saber en que stage o aplicación ejecutar
-un comando.
+Para acceder mas facil a las aplicaciones en heroku desde tu proyecto, el heroku toolbelt usa los remotes de github para saber en que stage o aplicación ejecutar un comando.
 
-Potassium crea los remotes automaticamente a generar la aplicacion. Si acabas de
-clonar una aplicación existente puedes ejecutar el script `bin/setup`.
+Potassium crea los remotes automaticamente a generar la aplicacion. Si acabas de clonar una aplicación existente puedes ejecutar el script `bin/setup`.
 
 Luego de esto puedes ejecutar los comandos de la siguiente manera
 
