@@ -2,7 +2,7 @@
 
 ## Version Management
 
-La version actual que usamos se puede ver en [ruby.platan.us/latest](http://ruby.platan.us/latest)
+La version actual que usamos se puede ver en el [stack ruby](https://github.com/platanus/our-boxen/blob/HEAD/modules/stacks/manifests/ruby.pp) de boxen
 
 Para administrar las versiones de ruby usamos [rbnev](https://github.com/sstephenson/rbenv)
 

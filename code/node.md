@@ -2,7 +2,7 @@
 
 ## Version Management
 
-La version actual que usamos se puede ver en [node.platan.us/latest](http://node.platan.us/latest)
+La version actual que usamos se puede ver en el [stack node](https://github.com/platanus/our-boxen/blob/HEAD/modules/stacks/manifests/node.pp) de boxen
 
 Para administrar las versiones de node usamos [nodenv](https://github.com/OiNutter/nodenv)
 
