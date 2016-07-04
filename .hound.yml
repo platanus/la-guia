@@ -2,7 +2,7 @@ javascript:
   enabled: false
 eslint:
   enabled: true
-  config_file: style/config/.eslintrc.yml
+  config_file: style/config/.eslintrc.json
 tslint:
   enabled: true
   config_file: style/config/tslint.json
