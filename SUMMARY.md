@@ -8,6 +8,7 @@
   * [La Biblioteca](cultura/library.md)
 
 * Languages
+  * [Style Guides](code/style.md)
   * [HTML](code/html.md)
   * [Ruby](code/ruby.md)
   * [Node](code/node.md)
