@@ -55,7 +55,7 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
 * [Linter](https://atom.io/packages/linter)
 * [Ruby](https://atom.io/packages/linter-rubocop)
 * [ES](https://atom.io/packages/linter-eslint)
-* [Sass](https://atom.io/packages/linter-sass-lint)
+* [Sass](https://atom.io/packages/linter-scss-lint)
 * [TypeScript](https://atom.io/packages/linter-tslint)
 
 #### VScode
@@ -69,7 +69,7 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
 * [Linter](https://github.com/SublimeLinter/SublimeLinter3)
 * [Ruby](https://github.com/SublimeLinter/SublimeLinter-rubocop)
 * [ES](https://github.com/roadhump/SublimeLinter-eslint)
-* [Sass](https://github.com/skovhus/SublimeLinter-contrib-sass-lint)
+* [Sass](https://github.com/attenzione/SublimeLinter-scss-lint)
 * [TypeScript](https://github.com/lavrton/SublimeLinter-contrib-tslint)
 
 #### RubyMine
