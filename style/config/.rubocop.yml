@@ -509,7 +509,7 @@ Metrics/MethodLength:
 Metrics/ParameterLists:
   Description: Avoid long parameter lists.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#too-many-params
-  Enabled: true
+  Enabled: false
   Max: 5
   CountKeywordArgs: true
 Metrics/PerceivedComplexity:
