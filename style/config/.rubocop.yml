@@ -177,6 +177,8 @@ Style/FormatString:
   - format
   - sprintf
   - percent
+Style/FrozenStringLiteralComment:
+  Enabled: false
 Style/GlobalVars:
   Description: Do not introduce global variables.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#instance-vars
