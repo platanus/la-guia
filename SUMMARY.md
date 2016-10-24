@@ -22,9 +22,6 @@
 
 * Testing
   * [Angular](testing/angular.md)
-  * [Karma](testing/karma.md)
-  * [Jasmine](testing/jasmine.md)
-  * [Rspec](testing/rspec.md)
 
 * Tools
   * [Sublime Text 3](tools/sublime.md)
