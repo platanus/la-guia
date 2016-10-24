@@ -32,5 +32,3 @@ $ ls -l /opt/rubies
 2.2.3
 2.2 -> /opt/rubies/2.2.3 #symlink a la version mayor
 ```
-
-{% getPostsByTag 'ruby' %}{% endgetPostsByTag %}

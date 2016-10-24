@@ -41,8 +41,6 @@ el command `install <recipe>` de potassium
     cd <project-name>
     potassium install pudnit
 
-{% getPostsByTag 'rails', 'ruby' %}{% endgetPostsByTag %}
-
 [heroku-dashboard]: https://dashboard.heroku.com
 [potassium]: https://github.com/platanus/potassium
 [simple-token-blog]: https://cb.platan.us/usando-angular-auth-lib-con-simple-token-authentication-gem

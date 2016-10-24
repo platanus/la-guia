@@ -31,5 +31,3 @@ $ ls -l /opt/nodes
 4.1.1
 4.1 -> /opt/nodes/4.1.1 # symlink a la version mayor
 ```
-
-{% getPostsByTag 'node', 'ionic' %}{% endgetPostsByTag %}

@@ -81,8 +81,6 @@ Luego de esto puedes ejecutar los comandos de la siguiente manera
 
 > El remote staging queda configurado como por defecto, asique puedes omitirlo.
 
-{% getPostsByTag 'heroku' %}{% endgetPostsByTag %}
-
 [heroku-dashboard]: https://dashboard.heroku.com
 [heroku-pipelines]: https://devcenter.heroku.com/articles/pipelines
 [heroku-toolbelt]: https://toolbelt.heroku.com/

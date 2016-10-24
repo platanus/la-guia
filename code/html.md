@@ -28,5 +28,3 @@ HTML
 * Las propiedades _booleanas_ se deberían usar por si solas. `<input type="checkbox" checked>` en vez de `<input type="checkbox" checked="checked">`
 
 Basado en [codeguide.co](http://codeguide.co) y [Primer Guidelines](http://primercss.io/guidelines).
-
-{% getPostsByTag 'html' %}{% endgetPostsByTag %}

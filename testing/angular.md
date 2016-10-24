@@ -182,5 +182,3 @@ describe('Field Factory', function(){
   });
 });
 ```
-
-{% getPostsByTag 'angular', 'testing' %}{% endgetPostsByTag %}
