@@ -6,11 +6,8 @@
       "Platanus": "https://platan.us"
     }
   },
-  "plugins" : ["platanus-blog", "github", "ungrey", "packages"],
+  "plugins" : ["github", "ungrey", "packages"],
   "pluginsConfig": {
-    "platanusBlog": {
-      "url": "http://cb.platan.us/posts-by-tag.json"
-    },
     "github": {
       "url": "https://github.com/platanus/la-guia"
     }
