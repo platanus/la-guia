@@ -10,6 +10,11 @@ Esta nos permite, mantener por cada lenguaje, un conjunto de reglas que se aplic
 
 Al momento de hacer un PR en un proyecto, Hound leerá el archivo de configuración [`.hound.yml`](https://github.com/platanus/la-guia/blob/master/.hound.yml) (que hemos decidido mantener en este repositorio). En este, revisará qué lenguajes están habilitados y, por cada uno, buscará una referencia (bajo el key `config_file`) a las [reglas de estilo](https://github.com/platanus/la-guia/tree/master/style/config) que usamos en Platanus para ese lenguaje. Con las reglas en mano, el mono aplicará las mismas contra los archivos del PR y generará comentarios si se produjeron violaciones de estilo en el código.
 
+#### ¿Cómo agrego un repositorio?
+
+Para que hound empieze a revisar los PR de un repositorio, debes ingresar a http://monkeyci.platan.us,
+entrar con tu cuenta de github y activar el repositorio.
+
 ### Una [Ruby CLI](https://github.com/platanus/hound-cli)
 
 Esta nos permite, localmente, simular lo mismo que ocurre con Hound. Esto lo hacemos con el objetivo de poder corregir localmente violaciones de estilo antes que "El Mono" nos reclame en el PR.
