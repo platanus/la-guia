@@ -779,7 +779,7 @@ Style/NilComparison:
 Style/Not:
   Description: Use ! instead of not.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#bang-not-not
-  Enabled: false
+  Enabled: true
 Style/OneLineConditional:
   Description: Favor the ternary operator(?:) over if/then/else/end constructs.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#ternary-operator
