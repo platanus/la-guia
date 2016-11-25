@@ -3,6 +3,7 @@ javascript:
 eslint:
   enabled: true
   config_file: style/config/.eslintrc.json
+  ignore_file: style/config/.eslintignore
 tslint:
   enabled: true
   config_file: style/config/tslint.json
