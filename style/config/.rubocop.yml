@@ -9,6 +9,7 @@ AllCops:
   - "bin/**/*"
   DisplayCopNames: false
   StyleGuideCopsOnly: false
+TargetRubyVersion: 2.3
 Style/AccessModifierIndentation:
   Description: Check indentation of private/protected visibility modifiers.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#indent-public-private-protected
