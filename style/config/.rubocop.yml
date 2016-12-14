@@ -53,6 +53,8 @@ Style/BarePercentLiterals:
   SupportedStyles:
   - percent_q
   - bare_percent
+Metrics/BlockLength:
+  Enabled: false
 Style/BracesAroundHashParameters:
   Description: Enforce braces style around hash parameters.
   Enabled: true
