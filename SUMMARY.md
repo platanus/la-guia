@@ -37,6 +37,7 @@
   * [Power Types](code/power-types.md)
 * [Angular](code/angular.md)
 * [Ionic](code/ionic.md)
+* [Vue](code/vue.md)
 
 ## Tools
 * [Environment](tools/environment.md)
