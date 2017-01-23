@@ -1,12 +1,47 @@
 Power Types
 ===
 
-Powert Types es una [gema](https://github.com/platanus/power-types) desarrollada por 
-*Platan.us* que permite estructurar el código en base a 4 prácticas (o patrones) 
-conocidos como **Services**, **Commands**, **Utils** y **Values**.
+Power Types es una [gema](https://github.com/platanus/power-types) desarrollada por **Platanus** que promueve el uso de estos poderosos patrones: **Services**, **Commands**, **Utils** y **Values**.
 
-El principal beneficio de trabajar con Power-Types es que nuestro código quedará 
-ordenado y no será una sorpresa a la hora de ser mantenido por otros desarrolladores.
+Estos se basan en el [SRP (Single Responsability Principe)](https://blog.platan.us/solid-single-responsability), que nos dice que cada clase debe tener **1** sola función.
+Por ejemplo, si tenemos un modelo con operaciones complejas como este:
+```ruby
+class User
+    def upgrade_membership
+        # ...
+    end
+    def notify_external_system
+        # ...
+    end
+    def register_payment_card
+    # ...
+    end
+end
+```
+
+Deberíamos llevar cada una de sus funciones a Commands o Services independientes:
+```ruby
+class UpgradeMembership < Command
+    # ...
+end
+
+class ExternalNotifierService < Service
+    # ...
+end
+
+class RegisterPaymentCard < Command
+    # ...
+end
+```
+
+
+Estructurando nuestro código de forma modular y desacoplada tenemos las siguientes ventajas:
+
+* Menos riesgo:  Aislar errores, no pisar variables
+* Más claridad, que hace cada clase
+* DRYness
+* Unit Testing de cada funcionalidad
+
 
 
 ## Services - `app/services`
@@ -21,25 +56,28 @@ $ rails generate service SomeNameService source
 
 Esto generará una clase cuyo nombre termina, por convención en `..Service`
 
-```Ruby
+```ruby
 class SomeNameService < PowerTypes::Service.new(:source)
-	def do_something
+	def do_something_now
 	end
+	
+	def do_something_later
+    	end
 end
 ```
 
 Luego pueden ser utilizados fácilmente instanciando la clase y llamando a sus métodos
 
-```Ruby
-ham = Mono.new
-result = ham.do_something
+```ruby
+service = SomeNameService.new(source: data)
+result = service.do_something_now
 ```
 
 ## Commands - `app/commands`
 
 Los *Comandos* son clases destinadas a realizar operaciones acotadas e 
 independientes. Se implementan a través de un método `perform` que recibe 
-argumentos y realiza operaciones con ellos entregando un resultado. Tamibén 
+argumentos y realiza operaciones con ellos entregando un resultado. También 
 poseen un generador para construir su estructura,
 
 ```
@@ -48,8 +86,8 @@ $ rails generate command DoSomething foo
 
 Esto generará una clase que implementa el método perform
 
-```Ruby 
-class DoSomething < PowerTypes::Command.new(:foo)
+```ruby 
+class DoSomething < PowerTypes::Command.new(:foo, :bar)
 	def perform(args)
 	end
 end
@@ -57,35 +95,40 @@ end
 
 Luego pueden ser llamados y ejecutados de la siguiente forma,
 
-```Ruby
-result = DoSomething.for(foo: bar)
+```ruby
+result = DoSomething.for(foo: waffle, bar: pancake)
 ```
 
-Donde `foo: bar` es simplemente el argumento `args` que será entregado al método `perform`.
+Donde `:foo, :bar` son los argumentos.  Están disponibles en el comando como variables de instancia `@foo, @bar`
 
 ## Utils - `app/utils`
 
-Las utils son módulos Ruby que nos permiten agrupar funciones y procedimientos. 
+Las utils son módulos Ruby que nos permiten agrupar funciones y procedimientos simples e independientes
 
-```Ruby
-module SomeModule
-	extend self
+```ruby
+module MagicTricks
+extend self
 
-	def do_something
-	end
+    def dissappear(object)
+        #blah blah
+    end
 
-	def do_other
-	end
-end
+    def shrink(children)
+        #bleh bleeh
+    end
+
+    def shuffle(cards)
+        #blaah
+    end  
 ```
 
 Luego los métodos podrán ser llamados de la siguiente forma
 
-```Ruby
-SomeModule.do_something()
+```ruby
+MagicTricks.dissapear(rabbit)
 # Or
-include SomeModule
-do_something()
+include MagicTricks
+dissapear(rabbit)
 ```
 
 ## Values - `app/values`
@@ -94,21 +137,28 @@ Los values corresponden a clases Ruby que pueden ser utilizadas para contener
 información que no persiste en la base de datos, y por lo tanto solo existe 
 en memoria.
 
-```Ruby
-class SomeClass
-	attr_accessor :name, :email
-
-	def initialize(name, email)
-		@name = name
-		@email = email
+Entonces si por ejemplo, generamos dinámicamente un reporte, en vez de retornarlo como Hash:
+``` ruby
+class BuildCleaningReport < PowerTypes::Command.new(:data)
+	def perform
+		# execute report logic, and finally return:
+		{ 
+			date: @date,
+			area: cleaned_area,
+			duration: cleaning.time,
+			effiency: cleaned_area / cleaning.time
+		}
 	end
+end
+```
+Mejor encapsular el resultado en una clase `Report`:
+```ruby
+# app/values/report.rb
+class Report
+	attr_accesor :date, :area, :duration
 
-	def do_something
-	end
-
-	private
-
-	def some_private_method
+	def eficciency
+		area / duration		
 	end
 end
 ```
