@@ -16,7 +16,8 @@
 
 * Frameworks
   * [Rails](code/rails.md)
-  * [ActiveAdmin](code/activeadmin.md)
+    * [ActiveAdmin](code/activeadmin.md)
+    * [Power Types](code/power-types.md)
   * [Angular](code/angular.md)
   * [Ionic](code/ionic.md)
 
