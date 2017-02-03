@@ -26,7 +26,7 @@ Estos días los dedicamos a trabajar para los productos de clientes y los nuestr
 
 Los viernes los invertimos en hacer de Platanus una **mejor empresa**.
 
-Para saber en qué trabajar, primero se debe identificar un problema. Puedes buscar inspiración en el [Trello de Platanus](trello.md) o puedes bucear en tus propias experiencias dentro del trabajo normal de la semana. Lo importante es buscar un problema a resolver. Mientras más impacto tenga dentro del equipo mejor!.
+Para saber en qué trabajar, primero se debe identificar una necesidad. La idea es bucear en el [Trello de Platanus](trello.md) algún problema a resolver. Mientras más impacto tenga dentro del equipo mejor!.
 
 Luego de identificar el problema, puedes trabajar en la solución!
 
@@ -39,3 +39,13 @@ Generalmente el trabajo se traduce en:
 * Aprender nuevas técnicas que hacen mi trabajo más eficiente
 * Fortalecer conocimiento en un área en que estoy más débil que el resto
 * Aportar en cualquiera de nuestras librerías open-source
+
+### Feriados
+
+Le llamamos *viernes no-viernes* a aquellos que **no hacemos Investment Day**, si no que trabajo regular en proyectos.
+
+Esto ocurre para quienes tuvieron **uno o más dias feriados** durante la semana.  Ya sea un feriado nacional, o personal por vacaciones u otra causa.  Este sacrificio de viernes vela por que dediquemos al menos 4 días a la semana a nuestros proyectos. 
+
+Como en Platanus tenemos gente repartida por el mundo, **se respetan los feriados de cada país!**
+
+Es decir, si vivo en Botswana, me corresponde ausentarme para festejar el Día Nacional de Botswana, como cualquier botswanense.  Sin embargo, tengo que trabajar para el de Chile, aunque sea un día solitario y gran parte del contingente platanesco esté ausente celebrando.  
