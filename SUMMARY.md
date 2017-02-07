@@ -4,6 +4,7 @@
 * [Cultura Platanus](cultura/README.md)
   * [Nuestra Semana](cultura/week.md)
   * [Trello](cultura/trello.md)
+  * [Toggl](cultura/toggl.md)
   * [El Blog](cultura/blog.md)
   * [La Biblioteca](cultura/library.md)
 
