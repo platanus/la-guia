@@ -1,4 +1,4 @@
-javascript:
+jshint:
   enabled: false
 eslint:
   enabled: true
