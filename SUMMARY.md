@@ -8,7 +8,7 @@
   * [El Blog](cultura/blog.md)
   * [La Biblioteca](cultura/library.md)
 
-* Product Owner
+* Clientes
   * [Google Play](clients/google-play.md)
   * [Apple App Store](clients/apple-app-store.md)
 
