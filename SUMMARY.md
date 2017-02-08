@@ -8,6 +8,10 @@
   * [El Blog](cultura/blog.md)
   * [La Biblioteca](cultura/library.md)
 
+* Clientes
+  * [Google Play](clients/google-play.md)
+  * [Apple App Store](clients/apple-app-store.md)
+
 * Languages
   * [Style Guides](code/style.md)
   * [HTML](code/html.md)
