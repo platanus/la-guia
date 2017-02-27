@@ -9,6 +9,7 @@
   * [La Biblioteca](cultura/library.md)
 
 * Product Owner
+  * [Heroku](clients/heroku.md)
   * [Google Play](clients/google-play.md)
   * [Apple App Store](clients/apple-app-store.md)
 
