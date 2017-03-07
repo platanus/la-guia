@@ -29,7 +29,7 @@
     "dot-notation": [1, {
       "allowKeywords": true
     }],
-    "dot-location": [2, "object"],
+    "dot-location": [2, "property"],
     "eqeqeq": [2],
     "guard-for-in": 2,
     "no-alert": 1,
