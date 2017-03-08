@@ -4,7 +4,7 @@
 
 La version actual que usamos se puede ver en el [stack ruby](https://github.com/platanus/our-boxen/blob/HEAD/modules/stacks/manifests/ruby.pp) de boxen
 
-Para administrar las versiones de ruby usamos [rbnev](https://github.com/sstephenson/rbenv)
+Para administrar las versiones de ruby usamos [rbenv](https://github.com/sstephenson/rbenv)
 
 Los proyectos deben tener la version de ruby definida en el archivo
 `.ruby-version` en la raíz del proyecto. Debemos definir versiones
