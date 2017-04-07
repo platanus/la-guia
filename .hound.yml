@@ -4,5 +4,5 @@ tslint:
   config_file: style/config/tslint.json
 ruby:
   config_file: style/config/.rubocop.yml
-scss:
-  config_file: style/config/.scss-lint.yml
+stylelint:
+  config_file: style/config/.stylelintrc.json
