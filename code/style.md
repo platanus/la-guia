@@ -44,13 +44,10 @@ gem install rubocop
 npm install -g eslint
 npm install -g eslint-plugin-import
 
-# css
-gem install scss_lint
-
 # typescript
 npm install -g tslint typescript
 
-# styleint
+# stylelint (css, scss)
 # Solo Sublime Text requiere que esté instalado
 npm install -g stylelint
 ```
@@ -64,7 +61,6 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
 * [Linter](https://atom.io/packages/linter)
 * [Ruby](https://atom.io/packages/linter-rubocop)
 * [ES](https://atom.io/packages/linter-eslint)
-* [Sass](https://atom.io/packages/linter-scss-lint)
 * [TypeScript](https://atom.io/packages/linter-tslint)
 * [stylelint](https://atom.io/packages/linter-stylelint)
 
@@ -80,7 +76,6 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
 * [Linter](https://github.com/SublimeLinter/SublimeLinter3)
 * [Ruby](https://github.com/SublimeLinter/SublimeLinter-rubocop)
 * [ES](https://github.com/roadhump/SublimeLinter-eslint)
-* [Sass](https://github.com/attenzione/SublimeLinter-scss-lint)
 * [TypeScript](https://github.com/lavrton/SublimeLinter-contrib-tslint)
 * [stylelint](https://github.com/kungfusheep/SublimeLinter-contrib-stylelint)
 
@@ -88,7 +83,7 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
 
 * [Ruby](https://plugins.jetbrains.com/plugin/7604?pr=)
 * [ES](https://plugins.jetbrains.com/plugin/7494?pr=)
-* [Sass](https://plugins.jetbrains.com/plugin/7530?pr=)
+* [stylelint](https://www.jetbrains.com/help/ruby/2017.1/using-stylelint-code-quality-tool.html)
 
 ## Contribuir
 
