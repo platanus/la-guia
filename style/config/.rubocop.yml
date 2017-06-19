@@ -370,7 +370,7 @@ Layout/SpaceAroundBlockParameters:
   Description: Checks the spacing inside and after block parameters pipes.
   Enabled: true
   EnforcedStyleInsidePipes: no_space
-  SupportedStyles:
+  SupportedStylesInsidePipes:
   - space
   - no_space
 Layout/SpaceAroundEqualsInParameterDefault:
@@ -531,14 +531,14 @@ Lint/EndAlignment:
   Description: Align ends correctly.
   Enabled: true
   EnforcedStyleAlignWith: keyword
-  SupportedStyles:
+  SupportedStylesAlignWith:
   - keyword
   - variable
 Lint/DefEndAlignment:
   Description: Align ends corresponding to defs correctly.
   Enabled: true
   EnforcedStyleAlignWith: start_of_line
-  SupportedStyles:
+  SupportedStylesAlignWith:
   - start_of_line
   - def
 Rails/ActionFilter:
