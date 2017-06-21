@@ -1,5 +1,7 @@
 # Heroku
 
+Heroku es el servicio que usamos para "hostear" la aplicación web y todos los servicios extras que necesitemos (Base de Datos, repositorio de archivos, etc...). Acá estará el admin, el API y la página de cara a los clientes.
+
 ## Crear una cuenta
 
 Para crear una cuenta debes ingresar a https://signup.heroku.com/
