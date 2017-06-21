@@ -1,13 +1,25 @@
 # Heroku
 
+## Crear una cuenta
+
+Para crear una cuenta debes ingresar a https://signup.heroku.com/
+
+- Ingresar los datos en el formulario (en la pregunta Primary Development language elegir Ruby)
+- Revisar email de confirmación
+- Activar cuenta haciendo click en el link de activación en el email
+- Elegir un password
+
+A continuacion te recomendamos [crear un team](#crear-un-team) para dar acceso a los desarrolladores de platanus.
+
 ## Team
 
 Los teams en Heroku nos dan mayor flexibilidad para administrar las aplicaciones.
 
 ### Crear un team
 
-Para crear un team debemos ingresarHheroku.
+Para crear un team debemos ingresar a [heroku](https://id.heroku.com/login).
 
+ - Hacer login
  - Click en *Personal apps*
  - Click en *Create Team*
 
