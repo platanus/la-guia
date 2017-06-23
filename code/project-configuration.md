@@ -36,20 +36,13 @@ Para realizar deploy en ciertos ambientes hay que agregar información a las var
 
 #### Potassium
 Con Potassium cualquier proyecto Rails que use la receta `heroku` va a traer el archivo que necesita CircleCI para hacer su trabajo.
-El deploy se configura desde Heroku. ***
+El deploy se configura desde [Heroku](../deployment/rails)
 
 #### Ionic
 Cualquier proyecto generado con `platanus/generator-pl-ionic` va a incluir el script necesario para que CircleCI pueda hacer deploy a Ionic Apps. Es necesario agregar las variables ambientes `IONIC_EMAIL` y `IONIC_PASSWORD`.
 
 ### Travis (Repositorios Públicos - Open Source)
 [https://travis-ci.org/profile/platanus]: Una vez logueado togglear el estado del repositorio. Al igual que Circle CI, Travis por defecto intenta adivinar qué es necesario para correr los tests de un proyecto pero para agregar deploy hay que agregar un archivo de configuración `.travis.yml`:
-
-#### NPM
-***
-
-#### Rubygems
-***
-
 
 
 
