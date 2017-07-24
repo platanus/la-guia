@@ -1,6 +1,6 @@
 # Introducción
 
-Acá encontrarás una suerte de mandamientos, lineamientos, acuerdos y todo lo necesario para que podamos comunicarnos de la mejor forma posible. Es importante que todos compartamos una misma [cultura](/cultura/README.md).
+Esta es la guia de Platanus. Acá encontrarás una suerte de mandamientos, lineamientos, acuerdos y todo lo necesario para que podamos comunicarnos de la mejor forma posible. Es importante que todos compartamos una misma [cultura](/cultura/README.md).
 
 Todos estamos invitados a aportar en la construcción de esta [guia maestra](https://github.com/platanus/la-guia), porque eres parte de Platanus!
 
