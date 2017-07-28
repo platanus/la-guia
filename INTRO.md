@@ -9,7 +9,7 @@ Todos estamos invitados a aportar en la construcción de esta [guia maestra](htt
 * En los proyectos móviles usamos [Ionic](/code/ionic.md) usando este [generador](https://github.com/platanus/generator-platanus-ionic)
 * Usamos [Bower](/tools/bower.md) como gestor de paquetes
 * Para unit testing usamos [Karma](/testing/karma.md)
-* En el Back todos los proyectos usamos [Rails 4.2](/code/rails.md)
+* En el back todos los proyectos usamos [Ruby](/code/ruby.md) on [Rails 4.2](/code/rails.md)
 * Para el versionamiento de código usamos [Git](/tools/git.md) y Github
 * Para desarrollar usamos [Sublime Text 3](/tools/sublime.md) y Atom, entre otros.
-* Seguimos las siguientes guías de estilos para [HTML](/code/html.md), CSS y JavaScript.
+* Seguimos las siguientes guías de estilos para [Ruby](/code/style.md), [HTML](/code/html.md), CSS y [JavaScript](/code/style.md).
