@@ -32,10 +32,6 @@
 * [Angular](code/angular.md)
 * [Ionic](code/ionic.md)
 
-## Testing
-
-* [Angular](testing/angular.md)
-
 ## Tools
 
 * [Sublime Text 3](tools/sublime.md)
