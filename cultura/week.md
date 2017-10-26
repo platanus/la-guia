@@ -22,7 +22,7 @@ Generalmente el trabajo se traduce en:
 
 * Aportar en los inicializadores de aplicaciones
 * Aportar en nuestras [Guías](http://www.github.com/platanus/la-guia)
-* Un post para nuestro [blog](http://cb.platan.us), [guia del blog](blog.md)
+* Un post para nuestro [blog](http://blog.platan.us), [guia del blog](blog.md)
 * Preparar o participar de un workshop
 * Aprender nuevas técnicas que hacen mi trabajo más eficiente
 * Fortalecer conocimiento en un área en que estoy más débil que el resto
