@@ -42,7 +42,7 @@
 ## Open Source
 
 * [Open Source en Platanus](open_source/README.md)
-* [Angular](open_source/angular.md)
+* [Browser and NodeJS](open_source/browser_node.md)
 * [Gems](open_source/gems.md)
 
 ## Deployment

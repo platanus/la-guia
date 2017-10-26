@@ -1,13 +1,6 @@
-# Angular (Open Source)
+# Browser and Node (Open Source)
 
-- Para no partir de cero, usamos [Yeoman](http://yeoman.io/) con el [generador de platanus](https://github.com/platanus/generator-angular-library)
 - Invierte tiempo en buscar un buen nombre (compartelo con el equipo)
-
-Para crear el package con el generador simplemente haz:
-
-    mkdir my-library
-    cd my-library
-    yo platanus-angular-library
 
 #### Spec `package.json`
 
