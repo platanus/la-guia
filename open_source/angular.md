@@ -29,15 +29,7 @@ En el archivo `package.json` debemos llenar al menos los siguientes campos.
 
 ## Publicación
 
-Las paquetes deben ser publicados en dos lugares. [Bower](https://bower.io) y [NPM](http://npmjs.com).
-
-#### Bower
-
-En bower solo se debe registrar el nombre del paquete la primera vez y asociarlo a un endpoint en github.
-
-    bower register <package-name> <git-endpoint>
-
-Luego en github se debe crear un tag con el nombre de la version a publicar.
+Las paquetes deben ser publicados en [NPM](http://npmjs.com).
 
 #### NPM
 

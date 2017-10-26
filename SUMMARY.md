@@ -37,7 +37,6 @@
 * [Sublime Text 3](tools/sublime.md)
 * [Atom](tools/atom.md)
 * [Git](tools/git.md)
-* [Bower](tools/bower.md)
 * [Trello](tools/trello.md)
 
 ## Open Source
