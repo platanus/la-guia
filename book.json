@@ -6,7 +6,7 @@
       "Platanus": "https://platan.us"
     }
   },
-  "plugins" : ["github", "ungrey", "packages"],
+  "plugins" : ["github", "ungrey", "packages", "-lunr", "-search", "search-plus"],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/platanus/la-guia"

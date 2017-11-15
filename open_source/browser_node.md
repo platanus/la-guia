@@ -1,13 +1,6 @@
-# Angular (Open Source)
+# Browser and Node (Open Source)
 
-- Para no partir de cero, usamos [Yeoman](http://yeoman.io/) con el [generador de platanus](https://github.com/platanus/generator-angular-library)
 - Invierte tiempo en buscar un buen nombre (compartelo con el equipo)
-
-Para crear el package con el generador simplemente haz:
-
-    mkdir my-library
-    cd my-library
-    yo platanus-angular-library
 
 #### Spec `package.json`
 
@@ -29,15 +22,7 @@ En el archivo `package.json` debemos llenar al menos los siguientes campos.
 
 ## Publicación
 
-Las paquetes deben ser publicados en dos lugares. [Bower](https://bower.io) y [NPM](http://npmjs.com).
-
-#### Bower
-
-En bower solo se debe registrar el nombre del paquete la primera vez y asociarlo a un endpoint en github.
-
-    bower register <package-name> <git-endpoint>
-
-Luego en github se debe crear un tag con el nombre de la version a publicar.
+Las paquetes deben ser publicados en [NPM](http://npmjs.com).
 
 #### NPM
 
