@@ -45,6 +45,34 @@ rake release
 gem owner GEM_NAME --add rubygems@platan.us
 ```
 
+### Publicación automágica
+
+Ahora que tenemos la primera versión arriba, vamos a delegar la responsabilidad a travis que haga el deploy cada vez que hagamos un tag de una nueva versión.
+
+Para esto necesitamos el cli de travis.
+
+```
+brew install travis
+```
+
+Y luego configuramos un deploy a rubygems contestando las preguntas.
+
+```bash
+travis setup rubygems
+
+# Output
+Detected repository as platanus/bank-api-gem, is this correct? |yes|
+Gem name: |bank-api-gem| bank-api
+Release only tagged commits? |yes|
+Release only from platanus/bank-api-gem? |yes|
+Encrypt API key? |yes|
+```
+
+Esto genera unos cambios en el archivo `.travis.yml` que incluyen un token encryptado de la cuenta rubygems con la que estas logeado.
+Haz un commit y un pull request con los cambios y ya está.
+
+Happy deploying.
+
 ## Un listado de librerías Platanus
 
 {% packagesTable %}{% endpackagesTable %}
