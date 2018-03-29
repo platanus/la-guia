@@ -37,7 +37,7 @@ El tipo nos ayuda a clasificar los commits. Los tipos que usamos son:
   * sin mayúscula al principio
   * sin punto (.) al final
 
-Nota: Esto es un extracto/traducción de [este documento](https://github.com/ajoslin/conventional-changelog/blob/master/CONVENTIONS.md), que es más completo, pero que por el momento no es una práctica que sigamos completamente en Platanus.
+Nota: Esto es un extracto/traducción de [este documento](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits), que es más completo, pero que por el momento no es una práctica que sigamos completamente en Platanus
 
 ### Branches y Pull-requests
 
