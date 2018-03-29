@@ -16,11 +16,16 @@ Los mensajes de commit:
 
 #### Tipo
 
+El tipo nos ayuda a clasificar los commits. Los tipos que usamos son:
+
   * **feat**: Un nuevo feature
   * **fix**: La corrección de un bug
-  * **chore**: Cambios al proceso de build y herramientas auxiliares
-  * **test**: Agrega tests
+  * **docs**: Cambios en la documentación
   * **style**: Cambios que no afectan el significado del código (espacios, indentación, etc.)
+  * **refactor**: Un cambio en el código que no agrega una funcionalidad ni corrige un bug
+  * **perf** Cambios en el código que sólo mejoran la performance
+  * **test**: Agrega, corrige o mejora tests
+  * **chore**: Cambios al proceso de build y herramientas auxiliares
 
 #### Contexto
 
