@@ -29,8 +29,8 @@ Los mensajes de commit:
 
 El contexto es una palabra que haga referencia al lugar del código donde afecta el commit.
 
-  * Puede contener información adicional sobre el componente del código modificado, en cuyo caso debe ir al inicio y separado usando un punto (`.`).
-  * El nombre del componente modificado debe estar en el mismo formato en el que aparece en el código (por ejemplo en `CamelCase` si es una clase ruby).
+  * Puede contener información adicional sobre el componente del código modificado, en cuyo caso debe ir al inicio y separado usando un slash (`/`).
+  * El nombre del componente modificado debe estar en el mismo formato `kebab-case`.
 
 #### Descripción
 
@@ -50,7 +50,7 @@ Salvo cosas muy insignificantes, los features los hacemos en un nuevo branch y h
 Como ejemplo de estas recomendaciones el siguiente commit soluciona un bug en el componente/clase `SignUpForm` del frontend de una aplicación, en el cual no se estaba entregando feedback de la validación sobre si el nombre de usuario estaba disponible o no:
 
 ```
-fix(ui.SignUpForm): validate username availability
+fix(ui/sign-up-form): validate username availability
 
 The `SignUpForm` component wasn´t validating the availability of the `username` field and only displayed a `couldn´t create account` error on submit.
 
