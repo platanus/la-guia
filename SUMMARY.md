@@ -33,7 +33,12 @@
 * [Ionic](code/ionic.md)
 
 ## Tools
-
+* [Environment](tools/environment.md)
+  * [Base](tools/environment.md#base)
+  * [Services](tools/environment.md#services)
+  * [Ruby](tools/environment.md#ruby)
+  * [Node](tools/environment.md#node)
+  * [Homebrew](tools/environment.md#homebrew)
 * [Sublime Text 3](tools/sublime.md)
 * [Atom](tools/atom.md)
 * [Git](tools/git.md)
