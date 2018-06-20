@@ -5,7 +5,7 @@ de Apple.
 
 ## Ingresar a iTunnes Connect
 
-- Ingresar a [iTunnes Connect](itunesconnect.apple.com)
+- Ingresar a [iTunnes Connect](https://itunesconnect.apple.com)
 - Iniciar sesión el usuario que tiene permisos para la aplicación en cuestión
 - Seleccionar el icono *My Apps*
 - Seleccionar la applicación de la lista.
