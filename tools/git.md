@@ -16,11 +16,16 @@ Los mensajes de commit:
 
 #### Tipo
 
+El tipo nos ayuda a clasificar los commits. Los tipos que usamos son:
+
   * **feat**: Un nuevo feature
   * **fix**: La corrección de un bug
-  * **chore**: Cambios al proceso de build y herramientas auxiliares
-  * **test**: Agrega tests
+  * **docs**: Cambios en la documentación
   * **style**: Cambios que no afectan el significado del código (espacios, indentación, etc.)
+  * **refactor**: Un cambio en el código que no agrega una funcionalidad ni corrige un bug
+  * **perf** Cambios en el código que sólo mejoran la performance
+  * **test**: Agrega, corrige o mejora tests
+  * **chore**: Cambios al proceso de build y herramientas auxiliares
 
 #### Contexto
 
@@ -32,7 +37,7 @@ Los mensajes de commit:
   * sin mayúscula al principio
   * sin punto (.) al final
 
-Nota: Esto es un extracto/traducción de [este documento](https://github.com/ajoslin/conventional-changelog/blob/master/CONVENTIONS.md), que es más completo, pero que por el momento no es una práctica que sigamos completamente en Platanus.
+Nota: Esto es un extracto/traducción de [este documento](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits), que es más completo, pero que por el momento no es una práctica que sigamos completamente en Platanus
 
 ### Branches y Pull-requests
 
