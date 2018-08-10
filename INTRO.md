@@ -14,16 +14,16 @@ Todos estamos invitados a aportar en la construcción de esta [Guía maestra](ht
     * Recibirás la [piedra de la verguenza](https://thelonious9.files.wordpress.com/2011/08/piedra.jpg) cuando no reconozcas tu ignorancia.
   * El canal `#coffeebar` es donde puedes comentar cualquier cosa no relacionada con desarrollo.
   * Se deben mantener las conversaciones privadas al mínimo, y utilizar los canales de proyectos para conversaciones relacionadas a los proyectos.
-  
+
 * Usamos [appear.in](http://appear.in) y [Hangouts](https://hangouts.google.com) para conversaciones grupales.
 * Para organizar nuestro trabajo usamos [Trello](/tools/trello.md).
 * Para el diseño de los proyectos, usamos [Sketch](https://www.sketchapp.com/), [Invision](https://invis.io/) e [InvisionStudio](https://www.invisionapp.com/studio).
-* Para el Front de todos los proyectos usamos [Angular 1.3](/code/angular.md).
+* Para el Front de todos los proyectos usamos [Vue.js](https://vuejs.org/).
 * En los proyectos móviles usamos [Ionic](/code/ionic.md) usando este [generador](https://github.com/platanus/generator-platanus-ionic).
-* Para Unit Testing usamos [Karma](/testing/karma.md).
-* En el Back todos los proyectos usamos [Ruby](/code/ruby.md) on [Rails 4.2](/code/rails.md).
+* Para todos los proyectos, en el Back usamos [Ruby](/code/ruby.md) on [Rails](/code/rails.md).
 * Para el versionamiento de código usamos [Git](/tools/git.md) y Github.
-* Para desarrollar usamos [Sublime Text 3](/tools/sublime.md) y [Atom](https://atom.io/), entre otros.
+* Para desarrollar usamos [Sublime Text 3](/tools/sublime.md), [Atom](https://atom.io/), [VSCode](https://code.visualstudio.com/), entre otros.
 * Seguimos las siguientes guías de estilos para [Ruby](/code/style.md), [HTML](/code/html.md), CSS y [JavaScript](/code/style.md).
+* Para hacer Continuous Integration usamos [CircleCI](https://circleci.com/).
 * ¡Comparte tu conocimiento!
 * Debes estar 100% actualizado de las [guias](http://la-guia.platan.us). Preocúpate que te lleguen las notificaciones a tu mail.
