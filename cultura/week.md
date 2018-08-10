@@ -14,16 +14,18 @@ Estos días los dedicamos a trabajar para los productos de clientes y los nuestr
 
 Los viernes los invertimos en hacer de Platanus una **mejor empresa**.
 
-Para saber en qué trabajar, primero se debe identificar una necesidad. La idea es bucear en el [Trello de Platanus](trello.md) algún problema a resolver. Mientras más impacto tenga dentro del equipo mejor!.
+Para saber en qué trabajar, primero se debe identificar una necesidad. La idea es bucear en el [Trello de Platanus](trello.md) algún problema a resolver. Mientras más impacto tenga dentro del equipo mejor!
 
 Luego de identificar el problema, puedes trabajar en la solución!
 
 Generalmente el trabajo se traduce en:
 
+
 * Aportar en los inicializadores de aplicaciones
 * Aportar en nuestras [Guías](http://www.github.com/platanus/la-guia)
 * Un post para nuestro [blog](http://blog.platan.us), [guia del blog](blog.md)
-* Preparar o participar de un workshop
+* Preparar o participar de un workshop o presentación
+* Participar en _cónclaves_ sobre distintos temas de interés (desarrollo móvil, estrategias de gestión de proyectos, etc)
 * Aprender nuevas técnicas que hacen mi trabajo más eficiente
 * Fortalecer conocimiento en un área en que estoy más débil que el resto
 * Aportar en cualquiera de nuestras librerías open-source
