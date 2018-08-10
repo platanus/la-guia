@@ -1,33 +1,26 @@
 # Gems
 
-Para crear una gema podemos partir con el generador de bundler
+Para crear una gema, en vez de usar el generador de bundler, podemos utilizar [gemaker](https://github.com/platanus/gemaker) que hace lo mismo pero, además:
+
+- permite elegir entre dos tipos de gemas: gema de Ruby o engine de Rails.
+- modifica el `README` para adaptarse al estándar de Platanus.
+- agrega en un archivo `CHANGELOG.md` para animarnos a documentar que se hizo en cada versión de la gema.
+- modifica el archivo de licencia nombrando a Platanus en él.
+- agrega la estructura básica para que nuestra gema tenga una CLI.
+- configura el ambiente de test utilizando Rspec.
+- agrega un generador para instalar la gema.
+- configura Hound y Rubocop en la propia gema.
+- configura Travis.
 
 ```
-bundle gem GEM_NAME
+gemaker new my_gem
 ```
 
-Con esto se va a generar un `Rakefile` que nos va a dar algunas tasks para simplificarnos la vida.
+Al correr el comando anterior gemaker, antes de crear la gema, nos hará una serie de preguntas para:
 
-- rake install
-- rake build
-- rake relase
+- dejar listo (o casi listo) archivos como el `README` o el `.gemspec`.
+- que seleccionemos aquella funcionalidad que es opcional y que necesitemos en nuestra gema. Por ej: podríamos no necesitar un CLI o un instalador o querer que nuestra gema sea una extensión de Rails (engine) o no.
 
-#### Spec `gemname.gemspec`
-
-En el gemspec debemos llenar al menos los siguientes campos
-
-```ruby
-#negroku gemspec example
-spec = Gem::Specification.new do |s|
-  s.name = 'negroku'
-  s.version = Negroku::VERSION
-  s.authors = ['Platanus', 'Juan Ignacio Donoso']
-  s.emails = ['rubygems@platan.us', 'juan.ignacio@platan.us']
-  s.homepage = 'http://github.com/platanus/negroku'
-  s.summary = 'Capistrano recipes collection'
-  s.description = 'Deploy applications right out of the box using nginx, unicorn, bower, rails, etc'
-...
-```
 
 ## Publicación
 
@@ -44,6 +37,34 @@ rake release
 # Agregar un owner a una gem
 gem owner GEM_NAME --add rubygems@platan.us
 ```
+
+### Publicación automágica
+
+Ahora que tenemos la primera versión arriba, vamos a delegar la responsabilidad a travis que haga el deploy cada vez que hagamos un tag de una nueva versión.
+
+Para esto necesitamos el cli de travis.
+
+```
+brew install travis
+```
+
+Y luego configuramos un deploy a rubygems contestando las preguntas.
+
+```bash
+travis setup rubygems
+
+# Output
+Detected repository as platanus/bank-api-gem, is this correct? |yes|
+Gem name: |bank-api-gem| bank-api
+Release only tagged commits? |yes|
+Release only from platanus/bank-api-gem? |yes|
+Encrypt API key? |yes|
+```
+
+Esto genera unos cambios en el archivo `.travis.yml` que incluyen un token encryptado de la cuenta rubygems con la que estas logeado.
+Haz un commit y un pull request con los cambios y ya está.
+
+Happy deploying.
 
 ## Un listado de librerías Platanus
 
