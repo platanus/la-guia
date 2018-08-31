@@ -44,8 +44,8 @@ Los componentes de las aplicaciones se clasifican en dos tipos:
 
  - Una `Page` gatilla una `Action`, p.ej: `UpdateCalendarEventsAction`
  - El `Store` se encarga de gatillar el `Effect` correspondiente `LoadCalendarEventsEffect`
- - El `Effect` invoca al `Provider` `CalendarEventsProvider` para recuperar la información que requiera. Si la recupera correctamente gatilla la accion `UpdateCalendarEventsSuccess`
- - El `Store` se encarga de refrescar el estado de la aplicación al recibir la acción `UpdateCalendarEventsSuccess` o gatilla `UpdateCalendarEventsFailure` en caso de error.
+ - El `Effect` invoca al `Provider` `CalendarEventsProvider` para recuperar la información que requiera. Si la recupera correctamente gatilla la accion `UpdateCalendarEventsSuccess` o gatilla `UpdateCalendarEventsFailure` en caso de error.
+ - El `Store` se encarga de refrescar el estado de la aplicación al recibir la acción `UpdateCalendarEventsSuccess`.
  - Los cambios se propagan desde el `Store` hacia los componentes a través de las suscripciones que tengan los componentes con el estado de la App.
 
 ### Navegación de la app
