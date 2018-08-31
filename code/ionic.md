@@ -8,6 +8,9 @@ Ionic
 * Usamos [Angular 5+](https://angular.io) para construir nuestras aplicaciones usando tecnología web.
 * Junto con [Ionic 3](https://ionicframework.com/) para correrlas en dispositivos móviles.
 * Y [NgRx](https://github.com/ngrx/platform) para el manejo de estado, _side-effects_ y _routing_ cuando corresponde.
+* Estamos explorando [NgXs](https://ngxs.gitbook.io/ngxs) para el manejo de estado de una forma menos verbosa.
+
+
 
 ## Arquitectura de nuestras aplicaciones móviles
 
