@@ -10,6 +10,10 @@
 * [El Blog](cultura/blog.md)
 * [La Biblioteca](cultura/library.md)
 
+## Trabajos
+
+* [Prácticas](jobs/internship.md)
+
 ## Product Owner
 
 * [Heroku](clients/heroku.md)
