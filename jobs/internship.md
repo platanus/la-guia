@@ -48,13 +48,17 @@ Si cumples con esos requisitos, postula! El programa está enfocado en que apren
 
 Ofrecemos dos modalidades de práctica:
 
-1. **Verano Full Time**: La típica práctica en una empresa de desarrollo es así: llegas, te asignan a un proyecto, tus colegas te explican de mala gana el proyecto a grandes rasgos, y te dan una lista de bugs a arreglar. Muy fome. Los practicantes aprenden poco, lo pasan horrible, y para el resto del equipo es una lata. Nosotros lo hacemos distinto. En vez de intentar rentabilizar al practicante, ponemos todo el énfasis y verdadero esfuerzo en que aprendas mucho pasándolo bien, conozcas al equipo y te contagies de nuestra cultura. Como esto requiere mucho tiempo, tenemos que balancear pagando una miseria ($60.000 + almuerzos). Es poco, lo sabemos, pero preferimos organizar una práctica increíble pagando menos, que una práctica mala pagando más.
+#### Verano Full Time
 
-* Durante la práctica:
+La típica práctica en una empresa de desarrollo es así: llegas, te asignan a un proyecto, tus colegas te explican de mala gana el proyecto a grandes rasgos, y te dan una lista de bugs a arreglar. Muy fome. Los practicantes aprenden poco, lo pasan horrible, y para el resto del equipo es una lata. Nosotros lo hacemos distinto. En vez de intentar rentabilizar al practicante, ponemos todo el énfasis y verdadero esfuerzo en que aprendas mucho pasándolo bien, conozcas al equipo y te contagies de nuestra cultura. Como esto requiere mucho tiempo, tenemos que balancear pagando una miseria ($60.000 + almuerzos). Es poco, lo sabemos, pero preferimos organizar una práctica increíble pagando menos, que una práctica mala pagando más.
 
-    * Trabajarás en un desarrollo interno de Platanus. En este participarán 3 - 4 developers además de tí, quienes dedicarán sus viernes a desarrollar en tu mismo proyecto.
+Durante la práctica:
 
-    * Almuerzos de la chef con el resto del equipo, o en algún lugar cerca con quien quieras.
+* Trabajarás en un desarrollo interno de Platanus. En este participarán 3 - 4 developers además de tí, quienes dedicarán sus viernes a desarrollar en tu mismo proyecto.
+
+* Podrás acceder a almuerzos de la chef con el resto del equipo, o en algún lugar cerca con quien quieras.
+
+* Participarás en las siguientes actividades:
 
 | Semana | Actividades |
 | -------- | ------------------- |
@@ -73,4 +77,6 @@ Ofrecemos dos modalidades de práctica:
 
 Si tienes muchas ganas de entrar a esta práctica pero el pago miserable te hace descartarnos, contáctanos y conversemos!
 
-**2. Invierno Part Time** (todos los meses menos diciembre, enero y febrero). Para los que quieren trabajar mientras estudian. La diferencia es que no tendremos tantas actividades divertidas como la de verano :(. Para compensar eso, ofrecemos $240.000 al mes trabajando part-time (22.5 horas a la semana), y puedes trabajar remoto cuando quieras. Es una buena opción si tienes un semestre que te permita hacer tu práctica y estudiar al mismo tiempo.
+#### Invierno Part Time (todos los meses menos diciembre, enero y febrero)
+
+Para los que quieren trabajar mientras estudian. La diferencia es que no tendremos tantas actividades divertidas como la de verano :(. Para compensar eso, ofrecemos $240.000 al mes trabajando part-time (22.5 horas a la semana), y puedes trabajar remoto cuando quieras. Es una buena opción si tienes un semestre que te permita hacer tu práctica y estudiar al mismo tiempo.
