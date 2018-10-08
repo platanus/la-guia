@@ -54,7 +54,7 @@ La típica práctica en una empresa de desarrollo es así: llegas, te asignan a 
 
 Durante la práctica:
 
-* Trabajarás en un desarrollo interno de Platanus. En este participarán 3 - 4 developers además de tí, quienes dedicarán sus viernes a desarrollar en tu mismo proyecto.
+* Trabajarás en un desarrollo interno de Platanus. En este participarán 3 - 4 developers además de ti, quienes dedicarán sus viernes a desarrollar en tu mismo proyecto.
 
 * Podrás acceder a almuerzos de la chef con el resto del equipo, o en algún lugar cerca con quien quieras.
 
