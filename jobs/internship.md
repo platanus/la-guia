@@ -80,3 +80,5 @@ Si tienes muchas ganas de entrar a esta práctica pero el pago miserable te hace
 #### Invierno Part Time (todos los meses menos diciembre, enero y febrero)
 
 Para los que quieren trabajar mientras estudian. La diferencia es que no tendremos tantas actividades divertidas como la de verano :(. Para compensar eso, ofrecemos $240.000 al mes trabajando part-time (22.5 horas a la semana), y puedes trabajar remoto cuando quieras. Es una buena opción si tienes un semestre que te permita hacer tu práctica y estudiar al mismo tiempo.
+
+Postula en https://platan.us/jobs!
