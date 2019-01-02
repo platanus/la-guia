@@ -22,7 +22,7 @@ Nos gusta hacer las cosas bien. Las buenas prácticas son claves en nuestra cult
 
 Somos una de las empresas chilenas con más código open-source. [Tenemos más de 300 repositorios públicos](https://github.com/platanus), algunos bien populares ⭐.
 
-Estamos super bien ubicados, en una oficina increíble cerca del metro Los Leones.
+Estamos súper bien ubicados, en una oficina increíble cerca del metro Los Leones.
 
 Si te interesa saber más de nuestra cultura, puedes seguir explorando nuestra [guía](https://la-guia.platan.us/) y ver nuestro [blog](https://blog.platan.us/).
 
@@ -42,7 +42,7 @@ Lo que esperamos de ti:
 
 * Que seas inteligente, pero además simpático y humilde, que sepas decir "no sé"
 
-Si cumples con esos requisitos, postula! El programa está enfocado en que aprendas lo máximo posible, y en que todos lo pasemos bien durante tu estadía. Además, si nos gusta tu manera de trabajar, te vamos a invitar a formar parte del equipo!
+Si cumples con esos requisitos, [postula](https://platan.us/jobs)! El programa está enfocado en que aprendas lo máximo posible, y en que todos lo pasemos bien durante tu estadía. Además, si nos gusta tu manera de trabajar, te vamos a invitar a formar parte del equipo!
 
 ### Actividades, sueldo y fechas
 
@@ -79,6 +79,6 @@ Si tienes muchas ganas de entrar a esta práctica pero el pago miserable te hace
 
 #### Invierno Part Time (todos los meses menos diciembre, enero y febrero)
 
-Para los que quieren trabajar mientras estudian. La diferencia es que no tendremos tantas actividades divertidas como la de verano :(. Para compensar eso, ofrecemos $240.000 al mes trabajando part-time (22.5 horas a la semana), y puedes trabajar remoto cuando quieras. Es una buena opción si tienes un semestre que te permita hacer tu práctica y estudiar al mismo tiempo.
+Para los que quieren trabajar mientras estudian. La diferencia es que no tendremos tantas actividades divertidas como las de verano ☹️. Para compensar eso, ofrecemos $240.000 al mes trabajando part-time (22.5 horas a la semana), y puedes trabajar remoto cuando quieras. Es una buena opción si tienes un semestre que te permita hacer tu práctica y estudiar al mismo tiempo.
 
-Postula en https://platan.us/jobs!
+Postula en [https://platan.us/jobs](https://platan.us/jobs)!
