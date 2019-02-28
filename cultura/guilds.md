@@ -9,8 +9,6 @@ Las **cofradías** (o guilds) nacen con ese espíritu. Cada cofradía tiene 2 o 
 
 Además de fomentar el aprendizaje de distintas áreas, estos guilds serán los motivados de definir y transmitir las buenas prácticas que queremos que existan en todos nuestros proyectos. Por ejemplo, si el guild de "backend" decide que active storage es el nuevo standard, este grupo debe encargarse de que el standard quede plasmado en [potassium](https://github.com/platanus/potassium), evangelizarlo y empujar que los proyectos se actualizen.
 
-si el guild de "backend" decide que active storage es el nuevo estándar en [potassium](https://github.com/platanus/potassium), este grupo debe encargarse de evangelizar y empujar a que los proyectos se actualicen.
-
 No existe un límite de la cantidad de grupos a los que puedes participar, pero nadie está en más de 2. Se necesita de tu dedicación y foco.
 
 ### Guilds
