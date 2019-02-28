@@ -7,11 +7,11 @@ En la versión del 2018 nos propusimos mejorar el proceso de cómo aprendemos nu
 
 Las **cofradías** (o guilds) nacen con ese espíritu. Cada cofradía tiene 2 o 3 "maestros" y N "aprendices". Los maestros se encargarán de todo lo necesario para que los aprendices se conviertan en expertos.
 
-Además de fomentar el aprendizaje de distintas áreas, estos guilds serán los motivados de definir y transmitir las buenas prácticas que queremos que existan en todos nuestros proyectos.
+Además de fomentar el aprendizaje de distintas áreas, estos guilds serán los motivados de definir y transmitir las buenas prácticas que queremos que existan en todos nuestros proyectos. Por ejemplo, si el guild de "backend" decide que active storage es el nuevo standard, este grupo debe encargarse de que el standard quede plasmado en [potassium](https://github.com/platanus/potassium), evangelizarlo y empujar que los proyectos se actualizen.
 
-Por ejemplo, si el guild de "backend" decide que active storage es el nuevo estándar en [potassium](https://github.com/platanus/potassium), este grupo debe encargarse de evangelizar y empujar a que los proyectos se actualicen.
+si el guild de "backend" decide que active storage es el nuevo estándar en [potassium](https://github.com/platanus/potassium), este grupo debe encargarse de evangelizar y empujar a que los proyectos se actualicen.
 
-No existe un límite de la cantidad de grupos a los que puedes participar, pero nadie está en más de 2.
+No existe un límite de la cantidad de grupos a los que puedes participar, pero nadie está en más de 2. Se necesita de tu dedicación y foco.
 
 ### Guilds
 
@@ -30,7 +30,6 @@ Para mejorar nuestras habilidades *front* y definir los estándares que queremos
 Heroku nos hace la vida bastante más fácil en temas de infraestructura. De todas formas hay varias cosas que se hacen con magia negra (el Negro es el único que sabe).
 
 Con esta cofradía se espera poder transmitir este conocimiento además de repartir la responsabilidad.
-
 
 **Scrum Master**: [#guild-scrum_masters](slack://channel?team=T03CDHC6U&id=CEA6YPA9Y)
 
