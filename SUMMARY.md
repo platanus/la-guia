@@ -17,6 +17,7 @@
 
 ## Product Owner
 
+* [Guía del Product Owner](clients/product-owner.md)
 * [Heroku](clients/heroku.md)
 * [Google Play](clients/google-play.md)
 * [Apple App Store](clients/apple-app-store.md)
