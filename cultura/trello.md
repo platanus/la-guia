@@ -1,7 +1,7 @@
 El Trello de Platanus
 =====================
 
-Usamos el [Trello de Platanus](https://trello.com/b/uXKddtNE/platanus) (sí, somos fanáticos de Trello!) para organizar el gran proyecto de hacer de Platanus una mejor empresa. Es la base para el [Investment Day](week.md#viernes-de-investment-day).
+Usamos el [Trello de Platanus](https://trello.com/b/HLaSCjFA/platanus-ideas) (sí, somos fanáticos de Trello!) para organizar el gran proyecto de hacer de Platanus una mejor empresa. Es la base para el [Investment Day](week.md#viernes-de-investment-day).
 
 #### Inbox
 
