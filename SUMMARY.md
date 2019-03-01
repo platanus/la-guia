@@ -6,6 +6,7 @@
 
 * [Nuestra Semana](cultura/week.md)
 * [Trello](cultura/trello.md)
+* [Cofradías](cultura/guilds.md)
 * [Time tracking](cultura/time_tracking.md)
 * [El Blog](cultura/blog.md)
 * [La Biblioteca](cultura/library.md)
