@@ -15,7 +15,7 @@
     "color-hex-length": "short",
     "color-hex-case": "lower",
     "color-no-invalid-hex": true,
-    "selector-no-id": true,
+    "selector-max-id": 0,
     "declaration-no-important": true,
     "indentation": 2,
     "number-leading-zero": "never",
