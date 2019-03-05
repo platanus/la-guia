@@ -6,7 +6,6 @@
       "/^border/": ["none"]
     },
     "color-named": "never",
-    "stylelint-disable-reason": "always-before",
     "declaration-block-no-duplicate-properties": true,
     "rule-empty-line-before": ["always-multi-line", {
       "except": ["after-single-line-comment", "first-nested"]
@@ -16,7 +15,7 @@
     "color-hex-length": "short",
     "color-hex-case": "lower",
     "color-no-invalid-hex": true,
-    "selector-no-id": true,
+    "selector-max-id": 0,
     "declaration-no-important": true,
     "indentation": 2,
     "number-leading-zero": "never",
