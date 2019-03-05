@@ -6,7 +6,6 @@
       "/^border/": ["none"]
     },
     "color-named": "never",
-    "stylelint-disable-reason": "always-before",
     "declaration-block-no-duplicate-properties": true,
     "rule-empty-line-before": ["always-multi-line", {
       "except": ["after-single-line-comment", "first-nested"]
