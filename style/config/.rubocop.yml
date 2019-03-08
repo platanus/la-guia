@@ -297,10 +297,6 @@ Style/CharacterLiteral:
   Description: Checks for uses of character literals.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-character-literals
   Enabled: false
-Style/ClassMethods:
-  Description: Use self when defining module/class methods.
-  StyleGuide: https://github.com/bbatsov/ruby-style-guide#def-self-singletons
-  Enabled: true
 Style/ClassVars:
   Description: Avoid the use of class variables.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-class-vars
