@@ -36,20 +36,6 @@ Style/CommentAnnotation:
   - OPTIMIZE
   - HACK
   - REVIEW
-Layout/EmptyLinesAroundClassBody:
-  Description: Keeps track of empty lines around class bodies.
-  Enabled: true
-  EnforcedStyle: no_empty_lines
-  SupportedStyles:
-  - empty_lines
-  - no_empty_lines
-Layout/EmptyLinesAroundModuleBody:
-  Description: Keeps track of empty lines around module bodies.
-  Enabled: true
-  EnforcedStyle: no_empty_lines
-  SupportedStyles:
-  - empty_lines
-  - no_empty_lines
 Naming/FileName:
   Description: Use snake_case for source file names.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#snake-case-files
@@ -153,17 +139,6 @@ Style/SignalException:
   - only_raise
   - only_fail
   - semantic
-Style/SingleLineBlockParams:
-  Description: Enforces the names of some block params.
-  StyleGuide: https://github.com/bbatsov/ruby-style-guide#reduce-blocks
-  Enabled: false
-  Methods:
-  - reduce:
-    - a
-    - e
-  - inject:
-    - a
-    - e
 Style/SingleLineMethods:
   Description: Avoid single-line methods.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-single-line-methods
