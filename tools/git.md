@@ -41,4 +41,4 @@ Nota: Esto es un extracto/traducción de [este documento](https://github.com/ang
 
 ### Branches y Pull-requests
 
-Salvo cosas muy insignificantes, los features los hacemos en un nuevo branch y hacemos un pull-request hacia master.
+Nunca agregamos commits directamente a master. Siempre se debe crear un nuevo branch y luego un PR a master.
