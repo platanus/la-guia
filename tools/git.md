@@ -41,4 +41,8 @@ Nota: Esto es un extracto/traducción de [este documento](https://github.com/ang
 
 ### Branches y Pull-requests
 
-Nunca agregamos commits directamente a master. Siempre se debe crear un nuevo branch y luego un PR a master.
+El flujo normal de desarrollo es crear un nuevo branch y luego hacer un PR a master.
+
+A veces, si el feature es muy grande, conviene tener un feature branch, y primero hacer PRs a ese branch antes del gran PR a master.
+
+
