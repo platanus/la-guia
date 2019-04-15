@@ -13,7 +13,7 @@
 
 ## Trabajos
 
-* [Prácticas](jobs/internship.md)
+* [Part-time/universitarios](jobs/part-time.md)
 
 ## Product Owner
 
