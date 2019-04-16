@@ -4,7 +4,7 @@ El programa part-timers de Platanus permite a estudiantes de ingeniería trabaja
 
 Creemos que las oportunidades que hoy existen para estudiantes con poca experiencia de desarrollo no son de buena calidad. En general son oportunidades que no ofrecen un buen aprendizaje, que no te permiten trabajar con pares que sepan más que tú, que no te permiten conocer las mejores prácticas de desarrollo, o que tienen ambientes malos y estresantes.
 
-Por otro lado, estamos convencidos que los proyectos de la universidad no son suficientes para cubrir todo el espectro de temas que se necesitan para desarrollar buen software. Mantener software en producción, hacer buenos tests o tener usuarios reales con problemas reales, son cosas que no se pueden experimentar en la universidad. Con este tipo de experiencias se puede encontrar más sentido a lo que entrega en las clases, y permite entender mejor en qué es necesario enfocarse durante el aprendizaje.
+Por otro lado, estamos convencidos que los proyectos de la universidad no son suficientes para cubrir todo el espectro de temas que se necesitan para desarrollar buen software. Mantener software en producción, hacer buenos tests o tener usuarios reales con problemas reales, son cosas que no se pueden experimentar en la universidad. Con este tipo de experiencias se puede encontrar más sentido a lo que se entrega en las clases, y permite entender mejor en qué es necesario enfocarse durante el aprendizaje.
 
 ## Beneficios para el part timer
 
@@ -35,7 +35,11 @@ El programa está orientado a estudiantes de ingeniería en computación que hay
 
 ## Cómo postular
 
-Para postular solo hay que enviar un correo a contacto@platan.us respondiendo la siguiente pregunta: ¿por qué quieres entrar al programa? No es necesario que sea largo, con un párrafo o una frase está bien.
+Para postular solo hay que enviar un correo a contacto@platan.us respondiendo la siguiente pregunta:
+
+¿Por qué quieres entrar al programa?
+
+No es necesario que sea largo, con un párrafo o una frase está bien.
 
 ## ¿Cuánto se paga?
 
