@@ -27,7 +27,8 @@ Por otro lado, estamos convencidos que los proyectos de la universidad no son su
 El programa está orientado a estudiantes de ingeniería en computación que hayan tenido más de un curso de programación y que tengan algún conocimiento de desarrollo web. Además:
 
 - Debes participar 22 horas semanales (se puede pasar como práctica)
-- Estarás participando en 1 o 2 proyectos. Pueden ser productos internos o para clientes.
+- Estarás participando en 1 o 2 proyectos. Pueden ser productos internos de Platanus o para clientes.
+- No es necesario manejarse en el stack que usamos (Rails, Vue, Ionic, etc). Sí es necesario ser capaz de aprenderlos.
 - Contarás con todo el apoyo del equipo Platanus para la revisión de código y para enseñarte lo que sea necesario.
 - Se te asignará un mentor que estará encargado de resolver tanto dudas generales de la oficina como dudas técnicas, y de redirigirlo a la persona indicada para resolver preguntas específicas.
 - Deberás trackear el tiempo usado de trabajo con Harvest.
