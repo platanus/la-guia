@@ -33,12 +33,13 @@ El contexto es una palabra que hace referencia al lugar del código o funcionali
 
 De manera opcional, se puede agregar información sobre el componente específico del código afectado. Si se agrega esta información:
 
-  * Debe ir después del contexto, separado usando un punto (`.`). Por ejemplo: `api.LoginService`
+  * Debe ir después del contexto, separado usando un slash (`/`). Por ejemplo: `api/LoginService`
   * El nombre del componente modificado debe estar en el mismo formato en el que aparece en el código (por ejemplo en `CamelCase` si es una clase ruby).
 
 #### Descripción
 
   * usamos el verbo imperativo en inglés:  "change" no "changed" ni "changes"
+  * separado por un espacio del contexto
   * sin mayúscula al principio
   * sin punto (.) al final
 
@@ -53,7 +54,7 @@ Salvo cosas muy insignificantes, los features los hacemos en un nuevo branch y h
 Como ejemplo de estas recomendaciones el siguiente commit soluciona un bug en el componente/clase `SignUpForm` del frontend de una aplicación, en el cual no se estaba entregando feedback de la validación sobre si el nombre de usuario estaba disponible o no:
 
 ```
-fix(ui.SignUpForm): validate username availability
+fix(ui/SignUpForm): validate username availability
 
 The `SignUpForm` component wasn´t validating the availability of the `username` field and only displayed a `couldn´t create account` error on submit.
 
