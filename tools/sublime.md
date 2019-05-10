@@ -42,10 +42,12 @@ Sublime Text
 * **[Emmet](https://github.com/sergeche/emmet-sublime)**: Permite escribir HTML y CSS mediante abreviaciones.
 
 ![Emmet](http://i.imgur.com/rfOCTLM.gif)
+
 * **[SCSS](https://packagecontrol.io/packages/SCSS)** y **[Sass](https://packagecontrol.io/packages/Sass)**: Agregan soporte para Sass.
 * **[Color Highlighter](https://github.com/Monnoroch/ColorHighlighter)**: Permite previsualizar los colores en el CSS.
 
 ![Color Highlighter](http://i.imgur.com/UBLa2Ek.png)
+
 * **[AutoPrefixer](https://github.com/sindresorhus/sublime-autoprefixer)**: Agrega automáticamente prefijos propietarios a propiedades de CSS.
 
 ![AutoPrefixer](http://i.imgur.com/YjhceOp.gif)
