@@ -23,7 +23,7 @@ Sublime Text
 
 * **[EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)**: Nos ayuda a mantener un estilo de código (espacios o tabs, sangrado, etc) consistente en los proyectos de Platanus.
 * **[SublimeLinter](http://www.sublimelinter.com/en/latest/)**: Framework para aplicar linting al código.
-
+* **[GitSavvy](https://github.com/divmain/GitSavvy)**: Interfaz para administrar git desde el editor. Muy útil para hacer hunks, manejar ramas, hacer rebase, diffs, etc.
 * **[SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)**: Agrega múltiples funciones para manejar archivos y carpetas a la sidebar.
 * **[Unicode Character Highlighter](https://packagecontrol.io/packages/Unicode%20Character%20Highlighter)**: Destaca caracteres como el [espacio duro](https://es.wikipedia.org/wiki/Espacio_duro) que OSX inserta al usar `⌥` + `ESPACIO` para hacer más facil su eliminación.
 
