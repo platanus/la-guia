@@ -9,7 +9,7 @@ Los mensajes de commit:
   * normalmente tienen una sola línea (aunque sabemos que más podría ser mejor)
   * la primera línea se forma de un **tipo**, un **contexto** y una **descripción**
     ```
-    tipo(contexto):descripción
+    tipo(contexto): descripción
     ```
 
   La línea no debiera tener más de 100 caracteres para que se lea bien en Github.
