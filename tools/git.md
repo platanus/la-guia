@@ -41,4 +41,8 @@ Nota: Esto es un extracto/traducción de [este documento](https://github.com/ang
 
 ### Branches y Pull-requests
 
-Salvo cosas muy insignificantes, los features los hacemos en un nuevo branch y hacemos un pull-request hacia master.
+El flujo normal de desarrollo es crear un nuevo branch y luego hacer un PR a master.
+
+A veces, si el feature es muy grande, conviene tener un feature branch, y primero hacer PRs a ese branch antes del gran PR a master.
+
+
