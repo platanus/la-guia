@@ -54,6 +54,6 @@ Sublime Text
 
 ### JavaScript
 
-* **[SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)**: Hace linting directamente en el editor usando JSHint (y archivos .jshintrc).
+* **[SublimeLinter-eslint](https://github.com/SublimeLinter/SublimeLinter-eslint)**: Hace linting directamente en el editor usando ESlint (y archivos .eslint).
 * **[AngularJS](https://github.com/angular-ui/AngularJS-sublime-package)**: Agrega "ir a definición", autocompletado de funciones, entre otras cosas.
 * **[AngularJS Snippets (John Papa)](http://www.johnpapa.net/angularjs-snippets-for-sublime-visual-studio-and-webstorm/)**: Agrega snippets basados en la [guía de estilo](https://github.com/johnpapa/angular-styleguide) para AngularJs de John Papa.
