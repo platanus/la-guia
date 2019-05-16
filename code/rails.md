@@ -108,8 +108,8 @@ no va a tener problemas al tratar de obtenerlas usando `ENV[] o ENV.fetch()`
   seteada o si queremos asignar un valor por defecto usando el segundo paramentro.
 
   ```ruby
-  ENV.fecth('API_KEY') # Really important variable would trigger a keyError exception
-  ENV.fecth('CHANGE_THRESHOLD', 10) # Default value variable
+  ENV.fetch('API_KEY') # Really important variable would trigger a keyError exception
+  ENV.fetch('CHANGE_THRESHOLD', 10) # Default value variable
   ```
 
   > **Nota**: En desarrollo el uso de `fetch` sin un valor por defecto se va a gatillar sólo cuando
