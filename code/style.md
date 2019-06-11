@@ -38,11 +38,12 @@ Para poder ejecutar la revisión de reglas localmente es que necesitamos de los 
 
 ```sh
 # ruby
-gem install rubocop
+gem install rubocop -v '0.65.0'
 
 # js
 npm install -g eslint
 npm install -g eslint-plugin-import
+npm install -g eslint-plugin-vue
 
 # typescript
 npm install -g tslint typescript
