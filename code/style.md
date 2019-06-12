@@ -38,11 +38,12 @@ Para poder ejecutar la revisión de reglas localmente es que necesitamos de los 
 
 ```sh
 # ruby
-gem install rubocop
+gem install rubocop -v '0.65.0'
 
 # js
 npm install -g eslint
 npm install -g eslint-plugin-import
+npm install -g eslint-plugin-vue
 
 # typescript
 npm install -g tslint typescript
@@ -70,6 +71,12 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
 * [ES](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [TypeScript](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 * [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
+
+Para que funcione Rubocop, se debe agregar la siguiente configuración en los Settings:
+
+```
+"ruby.rubocop.executePath": "/Users/TU_USUARIO/.rbenv/shims/"
+```
 
 #### Sublime
 
