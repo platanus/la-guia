@@ -36,11 +36,7 @@ El programa está orientado a estudiantes de ingeniería en computación que hay
 
 ## Cómo postular
 
-Para postular solo hay que enviar un correo a contacto@platan.us respondiendo la siguiente pregunta:
-
-¿Por qué quieres entrar al programa?
-
-No es necesario que sea largo, con un párrafo o una frase está bien.
+Para saber cómo postular visita [esta página](https://platan.us/jobs) y busca la oferta con el título "Part-time" o "Internship".
 
 ## ¿Cuánto se paga?
 
