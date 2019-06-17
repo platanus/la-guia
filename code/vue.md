@@ -1,8 +1,8 @@
 Vue
 ===
 
-*[Vue.js](https://vuejs.org/v2/guide/)* es un framework **progresivo** orientado a la construcción de interfáces de usuario,
-siendo capáz también de servir en la contrucción de SAP (*Single Page Applications*).
+*[Vue.js](https://vuejs.org/v2/guide/)* es un framework progresivo orientado a la construcción de interfaces de usuario,
+siendo capaz también de servir en la contrucción de SPAs.
 
 La documentación es excelente y debería ser el primer paso en caso de cualquier duda.
 
@@ -99,7 +99,7 @@ views/layouts/shop.html.erb
 
 ## Tips
 
-La regla en general en Platanus es que solo puede haber una fuente de la verdad para el estado de la aplicación, determinada quién maneja la paginación.
+La regla en general en Platanus es que solo puede haber una fuente de la verdad para el estado de la aplicación, determinada por quién maneja la paginación.
 - Si la paginación la maneja Rails, Rails debería manejar el estado de la aplicación, siendo Vue un suplemento para agregar elementos dinámicos.
 - Si la paginación la maneja Vue (mediante un router, por ejemplo), el estado de la aplicación lo debería manejar Vue (con Vuex probablemente), usando Rails principalmente como API.
 
@@ -111,7 +111,7 @@ Usamos [eslint-plugin-vue](https://vuejs.github.io/eslint-plugin-vue) con las re
 
 ## Tests
 
-Para realizar tests unitarios dentro de Rails y Vue se puede usar [Jest](https://jestjs.io/) y [Vue Test Utils](https://vue-test-utils.vuejs.org/). Como siempre, la [documentación de Vue](https://vuejs.org/v2/guide/unit-testing.html) como puntos de partida.
+Para realizar tests unitarios dentro de Rails y Vue se puede usar [Jest](https://jestjs.io/) y [Vue Test Utils](https://vue-test-utils.vuejs.org/). Como siempre, la [documentación de Vue](https://vuejs.org/v2/guide/unit-testing.html) es un buen punto de partida.
 
 Potassium no incluye la configuración para realizar tests todavía pero con los siguientes pasos vas a tener un ambiente listo para realizar pruebas.
 
