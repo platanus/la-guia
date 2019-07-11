@@ -15,9 +15,10 @@ Todos estamos invitados a aportar en la construcción de esta [Guía maestra](ht
   * El canal `#coffeebar` es donde puedes comentar cualquier cosa no relacionada con desarrollo.
   * Se deben mantener las conversaciones privadas al mínimo, y utilizar los canales de proyectos para conversaciones relacionadas a los proyectos.
 
-* Usamos [appear.in](http://appear.in) y [Hangouts](https://hangouts.google.com) para conversaciones grupales.
+* Usamos [Hangouts](https://hangouts.google.com) para conversaciones grupales.
 * Para organizar nuestro trabajo usamos [Trello](/tools/trello.md).
-* Para el diseño de los proyectos, usamos [Sketch](https://www.sketchapp.com/), [Invision](https://invis.io/) e [InvisionStudio](https://www.invisionapp.com/studio).
+* Diseñamos en [Sketch](https://www.sketchapp.com/) y a veces jugamos con [Adobe XD](https://www.adobe.com/la/products/xd.html)🤫.
+* Usamos [Abstract](https://www.abstract.com/) como puente entre diseño y código, [Invision](https://invis.io/) para testear y colaborar con nuestros clientes. [Guía en proceso ⌛️]
 * Para el Front de todos los proyectos usamos [Vue.js](https://vuejs.org/).
 * En los proyectos móviles usamos [Ionic](/code/ionic.md) usando este [generador](https://github.com/platanus/generator-platanus-ionic).
 * Para todos los proyectos, en el Back usamos [Ruby](/code/ruby.md) on [Rails](/code/rails.md).
