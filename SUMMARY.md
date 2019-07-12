@@ -46,6 +46,7 @@
 * [Atom](tools/atom.md)
 * [Git](tools/git.md)
 * [Trello](tools/trello.md)
+* [Abstract](tools/abstract.md)
 
 ## Open Source
 
