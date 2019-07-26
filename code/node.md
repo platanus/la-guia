@@ -14,7 +14,7 @@ Esta version viene definida si usamos nuestro generador para
 [ionic](https://github.com/platanus/generator-platanus-ionic) para
 inicializar nuestro proyecto.
 
-También podemos defirla usando
+También podemos definirla usando
 
 ```
 nodenv local <alias-version>
