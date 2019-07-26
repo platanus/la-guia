@@ -23,7 +23,7 @@ Todos estamos invitados a aportar en la construcción de esta [Guía maestra](ht
 * En los proyectos móviles usamos [Ionic](/code/ionic.md) usando este [generador](https://github.com/platanus/generator-platanus-ionic).
 * Para todos los proyectos, en el Back usamos [Ruby](/code/ruby.md) on [Rails](/code/rails.md).
 * Para el versionamiento de código usamos [Git](/tools/git.md) y Github.
-* Para desarrollar usamos [Sublime Text 3](/tools/sublime.md), [Atom](https://atom.io/), [VSCode](https://code.visualstudio.com/), entre otros.
+* Para desarrollar usamos [Sublime Text 3](/tools/sublime.md), [VSCode](https://code.visualstudio.com/), entre otros.
 * Seguimos las siguientes guías de estilos para [Ruby](/code/style.md), [HTML](/code/html.md), CSS y [JavaScript](/code/style.md).
 * Para hacer Continuous Integration usamos [CircleCI](https://circleci.com/).
 * ¡Comparte tu conocimiento!

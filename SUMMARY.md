@@ -43,7 +43,7 @@
 ## Tools
 * [Environment](tools/environment.md)
 * [Sublime Text 3](tools/sublime.md)
-* [Atom](tools/atom.md)
+* [Visual Studio Code](tools/visual-studio-code.md)
 * [Git](tools/git.md)
 * [Trello](tools/trello.md)
 * [Abstract](tools/abstract.md)
