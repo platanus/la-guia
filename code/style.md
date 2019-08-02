@@ -39,6 +39,7 @@ Para poder ejecutar la revisión de reglas localmente es que necesitamos de los 
 ```sh
 # ruby
 gem install rubocop -v '0.65.0'
+gem install rubocop-rspec
 
 # js
 npm install -g eslint

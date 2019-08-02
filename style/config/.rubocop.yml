@@ -1,3 +1,4 @@
+require: rubocop-rspec
 AllCops:
   Exclude:
   - "vendor/**/*"
@@ -477,3 +478,14 @@ Performance/RedundantBlockCall:
   Description: Use `yield` instead of `block.call`.
   Reference: https://github.com/JuanitoFatas/fast-ruby#proccall-vs-yield-code
   Enabled: false
+RSpec/MultipleExpectations:
+  Max: 5
+RSpec/NestedGroups:
+  Max: 5
+RSpec/ExampleLength:
+  Max: 10
+RSpec/LetSetup:
+  Enabled: false
+RSpec/ExpectChange:
+  Enabled: true
+  EnforcedStyle: block
