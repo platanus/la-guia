@@ -2,7 +2,7 @@ Almuerzo
 ========
 
 
-La Vicky, nuestra chef, nos hace almuerzo todos los días. Pero no para todos. Hay 12 cupos diarios, y por lo general hay más de 12 personas que quieren almorzar.
+La Vicky, nuestra chef, nos hace almuerzo todos los días. Pero no para todos. La idea es que sea un grupo que pueda conversar de un solo tema, así que hay solo 12 cupos diarios. Por lo general hay más de 12 personas que quieren almorzar.
 
 ¿Cómo se decide quiénes almuerzan cada día?
 
