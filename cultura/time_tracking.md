@@ -11,26 +11,26 @@ Porque es muy sano saber cuanto tiempo le dedicamos a los distintos proyectos. N
 
 - El tiempo de las **tareas que estamos realizando** en el momento.
 
-  Como nada representa mejor estas tareas que los títulos de las tarjetas de [Trello](trello.md) en las cuales estamos trabajando se recomienda, al iniciar la tarea, copiar este título y agregarlo en harvest sin olvidar asociar el proyecto al cual pertenece la misma.
+  Como nada representa mejor estas tareas que los títulos de las tarjetas de [Trello](trello.md) en las cuales estamos trabajando, se recomienda al iniciar la tarea, copiar este título y agregarlo en harvest sin olvidar asociar el proyecto al cual pertenece la misma.
 
   **Trello card**
 
-  Puedes usar el [chrome extention](#harvest-chrome-extension) o el PowerUp.
+  Puedes usar el [chrome extension](#harvest-chrome-extension) o el PowerUp.
 
   <img src="./assets/harvest-trello.gif" />
 
   **Github Issues**
 
-  Puedes usar el [chrome extention](#harvest-chrome-extension)
+  Puedes usar el [chrome extension](#harvest-chrome-extension)
 
   <img src="./assets/harvest-github.gif" />
 
 - El tiempo de las **reuniones**.
 
-  Esto es cuando: tenemos una reunión de sprint, un compañero nos pide ayuda, surge una reunión espontánea para tomar decisiones, conversarmos sobre el diseño de una aplicación, etc. Algunos ejemplos de descripción para esas tareas.
+  Esto es cuando: tenemos una reunión de sprint, un compañero nos pide ayuda, surge una reunión espontánea para tomar decisiones, conversamos sobre el diseño de una aplicación, etc. Algunos ejemplos de descripción para esas tareas.
 
-  - Reunión para definir que mapas user
-  - Ayudando a Pepito a instalar node
+  - Reunión para definir que mapas usar
+  - Ayudando a Pepito a instalar Node
 
 - El tiempo de **revisar código** de nuestros compañeros.
 
