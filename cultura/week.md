@@ -23,7 +23,7 @@ Generalmente el trabajo se traduce en:
 
 * Aportar en los inicializadores de aplicaciones
 * Aportar en nuestras [Guías](http://www.github.com/platanus/la-guia)
-* Un post para nuestro [blog](http://blog.platan.us), [guia del blog](blog.md)
+* Un post para nuestro [blog](https://blog.platan.us), [guia del blog](blog.md)
 * Preparar o participar de un workshop o presentación
 * Participar en _cónclaves_ sobre distintos temas de interés (desarrollo móvil, estrategias de gestión de proyectos, etc)
 * Aprender nuevas técnicas que hacen mi trabajo más eficiente
@@ -34,8 +34,8 @@ Generalmente el trabajo se traduce en:
 
 Le llamamos *viernes no-viernes* a aquellos que **no hacemos Investment Day**, si no que trabajo regular en proyectos.
 
-Esto ocurre para quienes tuvieron **uno o más dias feriados** durante la semana.  Ya sea un feriado nacional, o personal por vacaciones u otra causa.  Este sacrificio de viernes vela por que dediquemos al menos 4 días a la semana a nuestros proyectos. 
+Esto ocurre para quienes tuvieron **uno o más dias feriados** durante la semana.  Ya sea un feriado nacional, o personal por vacaciones u otra causa.  Este sacrificio de viernes vela por que dediquemos al menos 4 días a la semana a nuestros proyectos.
 
 Como en Platanus tenemos gente repartida por el mundo, **se respetan los feriados de cada país!**
 
-Es decir, si vivo en Botswana, me corresponde ausentarme para festejar el Día Nacional de Botswana, como cualquier botswanense.  Sin embargo, tengo que trabajar para el de Chile, aunque sea un día solitario y gran parte del contingente platanesco esté ausente celebrando.  
+Es decir, si vivo en Botswana, me corresponde ausentarme para festejar el Día Nacional de Botswana, como cualquier botswanense.  Sin embargo, tengo que trabajar para el de Chile, aunque sea un día solitario y gran parte del contingente platanesco esté ausente celebrando.
