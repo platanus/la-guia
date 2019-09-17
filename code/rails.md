@@ -120,8 +120,8 @@ no va a tener problemas al tratar de obtenerlas usando `ENV[] o ENV.fetch()`
 
 [heroku-dashboard]: https://dashboard.heroku.com
 [potassium]: https://github.com/platanus/potassium
-[simple-token-blog]: https://cb.platan.us/usando-angular-auth-lib-con-simple-token-authentication-gem
-[devise_invitable]: http://cb.platan.us/rails/active%20admin/devise/2015/03/18/invitar-usuarios-con-devise.html
+[simple-token-blog]: https://blog.platan.us/usando-angular-auth-lib-con-simple-token-authentication-gem
+[devise_invitable]: https://blog.platan.us/invitar-usuarios-con-devise
 [simple_token_authentication]: https://github.com/gonzalo-bulnes/simple_token_authentication
 [rails_pallet]: https://github.com/platanus/rails_pallet
 [enumerize]: https://github.com/brainspec/enumerize
