@@ -44,7 +44,7 @@ Para poder administrar las aplicaciones del team, es necesario dar persmisos de 
 - Seleccionar el team
 - Ir al tab *Access*
 - Click en botón *Invite Member*
-- Agregar el mail del usuario a quién darás permisos. (contacto@platan.us)
+- Agregar el mail heroku@platan.us
 - Seleccionar *admin* el la opción *Role*
 - Click en *Save changes*
 
