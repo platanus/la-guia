@@ -60,3 +60,7 @@ The `SignUpForm` component wasn´t validating the availability of the `username`
 
 This commit adds an asynchronous validation when typing on the field so the user will know if the username is available before completing further fields.
 ```
+
+### Rebase
+
+Para ordenar un poco los commits, usamos fixups y rebase. Puedes leer sobre eso [acá](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html).
