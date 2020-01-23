@@ -31,7 +31,7 @@ Para explicar de manera más fácil cómo funciona, imaginemos que no son 12 cup
 
 Si quedas en el almuerzo, se te descuenta lo que apostaste. Si no quedas en el almuerzo, no se te descuenta nada.
 
-Se puede comprar y vender almuerzos. Si alguien quedó en el almuerzo y se da cuenta que no puede almorzar, puede decirle a ham “vendo almuerzo”. El primero que llegue a comprarlo se lo lleva. Lo mismo al revés. Puedo decirle “compro almuerzo”. Luego, si alguien vende su almuerzo, se lo compro automáticamente. Se respeta el orden de llegada.
+Se puede comprar y vender almuerzos. Si alguien quedó en el almuerzo y se da cuenta que no puede almorzar, puede decirle a ham “vendo almuerzo”. El primero que llegue a comprarlo se lo lleva. Lo mismo al revés. Puedo decirle “compro almuerzo”. Luego, si alguien vende su almuerzo, se lo compro automáticamente. Se respeta el orden de llegada. En ambos casos el valor por defecto de la venta o compra es de 1 karma, pero tienes la opción de decirle a ham "vendo almuerzo a X" o "compro almuerzo a X" para intentar vender/comprar a precio de `X` karma.
 
 Todo el karma que se apuesta no se va gastando. Ham lo va recolectando. Cada 30 días Ham lo redistribuye entre todos. Pero ojo! Hay un límite de riqueza de 40 karmas. Esto es para incentivar que la gente gaste su karma almorzando en la oficina. Si tienes 40 o más, Ham no te va a repartir karma, se va a repartir solo entre los más pobres.
 
@@ -39,7 +39,9 @@ Todo el karma que se apuesta no se va gastando. Ham lo va recolectando. Cada 30 
 
 ```
 @ham compro almuerzo
+@ham compro almuerzo a 2
 @ham vendo almuerzo
+@ham vendo almuerzo a 3
 @ham quienes almuerzan hoy
 @ham quienes cooperaron con el almuerzo hoy
 @ham cuanto karma tiene @pepito
