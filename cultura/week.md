@@ -1,5 +1,6 @@
-The Platanus Week
-=================
+## The Platanus Week
+
+Apoyamos 100% el trabajo remoto. Puedes trabajar desde tu casa o en la oficina.
 
 ### De Lunes a Jueves
 
@@ -14,15 +15,14 @@ Estos días los dedicamos a trabajar para los productos de clientes y los nuestr
 
 Los viernes los invertimos en hacer de Platanus una **mejor empresa**.
 
-Para saber en qué trabajar, primero se debe identificar una necesidad. La idea es bucear en el [Trello de Platanus](trello.md) algún problema a resolver. Mientras más impacto tenga dentro del equipo mejor!
+Para saber en qué trabajar, primero se debe identificar una necesidad. Si no te sientes demasiado inspirado, conversa con el equipo para obtener ideas y recuerda: mientras más impacto tenga lo que hagas dentro del equipo, mejor!
 
 Luego de identificar el problema, puedes trabajar en la solución!
 
 Generalmente el trabajo se traduce en:
 
-
-* Aportar en los inicializadores de aplicaciones
-* Aportar en nuestras [Guías](http://www.github.com/platanus/la-guia)
+* Aportar en los inicializadores de aplicaciones (Potassium por ejemplo)
+* Aportar aquí mismo en [La Guía](http://www.github.com/platanus/la-guia)
 * Un post para nuestro [blog](https://blog.platan.us), [guia del blog](blog.md)
 * Preparar o participar de un workshop o presentación
 * Participar en _cónclaves_ sobre distintos temas de interés (desarrollo móvil, estrategias de gestión de proyectos, etc)

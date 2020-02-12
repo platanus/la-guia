@@ -1,5 +1,4 @@
-La Biblioteca
-===============
+## La Biblioteca
 
 Es el lugar donde vamos juntado libros de interes común, usamos el [Trello Biblioteca](https://trello.com/b/XECWQYEO/biblioteca).
 

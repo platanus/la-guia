@@ -1,6 +1,4 @@
-Almuerzo
-========
-
+## Almuerzo
 
 La Vicky, nuestra chef, nos hace almuerzo todos los días. Pero no para todos. La idea es que sea un grupo que pueda conversar de un solo tema, así que hay solo 12 cupos diarios. Por lo general hay más de 12 personas que quieren almorzar.
 
@@ -35,7 +33,7 @@ Se puede comprar y vender almuerzos. Si alguien quedó en el almuerzo y se da cu
 
 Todo el karma que se apuesta no se va gastando. Ham lo va recolectando. Cada 30 días Ham lo redistribuye entre todos. Pero ojo! Hay un límite de riqueza de 40 karmas. Esto es para incentivar que la gente gaste su karma almorzando en la oficina. Si tienes 40 o más, Ham no te va a repartir karma, se va a repartir solo entre los más pobres.
 
-## Comandos útiles
+### Comandos útiles
 
 ```
 @ham compro almuerzo

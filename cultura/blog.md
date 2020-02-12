@@ -1,4 +1,4 @@
-# Blog - Codigo Banana
+## Blog - Codigo Banana
 
 El blog de platanus esta hosteado en la plataforma [medium](medium.com) bajo el dominio [blog.platan.us](https://blog.platan.us).
 

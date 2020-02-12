@@ -1,60 +1,72 @@
 # Summary
 
-* [Introducción](INTRO.md)
+* [Introducción](README.md)
 
 ## Cultura Platanus
 
 * [Nuestra Semana](cultura/week.md)
 * [Almuerzo](cultura/lunch.md)
-* [Trello](cultura/trello.md)
-* [Cofradías](cultura/guilds.md)
-* [Time tracking](cultura/time_tracking.md)
+* [Time tracking](cultura/time-tracking.md)
 * [El Blog](cultura/blog.md)
 * [La Biblioteca](cultura/library.md)
+* [Product Owner](cultura/product-owner.md)
 
 ## Trabajos
 
-* [Part-time/universitarios](jobs/part-time.md)
+* [Part-time/universitarios](jobs/README.md)
 
-## Product Owner
+## Stack
 
-* [Guía del Product Owner](clients/product-owner.md)
-* [Heroku](clients/heroku.md)
-* [Google Play](clients/google-play.md)
-* [Apple App Store](clients/apple-app-store.md)
+* [Ruby](stack/ruby/README.md)
+  * [Rails](stack/ruby/rails/README.md)
+    * [Potassium](https://github.com/platanus/potassium)
+    * [Power Types](stack/ruby/rails/powertypes.md)
+    * [Active Admin](stack/ruby/rails/activeadmin.md)
+  * [Gems](stack/ruby/gems.md)
+* [Javascript](stack/js/README.md)
+  * [Vue](stack/js/vue/README.md)
+    * [General](stack/js/vue/general.md)
+    * [Testing](stack/js/vue/tests.md)
+* [CSS](stack/css/README.md)
+  * [General](stack/css/general.md)
 
-## Languages
+## Setup
 
-* [Style Guides](code/style.md)
-* [HTML](code/html.md)
-* [Ruby](code/ruby.md)
-* [Node](code/node.md)
-* [Javascript](code/javascript.md)
+* [Local](setup/local/README.md)
+  * [General](setup/local/Rgeneral.md)
+  * [Ruby](setup/local/Rruby.md)
+  * [Node](setup/local/Rnode.md)
+  * [Homebrew](setup/local/Rnode.md)
+  * [Linters](setup/local/Rlinters.md)
+* [Proyectos](setup/proyectos/README.md)
+  * [Heroku](setup/proyectos/heroku.md)
+  * [Rails](setup/proyectos/rails.md)
+  * [Integración Continua](setup/proyectos/continous-integration.md)
+  * [Vue](setup/proyectos/vue.md)
+  * [Apple App Store](setup/proyectos/apple-app-store.md)
+  * [Google Play](setup/proyectos/google-play.md)
 
-## Frameworks
-
-* [Rails](code/rails.md)
-  * [ActiveAdmin](code/activeadmin.md)
-  * [Power Types](code/power-types.md)
-* [Angular](code/angular.md)
-* [Ionic](code/ionic.md)
-* [Vue](code/vue.md)
-
-## Tools
-* [Environment](tools/environment.md)
-* [Sublime Text 3](tools/sublime.md)
-* [Visual Studio Code](tools/visual-studio-code.md)
-* [Git](tools/git.md)
-* [Trello](tools/trello.md)
-* [Abstract](tools/abstract.md)
-
-## Open Source
-
-* [Open Source en Platanus](open_source/README.md)
-* [Browser and NodeJS](open_source/browser_node.md)
-* [Gems](open_source/gems.md)
+## Herramientas
+* [Diseño/UX](tools/design/README.md)
+  * [Abstract](tools/design/abstract.md)
+  * [Sketch](tools/design/https://www.sketchapp.com/)
+  * [Adobe XD](tools/design/https://www.adobe.com/la/products/xd.html)
+* [IDE/Editores](tools/ide/README.md)
+  * [Sublime Text](tools/ide/sublime.md)
+  * [VS Code](tools/ide/visual-studio-code.md)
+* [Control de Versiones (Git)](tools/git.md)
+* [Comunicación](tools/comunicacion/README.md)
+* [Trello](https://trello.com/)
 
 ## Deployment
 
 * [Rails](deployment/rails.md)
-* [Mobile resources](deployment/mobile-resources.md)
+* [Ruby Gems](deployment/gems.md)
+* [Mobile Resource](deployment/mobile-resources.md)
+* [Browser and Node (deployment/Open Source)](deployment/browser-node.md)
+* [Apple App Store](deployment/apple-app-store.md)
+* [Google Play](deployment/google-play.md)
+
+## Contribuir
+
+* [Contribuir](contribuir.md)
