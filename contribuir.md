@@ -14,7 +14,7 @@ Las secciones son:
 
 Por ejemplo: si te volviste experto en el manejo de [sidekiq](https://github.com/mperham/sidekiq) (herramienta que usamos para el procesamiento en background) deberías agregar este conocimiento a [Stack/Ruby](stack/ruby/README.md)
 
-### 2. Si lo que agregas es solo un link, agregalo directamente en la sección que corresponda.
+### 2. Si lo que agregas es solo un link, agrégalo directamente en la sección que corresponda.
 
 Siguendo con el ejemplo, en [Stack/Ruby](stack/ruby/README.md) deberías agregar:
 

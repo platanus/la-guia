@@ -38,13 +38,13 @@ Las siguientes son algunas cosas que puedes hacer e instalar para tener una base
 
 Normalmente para desarrollar usamos algunos servicios, como bases de datos, cache, etc. Estos son algunos ejemplos de los servicios que más usamos en Platanus.
 
-- PostgresSQL 9.6.x con Postgis `brew install postgis`
+- PostgresSQL con Postgis `brew install postgis`
 
-- MYSQL 5.7.x `brew install mysql`
+- MYSQL `brew install mysql`
 
-- Redis 3 `brew install redis`
+- Redis `brew install redis`
 
-- Elasticsearch 6.2.4 `brew install elasticsearch@6.2.4`
+- Elasticsearch `brew install elasticsearch`
 
 Una vez instalados los servicios pueden ser iniciados o detenidos usando la extensión services de brew.
 

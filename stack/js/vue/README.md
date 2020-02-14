@@ -1,4 +1,5 @@
 ## Vue
 
-- [General](general.md)
-- [Testing](tests.md)
+* [Setup](../../../setup/proyectos/vue.md)
+* [General](general.md)
+* [Testing](tests.md)

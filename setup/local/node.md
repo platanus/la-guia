@@ -1,6 +1,7 @@
 ## NodeJS Setup
 
 Para el uso de node utilizamos el manejador de versiones [nodenv](https://github.com/nodenv/nodenv) y algunos plugins.
+Siempre usamos la versión LTS, poniendo la `major` en el archivo `.node-version`. Es decir, se debe preferir escribir 10 en vez de 10.12.1.
 
 ```bash
 # Instalar nodenv y node-build

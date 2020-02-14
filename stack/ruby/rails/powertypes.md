@@ -48,7 +48,7 @@ Estructurando nuestro código de forma modular y desacoplada tenemos las siguien
 
 #### Services - `app/services`
 
-Los *Servicios* son clases Ruby que expone métodos públicos para llevar a cabo
+Los *Servicios* son clases Ruby que exponen métodos públicos para llevar a cabo
 tareas relacionadas a un contexto en común. Pueden ser generados con la ayuda
 del siguiente comando
 

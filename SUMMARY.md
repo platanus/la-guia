@@ -4,12 +4,7 @@
 
 ## Cultura Platanus
 
-* [Nuestra Semana](cultura/week.md)
-* [Almuerzo](cultura/lunch.md)
-* [Time tracking](cultura/time-tracking.md)
-* [El Blog](cultura/blog.md)
-* [La Biblioteca](cultura/library.md)
-* [Product Owner](cultura/product-owner.md)
+* [Cultura](cultura.md)
 
 ## Trabajos
 

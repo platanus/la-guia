@@ -34,12 +34,3 @@ En NPM debes registrar el paquete y publicar directamente cada version. La prime
 
     # Agregar un owner a un package
     npm owner add platanus <package-name>
-
-#### Publicando con el generador
-
-El generador define un archivo [gulpfile](https://github.com/platanus/generator-angular-library/blob/master/generators/app/templates/base/gulpfile.js) con una serie de tareas para hacer más simple la publicacion.
-
-Cuando quieras publicar una nueva version de una libreria simplemente debes hacer:
-
-    gulp build
-    gulp publish-npm
