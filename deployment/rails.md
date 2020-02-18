@@ -1,14 +1,13 @@
-# Rails Deployment
+## Rails Deployment
 
-Los projectos rails se publican en [heroku][heroku-dashboard] en la cuenta de Platanus.
+Los proyectos Rails se publican en [heroku][heroku-dashboard] en la cuenta de Platanus.
 
-Utilizaremos los [pipelines][heroku-pipelines] de heroku para manejar diferente stages de la aplicación. Como convencion partiremos siempre con *staging* y *production*.
+Utilizaremos los [pipelines][heroku-pipelines] de heroku para manejar diferente stages de la aplicación. Como convención partiremos siempre con *staging* y *production*.
 
-## Creación de la app en heroku
+### Creación de la app en heroku
 
 Al crear un proyecto rails con potassium, si tienes acceso a la cuenta de heroku,
 las aplicaciones seran creadas por el mismo commando `create` de potassium.
-[Como generar una aplicacion rails?](../code/rails.md)
 
 > Para crear la aplicación se deben usar la cuenta *owner* que es tiene permisos para crear nuevas aplicaciones. Para esto debes installar el [heroku-toolbelt][] y la gema [potassium][].
 
@@ -29,7 +28,7 @@ puedes ejecutar nuevamente la receta con el comando `install`
 
     potassium install heroku
 
-#### Conectar github
+### Conectar github
 
 Entrar al [dashboard de heroku][heroku-dashboard] y conectar el pipeline con un repositorio en github y configurar los **automatic deploys** usando github.
 
@@ -46,18 +45,18 @@ Al configurar los **automatic deploys** hay que elegir un branch para cada stage
 la opcion que dice, esperar CI antes de publicar. Eso para que solo se publiquen
 braches en los que los tests estan pasando.
 
-##### Continuous integration
+### Continuous integration
 
 Los test de la aplicación ejecutados por el servicio CircleCi. Para esto debes
 habilitar el repositorio en https://circleci.com/add-projects.
 
-##### Continuous delivery
+### Continuous delivery
 
 El deploy se hace de manera automática mediante usando los branches definidos para cada stage.
 
 Cada vez que se hace un push al repositorio en github a uno de estos branches, la aplicación del stage correspondiente comienza su proceso de build y luego es publicada.
 
-## Usando heroku desde la linea de commando
+### Usando heroku desde la linea de commando
 
 Para comenzar a usar heroku desde la linea de comando debes instalar [heroku-toolbelt][]
 

@@ -1,7 +1,8 @@
-Git
-===
+## Git
 
-### Commits en Git
+Utilizamos [git](https://git-scm.com/) para el control de versiones junto con [github](https://github.com/platanus)
+
+### Commits
 
 Los mensajes de commit:
 
@@ -47,9 +48,9 @@ Nota: Esto es un extracto/traducción de [este documento](https://github.com/ang
 
 ### Branches y Pull-requests
 
-Salvo cosas muy insignificantes, los features los hacemos en un nuevo branch y hacemos un pull-request hacia master.
+Los features los hacemos en un nuevo branch y hacemos un pull-request hacia master.
 
-### Ejemplo
+#### Ejemplo
 
 Como ejemplo de estas recomendaciones el siguiente commit soluciona un bug en el componente/clase `SignUpForm` del frontend de una aplicación, en el cual no se estaba entregando feedback de la validación sobre si el nombre de usuario estaba disponible o no:
 
