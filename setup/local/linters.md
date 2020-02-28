@@ -37,7 +37,7 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
 * [Ruby](https://github.com/misogi/vscode-ruby-rubocop)
 * [ES](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [TypeScript](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
-* [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
+* [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
 Para que funcione Rubocop, se debe agregar la siguiente configuración en los Settings:
 
