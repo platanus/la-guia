@@ -246,7 +246,9 @@
     "linebreak-style": [2, "unix"],
     "lines-around-comment": 0,
     "max-depth": [2, 4],
-    "max-len": [2, 120],
+    "max-len": [2, 120, {
+      "ignorePattern": "^\\s.+class=\""
+    }],
     "max-nested-callbacks": [2, 4],
     "max-params": [1, 4],
     "max-statements": [1, 10],
@@ -332,6 +334,10 @@
       "vars": "local",
       "args": "after-used"
     }],
-    "no-use-before-define": 2
+    "no-use-before-define": 2,
+    "vue/max-len": ["error", {
+      "code": 120,
+      "ignoreHTMLAttributeValues": true
+  }]
   }
 }
