@@ -334,6 +334,10 @@
       "vars": "local",
       "args": "after-used"
     }],
-    "no-use-before-define": 2
+    "no-use-before-define": 2,
+    "vue/max-len": ["error", {
+      "code": 120,
+      "ignoreHTMLAttributeValues": true
+  }]
   }
 }
