@@ -6,3 +6,5 @@ ruby:
   config_file: style/config/.rubocop.yml
 stylelint:
   config_file: style/config/.stylelintrc.json
+coffeescript:
+  enabled: false
