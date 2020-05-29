@@ -57,7 +57,7 @@ Si el proyecto no fue creado con Potassium, en general se puede instalar siguien
 
 TailwindCSS se describe como un framework utility-**first**, en otras palabras mientras se recomienda usar sus clases para todo, hay casos en que hace sentido [extraer html a componentes de Vue o partials de Rails](https://tailwindcss.com/docs/extracting-components). En casos especiales o muy simples (como botones) también se pueden extraer solo las clases a CSS usando [la directiva @apply](https://tailwindcss.com/docs/extracting-components/#extracting-css-components-with-apply) de Tailwind.
 
-Hay que tener cuidado y aplicar criterio para extraer _**solo componentes que se repiten muchas veces**_ (si es que la razón para extraerlo es solo la repetición de clases).
+Hay que tener cuidado y aplicar criterio para extraer _**solo componentes que se repiten muchas veces**_ (si es que la razón para extraerlo es solo la repetición de clases). Para mantener el orden del CSS, se recomienda usar [BEM](./bem.md) como en el siguiente ejemplo.
 
 ```html
 <button class="btn btn--secondary mr-2">Cancelar</button>
