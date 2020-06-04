@@ -16,6 +16,7 @@
   * [Rails](stack/ruby/rails/README.md)
     * [Potassium](https://github.com/platanus/potassium)
     * [Power Types](stack/ruby/rails/powertypes.md)
+    * [Power API](stack/ruby/rails/power_api/md)
     * [Active Admin](stack/ruby/rails/activeadmin.md)
   * [Gems](stack/ruby/gems.md)
 * [Javascript](stack/js/README.md)
@@ -23,7 +24,8 @@
     * [General](stack/js/vue/general.md)
     * [Testing](stack/js/vue/tests.md)
 * [CSS](stack/css/README.md)
-  * [General](stack/css/general.md)
+  * [Tailwind CSS](stack/css/tailwind.md)
+  * [BEM](stack/css/bem.md)
 
 ## Setup
 
