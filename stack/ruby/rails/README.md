@@ -6,3 +6,4 @@
 * [Power API](power_api.md): gemas y configuraciones pensadas para construir APIs REST de calidad.
 * [Active Admin](activeadmin.md): es la gema que utilizamos para manejar el back office de nuestras aplicaciones web.
 * [Shrine](shrine.md): es la gema que utilizamos para manejar el almacenamiento de archivos.
+* [Pry](pry.md): es la gema que utilizamos para debuggear mientras desarrollamos y como la consola por defecto.
