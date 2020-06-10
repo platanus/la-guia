@@ -5,3 +5,4 @@
 * [Power Types](powertypes.md): patrones que usamos en Rails rompiendo un poco el MVC :speak_no_evil:.
 * [Power API](power_api.md): gemas y configuraciones pensadas para construir APIs REST de calidad.
 * [Active Admin](activeadmin.md): es la gema que utilizamos para manejar el back office de nuestras aplicaciones web.
+* [Shrine](shrine.md): es la gema que utilizamos para manejar el almacenamiento de archivos.

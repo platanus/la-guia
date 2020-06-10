@@ -18,6 +18,7 @@
     * [Power Types](stack/ruby/rails/powertypes.md)
     * [Power API](stack/ruby/rails/power_api/md)
     * [Active Admin](stack/ruby/rails/activeadmin.md)
+    * [Shrine](stack/ruby/rails/shrine.md)
   * [Gems](stack/ruby/gems.md)
 * [Javascript](stack/js/README.md)
   * [Vue](stack/js/vue/README.md)
