@@ -163,6 +163,7 @@ include ProfilePictureUploader::Attachment(:profile_picture)
 - [Documentación oficial](https://shrinerb.com/): muy buena, con guías y secciones explicando los distintos plugins.
 - [Repo en Github](https://github.com/shrinerb/shrine)
 - [Cómo implementar Direct Upload](https://github.com/shrinerb/shrine/wiki/Adding-Direct-S3-Uploads): subir archivo directamente a S3 de manera asíncrona
+- [Demo Direct Upload + Vue](https://drive.google.com/file/d/1fwrZ1tLZa_xeSp2j57iKFgjNlgDxXAM9/view?usp=sharing): presentación al equipo de Platanus para introducir Shrine. Se arma un componente Vue para manejar el Direct Upload que puede ser usado dentro de un form de Rails
 
 #### Recursos útiles para plataneros
 - [Implementación Direct Upload](https://github.com/platanus/gret/pull/22): PR implementando Direct Upload para ser usado en ActiveAdmin
