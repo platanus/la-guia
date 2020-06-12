@@ -42,6 +42,8 @@ Con esto ya podemos empezar a incluir imágenes en los modelos. Si queremos un `
 include ImageUploader::Attachment(:photo)
 ```
 
+> El nombre de la columna **siempre** debe incluir el sufijo `_data`
+
 #### Ejemplo: heredando de un uploader
 Ahora, imaginemos que se quiere agregar una imagen de perfil para los usuarios. Podríamos usar el `ImageUploader` definido antes, pero se quieren un par de cosas extra para esta `profile_picture`:
 
