@@ -42,6 +42,8 @@ Con esto ya podemos empezar a incluir imágenes en los modelos. Si queremos un `
 include ImageUploader::Attachment(:photo)
 ```
 
+> El nombre de la columna **siempre** debe incluir el sufijo `_data`
+
 #### Ejemplo: heredando de un uploader
 Ahora, imaginemos que se quiere agregar una imagen de perfil para los usuarios. Podríamos usar el `ImageUploader` definido antes, pero se quieren un par de cosas extra para esta `profile_picture`:
 
@@ -162,7 +164,8 @@ include ProfilePictureUploader::Attachment(:profile_picture)
 ### Recursos útiles
 - [Documentación oficial](https://shrinerb.com/): muy buena, con guías y secciones explicando los distintos plugins.
 - [Repo en Github](https://github.com/shrinerb/shrine)
-- [Cómo implementar Direct Upload](https://github.com/shrinerb/shrine/wiki/Adding-Direct-S3-Uploads): subir archivo directamente a S3 de manera asíncrona
+- [Direct S3 Upload](https://github.com/shrinerb/shrine/wiki/Adding-Direct-S3-Uploads) / [Direct App Upload](https://github.com/shrinerb/shrine/wiki/Adding-Direct-App-Uploads): ambos sirven para subir un archivo antes de que se le haga submit a un form. La diferencia radica en que el de S3 lo sube directamente a AWS, mientras que el otro lo sube a un `upload_endpoint` de la aplicación. Para ambientes que no tienen un bucket S3 (como `development`, en que se guardan los archivos en el filesystem) habría que usar Direct App Upload
+- [Demo Direct Upload + Vue](https://drive.google.com/file/d/1fwrZ1tLZa_xeSp2j57iKFgjNlgDxXAM9/view?usp=sharing): presentación al equipo de Platanus para introducir Shrine. Se arma un componente Vue para manejar el Direct Upload que puede ser usado dentro de un form de Rails
 
 #### Recursos útiles para plataneros
 - [Implementación Direct Upload](https://github.com/platanus/gret/pull/22): PR implementando Direct Upload para ser usado en ActiveAdmin
