@@ -37,11 +37,3 @@ El programa está orientado a estudiantes que hayan tenido más de un curso de p
 ### Cómo postular
 
 Para postular visita [esta página](https://platan.us/jobs) y busca el trabajo con el título "Trainee".
-
-### ¿Cuánto se paga?
-
-$250.000 al mes por 5 medios días (medio tiempo). Si quieres trabajar full-time, entonces $500.000.
-
-Puede trabajar una combinación de días enteros y medios días. Se puede conversar estar 4 medios días en vez de 5.
-
-Al terminar el programa, se puede optar por trabajar developer part-time por $750.000.
