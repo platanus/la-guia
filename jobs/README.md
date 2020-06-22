@@ -8,7 +8,7 @@ Por otro lado, estamos convencidos que los proyectos de la universidad no son su
 
 ### Beneficios para el part timer
 
-- Obtener formación como Ingeniero de Software en el mundo real, con productos reales, de manera pagada
+- Obtener formación en Ingeniería de Software en el mundo real, con productos reales, de manera pagada
 - Aprender y aplicar técnicas de desarrollo ágil en el mundo real
 - Aprender y aplicar técnicas de desarrollo de productos y emprendimiento en el mundo real
 - Asimilar y aplicar buenas prácticas de desarrollo
@@ -16,11 +16,11 @@ Por otro lado, estamos convencidos que los proyectos de la universidad no son su
 
 ### Beneficios para Platanus
 
-- Generar contacto con nuevos ingenieros
-- Ofrecer oportunidades laborales a los egresados del programa
+- Generar contacto con nuevas y nuevos ingenieros
+- Ofrecer oportunidades laborales a quienes egresen del programa
 - Desarrollar productos y proyectos internos
 - Habilitar nuevos modelos de trabajo con clientes
-- Algo que nos gusta harto: participar en la formación de ingenieros de software
+- Algo que nos gusta harto: participar en la formación de futuros ingenieros o ingenieras de software
 
 ### Cómo funciona
 
@@ -32,7 +32,7 @@ El programa está orientado a estudiantes que hayan tenido más de un curso de p
 - Contarás con todo el apoyo del equipo Platanus para la revisión de código y para enseñarte lo que sea necesario.
 - Se te asignará un mentor que estará encargado de resolver tanto dudas generales de la oficina como dudas técnicas, y de redirigirte a la persona indicada para resolver preguntas específicas.
 - Deberás trackear el tiempo de trabajo con Harvest.
-- El programa durará 4 meses. Luego hay tres opciones: renovar en el programa, ser contratado como desarrollador part-time o full-time, o se termina el programa.
+- El programa durará 4 meses. Luego hay tres opciones: renovar en el programa, ser contratado como developer part-time o full-time, o se termina el programa.
 
 ### Cómo postular
 
