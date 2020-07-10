@@ -24,7 +24,7 @@ Algunas operaciones peligrosas que es muy común realizar de manera insegura son
 
 #### Proyectos chicos
 
-En algunos casos las verificaciones que realiza esta gema pueden ser innecesarias si el proyecto está en una etapa temprana o es muy acotado, debido a que ciertos problemas solo surgen cuando el tráfico de las tablas es grande y el tamaño también.
+En algunos casos las verificaciones que realiza esta gema pueden ser innecesarias si el proyecto está en una etapa temprana o es muy acotado, debido a que ciertos problemas solo surgen cuando el tráfico de las tablas es grande y el tamaño también. Lo anterior también aplica para proyectos más avanzados pero que deseen modificar tablas de la base de datos que no cuenten con información, o que presentan un uso muy limitado.
 
 Si efectivamente es el caso y se cree que los riesgos de correr dichas migraciones son bajos o nulos, la gema ofrece la opción de realizar la migración de todas maneras. Por ejemplo si se desea renombrar una columna, strong migrations alerta sobre los riesgos, pero se puede marcar la operación como segura de la siguiente forma:
 
