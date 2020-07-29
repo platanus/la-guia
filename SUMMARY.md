@@ -12,6 +12,7 @@
 
 ## Stack
 
+* [Getting Started](stack/intro.md)
 * [Ruby](stack/ruby/README.md)
   * [Rails](stack/ruby/rails/README.md)
     * [Potassium](https://github.com/platanus/potassium)
