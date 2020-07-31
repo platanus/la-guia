@@ -22,6 +22,7 @@
     * [Shrine](stack/ruby/rails/shrine.md)
     * [Pry](stack/ruby/rails/pry.md)
     * [Strong Migrations](stack/ruby/rails/strong_migrations.md)
+    * [Sidekiq](stack/ruby/rails/sidekiq.md)
   * [Gems](stack/ruby/gems.md)
 * [Javascript](stack/js/README.md)
   * [Vue](stack/js/vue/README.md)
