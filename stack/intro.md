@@ -21,8 +21,7 @@ El resto de la guía contiene información específica de cómo hacemos las cosa
 
 - [Ruby Programming Language](https://www.youtube.com/watch?v=t_ispmWmdjY): introducción básica a Ruby.
 - [Rails 5: The Tour](https://youtu.be/OaDhY_y8WTo): introducción básica a Rails. Está hecho a partir de Rails 5 (aunque ya vamos por la versión 6) pero en esencia es lo mismo y es material oficial.
-- [Ruby on Rails Guides](https://guides.rubyonrails.org/active_job_basics.html): guía oficial de Ruby on Rails. Toda la guía es excelente pero quizás es un poco grande. De aquí al menos revisaría: [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html), [Active Record Basics](https://guides.rubyonrails.org/active_record_basics.html), [Active Record Migrations
-](https://guides.rubyonrails.org/active_record_migrations.html), [Action Controller Overview](https://guides.rubyonrails.org/action_controller_overview.html), [Layouts and Rendering in Rails](https://guides.rubyonrails.org/layouts_and_rendering.html) y [Action Mailer Basics](https://guides.rubyonrails.org/action_mailer_basics.html).
+- [Ruby on Rails Guides](https://guides.rubyonrails.org/active_job_basics.html): guía oficial de Ruby on Rails. Toda la guía es excelente pero quizás es un poco grande. De aquí al menos revisaría: [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html), [Active Record Basics](https://guides.rubyonrails.org/active_record_basics.html), [Active Record Migrations](https://guides.rubyonrails.org/active_record_migrations.html), [Action Controller Overview](https://guides.rubyonrails.org/action_controller_overview.html), [Layouts and Rendering in Rails](https://guides.rubyonrails.org/layouts_and_rendering.html) y [Action Mailer Basics](https://guides.rubyonrails.org/action_mailer_basics.html).
 
 #### Vue
 
