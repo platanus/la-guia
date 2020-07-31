@@ -8,3 +8,4 @@
 * [Shrine](shrine.md): es la gema que utilizamos para manejar el almacenamiento de archivos.
 * [Pry](pry.md): es la gema que utilizamos para debuggear mientras desarrollamos y como la consola por defecto.
 * [Strong Migrations](strong_migrations.md): es la gema que utilizamos para forzar prácticas seguras a la hora de modificar el schema de la base de datos.
+* [Sidekiq](sidekiq.md): es la gema que usamos para correr tareas de manera asíncrona.

@@ -172,6 +172,7 @@ Podemos definir la recurrencia de este Job usando un [Cron](https://crontab.guru
 - [Sidekiq-history](https://github.com/russ/sidekiq-history)
 - [ActiveJob](https://edgeguides.rubyonrails.org/active_job_basics.html)
 - [Buenas prácticas](https://github.com/mperham/sidekiq/wiki/Best-Practices)
+- [Active Job Log](https://github.com/platanus/active_job_log)
 
 ### Sidekiq Pro
 
