@@ -60,7 +60,7 @@ TailwindCSS se describe como un framework utility-**first**, en otras palabras m
 Hay que tener cuidado y aplicar criterio para extraer _**solo componentes que se repiten muchas veces**_ (si es que la razón para extraerlo es solo la repetición de clases). Para mantener el orden del CSS, se recomienda usar [BEM](./bem.md) como en el siguiente ejemplo.
 
 ```html
-<button class="btn btn--secondary mr-2">Cancelar</button>
+<button class="mr-2 btn btn--secondary">Cancelar</button>
 <button class="btn btn--primary">Aceptar</button>
 ```
 
@@ -98,3 +98,6 @@ Hay que tener cuidado y aplicar criterio para extraer _**solo componentes que se
 - [Tailwind CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) (VS Code): Agrega autocompletado de clases al escribir HTML.
 - [Tailwind Docs](https://marketplace.visualstudio.com/items?itemName=austenc.tailwind-docs) (VS Code): Permite buscar la documentación de Tailwind directamente desde el editor.
 - [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) (VS Code): Estandariza el orden de las clases de Tailwind al guardar.
+  > Por defecto Headwind no detecta las clases que se agregan a helpers de rails en un `.erb` usando `class:`. Para permitir esto se puede editar [la configuración de la extensión](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind#headwind.classregex) en el `settings.json` de VSCode y poner el siguiente regex en la sección de `html`:
+  >
+  >`\\bclass\\s*[=:]\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\']`
