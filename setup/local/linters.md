@@ -1,60 +1,39 @@
 ## Linters
 
-Para que todos los desarrolladores de Platanus sigamos las mismas reglas de estilo, usamos los siguientes linters:
+Usamos `rubocop` para Ruby, `eslint` para JS y `stylelint` para CSS. Actualmente incluímos estos linters como dependencias de desarrollo en nuestros proyectos tanto en el `package.json` como el `Gemfile`. Debido a esto, no se necesita instalar nada aparte y basta con correr `yarn install` y `bundle install`.
 
-```sh
-# ruby
-gem install rubocop -v '0.65.0'
-gem install rubocop-rspec -v '1.35.0'
+Además de los linters, cada proyecto incluye archivos con sus reglas.
 
-# js
-npm install -g eslint
-npm install -g eslint-plugin-import
-npm install -g eslint-plugin-vue
+> En el `Gemfile` verás que la versión de `rubocop` está restringida. Hay que tener cuidado al modificarla ya que no siguen Semantic Versioning y es común que un cambio en el _minor_ introduzca _breaking changes_ como cambio de nombre de alguna regla que podría estar definida en el proyecto.
 
-# typescript
-npm install -g tslint typescript
+### Tips
 
-# stylelint (css, scss)
-# Solo Sublime Text requiere que esté instalado
-npm install -g stylelint
-```
+- Antes de hacer un _commit_ recuerda revisar los warnings de los linters
+- Deberías fijarte solo en los warnings sobre el código que estás tocando, no es necesario corregir todos los problemas que tenga un archivo antes de agregar una feature en este
+- Si se debe arreglar un warning puntual sobre un código de tu rama que ya se _commiteo_ una opción es hacer el cambio con un `rebase` o `fixup`, cambiando el commit en el que se introdujo el problema. Esto para dejar la historia más limpia evitando los commits del tipo `style(): fix linter warnings`
 
 ### Plugins
 
 Para correr los linters de manera más cómoda, podemos instalar los siguientes plugins:
 
-#### Atom
-
-* [Linter](https://atom.io/packages/linter)
-* [Ruby](https://atom.io/packages/linter-rubocop)
-* [ES](https://atom.io/packages/linter-eslint)
-* [TypeScript](https://atom.io/packages/linter-tslint)
-* [stylelint](https://atom.io/packages/linter-stylelint)
-
 #### VScode
 
-* [Ruby](https://github.com/misogi/vscode-ruby-rubocop)
+* [Ruby](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 * [ES](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-* [TypeScript](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 * [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
-Para que funcione Rubocop, se debe agregar la siguiente configuración en los Settings:
-
-```
-"ruby.rubocop.executePath": "/Users/TU_USUARIO/.rbenv/shims/"
-```
+> Con la extensión de rubocop podrían haber problemas si se tiene un `.rubocop.yml` en tu `root` por algún otro proyecto. Esto dado que al _lintear_ se tratan de combinar esas reglas con las locales del proyecto. Si hay diferencia entre la versión de rubocop para la que están hechos ambos archivos de reglas esto podría resultar en error como este: `Metrics/LineLength has the wrong namespace`.
+> 
+> Para evitar esto (sin borrar el archivo del `root`) se puede modificar los settings de la extensión para el proyecto e incluir lo siguiente:
+> `"ruby.rubocop.configFilePath": "./.rubocop.yml"`
 
 #### Sublime
 
 * [Linter](https://github.com/SublimeLinter/SublimeLinter3)
 * [Ruby](https://github.com/SublimeLinter/SublimeLinter-rubocop)
 * [ES](https://github.com/roadhump/SublimeLinter-eslint)
-* [TypeScript](https://github.com/lavrton/SublimeLinter-contrib-tslint)
-* [stylelint](https://github.com/kungfusheep/SublimeLinter-contrib-stylelint)
+* [stylelint](https://github.com/SublimeLinter/SublimeLinter-stylelint)
 
-#### RubyMine
+#### Vim
 
-* [Ruby](https://plugins.jetbrains.com/plugin/7604?pr=)
-* [ES](https://plugins.jetbrains.com/plugin/7494?pr=)
-* [stylelint](https://www.jetbrains.com/help/ruby/2017.1/using-stylelint-code-quality-tool.html)
+Configurar los linters para que funcionen solo con vim puede ser un poco enredado. Una alternativa es usar VSCode con sus extensiones de linters y [esta extensión de Vim](https://github.com/VSCodeVim/Vim), alcanzando así un punto medio entre la experiencia de uso de un editor más moderno y las _features_ de vim.
