@@ -511,6 +511,19 @@ Muchas veces en un formulario de Active Admin necesitamos un input custom. Por e
 
 <img src="./assets/active-admin-custom-input.gif" />
 
+#### Filtros custom
+
+Para manejar la búsqueda de los filtros ActiveAdmin por debajo usa [Ransack](https://github.com/activerecord-hackery/ransack). Esta gema usa [distintos sufijos](https://github.com/activerecord-hackery/ransack#search-matchers) para indicar distintos tipos de búsqueda. Además, nos permite hacer búsquedas con respecto a [atributos de asociaciones](https://github.com/activerecord-hackery/ransack#associations).
+
+Por ejemplo, si queremos buscar blogs por nombre de usuario:
+
+```
+filter :user_name_cont
+```
+
+Aquí `_cont` indica que se entregarán los resultados que contengan el valor dado. Podríamos haber usado `_eq` si quisieramos un match perfecto, por ejemplo.
+
+
 ### Recursos útiles
 
 - [Active Admin Docs](https://activeadmin.info/documentation.html)
