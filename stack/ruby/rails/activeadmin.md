@@ -393,6 +393,43 @@ Hay veces que necesitamos agregar nuevos endpoints con HTML a medida. Para hacer
 
    sería equivalente a lo de `/app/views/admin/blogs/preview.html.erb` en Arbre.
 
+#### <a name="shrine-download"></a>Link de download para archivos
+
+> Para manejo de archivos se supone el uso de [Shrine](shrine.md)
+
+Suponiendo que el blog tiene un archivo `image`:
+
+1. Agregar la `member_action`:
+
+    ```
+    member_action :download, method: :get do
+      blog = Blog.find(params[:id])
+      send_file blog.image.download
+    end
+    ```
+
+2. Agregar el `action_item`:
+
+    ```
+    action_item :download, only: :show, if: -> { blog.image.present? } do
+      link_to 'Download', download_admin_blog_path(blog)
+    end
+    ```
+
+3. Agregar link a las `actions` en el index
+
+    ```
+    index do
+      column :id
+      .
+      .
+      .
+      actions defaults: true do |blog|
+        link_to 'Download Image', download_admin_blog_path(blog)
+      end
+    end
+    ```
+
 #### JavaScript en una vista
 
 Si necesitas agregar alguna pequeña inteligencia en una vista de Active Admin puedes:
@@ -473,6 +510,19 @@ Muchas veces en un formulario de Active Admin necesitamos un input custom. Por e
   ```
 
 <img src="./assets/active-admin-custom-input.gif" />
+
+#### Filtros custom
+
+Para manejar la búsqueda de los filtros ActiveAdmin por debajo usa [Ransack](https://github.com/activerecord-hackery/ransack). Esta gema usa [distintos sufijos](https://github.com/activerecord-hackery/ransack#search-matchers) para indicar distintos tipos de búsqueda. Además, nos permite hacer búsquedas con respecto a [atributos de asociaciones](https://github.com/activerecord-hackery/ransack#associations).
+
+Por ejemplo, si queremos buscar blogs por nombre de usuario:
+
+```
+filter :user_name_cont
+```
+
+Aquí `_cont` indica que se entregarán los resultados que contengan el valor dado. Podríamos haber usado `_eq` si quisieramos un match perfecto, por ejemplo.
+
 
 ### Recursos útiles
 
