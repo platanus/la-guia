@@ -393,6 +393,43 @@ Hay veces que necesitamos agregar nuevos endpoints con HTML a medida. Para hacer
 
    sería equivalente a lo de `/app/views/admin/blogs/preview.html.erb` en Arbre.
 
+#### <a name="shrine-download"></a>Link de download para archivos
+
+> Para manejo de archivos se supone el uso de [Shrine](shrine.md)
+
+Suponiendo que el blog tiene un archivo `image`:
+
+1. Agregar la `member_action`:
+
+    ```
+    member_action :download, method: :get do
+      blog = Blog.find(params[:id])
+      send_file blog.image.download
+    end
+    ```
+
+2. Agregar el `action_item`:
+
+    ```
+    action_item :download, only: :show, if: -> { blog.image.present? } do
+      link_to 'Download', download_admin_blog_path(blog)
+    end
+    ```
+
+3. Agregar link a las `actions` en el index
+
+    ```
+    index do
+      column :id
+      .
+      .
+      .
+      actions defaults: true do |blog|
+        link_to 'Download Image', download_admin_blog_path(blog)
+      end
+    end
+    ```
+
 #### JavaScript en una vista
 
 Si necesitas agregar alguna pequeña inteligencia en una vista de Active Admin puedes:
