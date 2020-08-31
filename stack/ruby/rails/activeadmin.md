@@ -393,7 +393,7 @@ Hay veces que necesitamos agregar nuevos endpoints con HTML a medida. Para hacer
 
    sería equivalente a lo de `/app/views/admin/blogs/preview.html.erb` en Arbre.
 
-#### <a name="shrine-download"></a>Link de download para archivos
+#### Link de download para archivos
 
 > Para manejo de archivos se supone el uso de [Shrine](shrine.md)
 
