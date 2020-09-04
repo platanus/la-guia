@@ -4,3 +4,4 @@ Ocupamos [React Native](https://reactnative.dev/) para desarrollar proyectos mó
 
 * [Expo](expo.md)
 * [React Navigation](react-navigation.md)
+* [Redux](redux.md)
