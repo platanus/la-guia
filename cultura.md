@@ -25,7 +25,7 @@ Generalmente el trabajo se traduce en:
 
 * Aportar en los inicializadores de aplicaciones ([Potassium](https://github.com/platanus/potassium) por ejemplo)
 * Aportar aquí mismo en [La Guía](http://www.github.com/platanus/la-guia)
-* Un post para nuestro [blog](https://blog.platan.us), [guia del blog](blog.md)
+* Un post para nuestro [blog](https://plata.news)
 * Preparar o participar de un workshop o presentación
 * Participar en _cónclaves_ sobre distintos temas de interés (desarrollo móvil, estrategias de gestión de proyectos, etc)
 * Aprender nuevas técnicas que hacen mi trabajo más eficiente
