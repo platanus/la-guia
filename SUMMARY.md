@@ -32,6 +32,12 @@
 * [CSS](stack/css/README.md)
   * [Tailwind CSS](stack/css/tailwind.md)
   * [BEM](stack/css/bem.md)
+* [Mobile](stack/mobile/README.md)
+  * [Expo](stack/mobile/expo.md)
+  * [React Navigation](stack/mobile/react-navigation.md)
+  * [Redux](stack/mobile/redux.md)
+  * [Resources](stack/mobile/resources.md)
+  * [Styling](stack/mobile/styling.md)
 
 ## Setup
 
@@ -48,6 +54,7 @@
   * [Vue](setup/proyectos/vue.md)
   * [Apple App Store](setup/proyectos/apple-app-store.md)
   * [Google Play](setup/proyectos/google-play.md)
+  * [Expo](setup/proyectos/expo.md)
 
 ## Herramientas
 * [Diseño/UX](tools/design/README.md)
