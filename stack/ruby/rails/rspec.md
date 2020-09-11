@@ -139,9 +139,6 @@ Esta vez vamos a correr solamente este test, para ahorrarnos un poquito de tiemp
 
 <img src="./assets/rspec-specific-test.png" />
 
-
-Si quieres ver un ejemplo más complejo (y realista) de testing de un proyecto con Rails, puedes ver el que hay en el documento de [PowerAPI](./power_api.md).
-
 ### Recursos Útiles
 
 - [RSpec cheat sheet](https://devhints.io/rspec): una lista resumen de cosas útiles que se pueden hacer con RSpec, y de qué manera se pueden testear las condiciones que queremos.
