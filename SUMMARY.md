@@ -45,7 +45,7 @@
   * [General](setup/local/general.md)
   * [Ruby](setup/local/ruby.md)
   * [Node](setup/local/node.md)
-  * [Homebrew](setup/local/node.md)
+  * [Homebrew](setup/local/homebrew.md)
   * [Linters](setup/local/linters.md)
 * [Proyectos](setup/proyectos/README.md)
   * [Heroku](setup/proyectos/heroku.md)
