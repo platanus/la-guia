@@ -34,6 +34,11 @@ El programa está orientado a estudiantes que hayan tenido más de un curso de p
 - Deberás trackear el tiempo de trabajo con Harvest.
 - El programa durará 4 meses. Luego hay tres opciones: renovar en el programa, ser contratado como developer part-time o full-time, o se termina el programa.
 
+### Nivel de experiencia
+Para sacar el mayor provecho posible del programa de trainee, necesitas una mini base de conocimiento.
+
+Hicimos [una guía](https://plata.news/blog/recursos-de-aprendizaje-101/) de los primeros aprendizajes sobre programación. Mírala y si sientes que conoces relativamente bien lo que sale ahí, entonces estás en muy buen camino para postular.
+
 ### Cómo postular
 
 Para postular visita [esta página](https://platan.us/jobs) y busca el trabajo con el título "Trainee".
