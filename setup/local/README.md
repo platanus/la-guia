@@ -3,5 +3,5 @@
 * [General](general.md)
 * [Ruby](ruby.md)
 * [Node](node.md)
-* [Homebrew](node.md)
+* [Homebrew](homebrew.md)
 * [Linters](linters.md)
