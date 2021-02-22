@@ -7,3 +7,4 @@
 * [Apple App Store](apple-app-store.md)
 * [Google Play](google-play.md)
 * [Expo](expo.md)
+* [S3](S3.md)
