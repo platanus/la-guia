@@ -55,6 +55,7 @@
   * [Apple App Store](setup/proyectos/apple-app-store.md)
   * [Google Play](setup/proyectos/google-play.md)
   * [Expo](setup/proyectos/expo.md)
+  * [S3](setup/proyectos/S3.md)
 
 ## Herramientas
 * [Diseño/UX](tools/design/README.md)
