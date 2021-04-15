@@ -5,3 +5,8 @@
 * [Node](node.md)
 * [Homebrew](homebrew.md)
 * [Linters](linters.md)
+
+## Si no usas Mac empieza por acá
+
+* [Windows](windows.md)
+* Linux (pendiente, pero se aplica lo genérico de la guía de Windows)
