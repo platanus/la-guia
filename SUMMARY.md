@@ -47,6 +47,7 @@
   * [Node](setup/local/node.md)
   * [Homebrew](setup/local/homebrew.md)
   * [Linters](setup/local/linters.md)
+  * [Windows](setup/local/windows.md)
 * [Proyectos](setup/proyectos/README.md)
   * [Heroku](setup/proyectos/heroku.md)
   * [Rails](setup/proyectos/rails.md)
