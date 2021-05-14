@@ -42,6 +42,13 @@ wsl --set-default-version 2
 
 6. Para tener un terminal decente instala Windows Terminal desde la [Microsoft Store](https://aka.ms/terminal), desde [el repo](https://github.com/microsoft/terminal/releases) o usando scoop (`scoop install windows-terminal`) (ver [Instalando Utilidades](#instalando-utilidades))
 
+7.  Es posible que sea necesario limitar la cantidad de memoria que WSL usa. Esto se puede lograr editando (o creando) el archivo `C:\Users\TU_USUARIO\.wslconfig` con lo siguiente:
+
+```
+[wsl2]
+memory=4GB
+```
+
 ## Instalando Docker
 
 1. Descarga [Docker Desktop](https://docs.docker.com/docker-for-windows/wsl/#download)
@@ -59,11 +66,18 @@ Una vez instalado Docker y Windows Terminal, el ambiente de desarrollo funciona 
 La mayoría de los proyectos de Platanus modernos usan Docker para los servicios como postgres o redis pero lo siguiente es una lista de los requisitos mínimos y como instalarlos desde Windows Terminal y la shell de Ubuntu:
 
 - git (`sudo apt install git`)
-- rbenv (`sudo apt install rbenv`)
-- nodenv (`curl -fsSL https://raw.githubusercontent.com/nodenv/nodenv-installer/master/bin/nodenv-installer | bash`)
+- rbenv (https://github.com/rbenv/rbenv-installer) y rbenv-aliases (https://github.com/tpope/rbenv-aliases)
+- nodenv (https://github.com/nodenv/nodenv-installer) y nodenv-aliases (https://github.com/nodenv/nodenv-aliases)
+- yarn (`npm install -g yarn` o https://github.com/pine/nodenv-yarn-install para no tener que instalarlo a mano con cada versión de node)
+- dependencia para la gema pg (`sudo apt install libpq-dev`)
 
 {% hint style="info" %}
-A pesar que WSL 2 lo permite, no te recomendamos clonar los proyectos dentro del filesystem de Windows (`/mnt/c` o similar) por temas de performance. Lo mejor es mantener los proyectos dentro del filesystem de Linux (`~/`). Si necesitas entrar a estas carpetas con File Explorer puedes hacerlo ejecutando `explorer.exe . ` en la carpeta correspondiente o navegando a `\\wsl$\Ubuntu-20.04\home\TU_USUARIO\`
+Si tienes Git for Windows instalado (con scoop: `scoop install git`) puedes usar Git Credential Manager de Windows para que se encargue de recordar tus credenciales de GitHub en WSL.
+`git config --global credential.helper /mnt/c/Users/TU_USUARIO/scoop/apps/git/current/mingw64/libexec/git-core/git-credential-manager-core.exe`
+{% endhint %}
+
+{% hint style="info" %}
+A pesar que WSL 2 lo permite, no te recomendamos clonar los proyectos dentro del filesystem de Windows (`/mnt/c` o similar) por temas de performance. Lo mejor es mantener los proyectos dentro del filesystem de Linux (`~/`). Si necesitas entrar a estas carpetas con File Explorer puedes hacerlo ejecutando `explorer.exe . ` en la carpeta correspondiente o navegando a `\\wsl$\Ubuntu-20.04\home\TU_USUARIO\`. En Windows Terminal puedes configurar que siempre se abra en tu home en las opciones.
 {% endhint %}
 
 ## Usando VS Code
@@ -85,3 +99,5 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 https://docs.microsoft.com/en-us/windows/terminal/get-started
 
 https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers
+
+https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig
