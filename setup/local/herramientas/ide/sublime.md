@@ -1,24 +1,5 @@
 ## Sublime Text
-
-### Atajos de teclado útiles:
-* `⌘`+`d` permite duplicar la selección actual creando cursores múltiples
-
-![⌘ + d](http://i.imgur.com/YNh8iOU.gif)
-
-* `CTRL`+`⌘`+`g` busca la selección actual en todo el documento.
-
-![CTRL * ⌘ + g](http://i.imgur.com/rT98qSb.gif)
-
-* `⌘`+`⇧`+`l` separa la seleccion actual en lineas independientes
-
-![⌘+⇧+l](http://i.imgur.com/thBg30o.gif)
-
-* `⌘`+`j` une la selección en una sola linea.
-
-![⌘+j](http://i.imgur.com/daTBTgv.gif)
-
 ### Extensiones
-
 #### Genéricas
 
 * **[EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)**: Nos ayuda a mantener un estilo de código (espacios o tabs, sangrado, etc) consistente en los proyectos de Platanus.
@@ -57,3 +38,32 @@
 * **[SublimeLinter-eslint](https://github.com/SublimeLinter/SublimeLinter-eslint)**: Hace linting directamente en el editor usando ESlint (y archivos `.eslintrc.json`).
 * **[AngularJS](https://github.com/angular-ui/AngularJS-sublime-package)**: Agrega "ir a definición", autocompletado de funciones, entre otras cosas.
 * **[AngularJS Snippets (John Papa)](http://www.johnpapa.net/angularjs-snippets-for-sublime-visual-studio-and-webstorm/)**: Agrega snippets basados en la [guía de estilo](https://github.com/johnpapa/angular-styleguide) para AngularJs de John Papa.
+
+
+### OSX
+
+#### Atajos de teclado útiles:
+* `⌘`+`d` permite duplicar la selección actual creando cursores múltiples
+
+![⌘ + d](http://i.imgur.com/YNh8iOU.gif)
+
+* `CTRL`+`⌘`+`g` busca la selección actual en todo el documento.
+
+![CTRL * ⌘ + g](http://i.imgur.com/rT98qSb.gif)
+
+* `⌘`+`⇧`+`l` separa la seleccion actual en lineas independientes
+
+![⌘+⇧+l](http://i.imgur.com/thBg30o.gif)
+
+* `⌘`+`j` une la selección en una sola linea.
+
+![⌘+j](http://i.imgur.com/daTBTgv.gif)
+
+### Windows
+
+TODO
+
+
+### Linux
+
+TODO

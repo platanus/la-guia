@@ -42,12 +42,20 @@
 ## Setup
 
 * [Local](setup/local/README.md)
-  * [General](setup/local/general.md)
-  * [Ruby](setup/local/ruby.md)
-  * [Node](setup/local/node.md)
-  * [Homebrew](setup/local/homebrew.md)
-  * [Linters](setup/local/linters.md)
-  * [Windows](setup/local/windows.md)
+  * [Instalación Base](setup/local/base/README.md)
+    * [OSX](setup/local/base/osx.md)
+    * [Windows](setup/local/base/windows.md)
+    * [Linux](setup/local/base/linux.md)
+  * [Herramientas](setup/local/herramientas/README.md)
+    * [Linters](setup/local/herramientas/linters.md)
+    * [Editores](setup/local/herramientas/ide/README.md)
+      * [VS Code](setup/local/herramientas/ide/visual-studio-code.md)
+      * [Sublime Text](setup/local/herramientas/ide/sublime.md)
+    * [Diseño](setup/local/herramientas/design/README.md)
+      * [Abstract](setup/local/herramientas/design/abstract.md)
+    * [Comunicación](setup/local/herramientas/comunicacion/README.md)
+      * [Slack](setup/local/herramientas/comunicacion/slack.md)
+    * [Control de Versiones (Git)](setup/local/herramientas/git.md)
 * [Proyectos](setup/proyectos/README.md)
   * [Heroku](setup/proyectos/heroku.md)
   * [Rails](setup/proyectos/rails.md)
@@ -57,18 +65,7 @@
   * [Google Play](setup/proyectos/google-play.md)
   * [Expo](setup/proyectos/expo.md)
   * [S3](setup/proyectos/S3.md)
-
-## Herramientas
-* [Diseño/UX](tools/design/README.md)
-  * [Abstract](tools/design/abstract.md)
-  * [Sketch](https://www.sketchapp.com/)
-  * [Adobe XD](https://www.adobe.com/la/products/xd.html)
-* [IDE/Editores](tools/ide/README.md)
-  * [Sublime Text](tools/ide/sublime.md)
-  * [VS Code](tools/ide/visual-studio-code.md)
-* [Control de Versiones (Git)](tools/git.md)
-* [Comunicación](tools/comunicacion/README.md)
-* [Trello](https://trello.com/)
+  * [Git](setup/proyectos/git.md)
 
 ## Deployment
 

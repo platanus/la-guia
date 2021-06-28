@@ -23,7 +23,7 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
 * [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
 > Con la extensión de rubocop podrían haber problemas si se tiene un `.rubocop.yml` en tu `root` por algún otro proyecto. Esto dado que al _lintear_ se tratan de combinar esas reglas con las locales del proyecto. Si hay diferencia entre la versión de rubocop para la que están hechos ambos archivos de reglas esto podría resultar en error como este: `Metrics/LineLength has the wrong namespace`.
-> 
+>
 > Para evitar esto (sin borrar el archivo del `root`) se puede modificar los settings de la extensión para el proyecto e incluir lo siguiente:
 > `"ruby.rubocop.configFilePath": "./.rubocop.yml"`
 

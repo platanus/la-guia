@@ -9,7 +9,6 @@ Las secciones son:
 * [Cultura](cultura/README.md)
 * [Stack](stack/README.md)
 * [Setup](setup/README.md)
-* [Herramientas](tools/README.md)
 * [Deployment](deployment/README.md)
 
 Por ejemplo: si te volviste experto en el manejo de [sidekiq](https://github.com/mperham/sidekiq) (herramienta que usamos para el procesamiento en background) deberías agregar este conocimiento a [Stack/Ruby](stack/ruby/README.md)

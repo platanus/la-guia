@@ -9,7 +9,6 @@ Todos estamos invitados a aportar en la construcción de esta [Guía maestra](ht
 * [Cultura](cultura.md): aquí encontrarás información relacionada con nuestra forma de trabajar.
 * [Stack](stack/README.md): en esta sección podrás ver nuestro stack tecnológico. Herramientas usadas, patrones, buenas prácticas, etc.
 * [Setup](setup/README.md): aquí todo lo necesario para configurar tu entorno local de trabajo y los proyectos en los que trabajes.
-* [Herramientas](tools/README.md): acá, las herramientas que utilizamos día a día en Platanus.
 * [Deployment](deployment/README.md): esta parte de la guía reúne la información necesaria para publicar aplicaciones, librerías y gemas.
 * [Contribuir](contribuir.md): aquí verás una serie de requsitos que deberás cumplir si deseas  ayudarnos a seguir evolucionando esta guía.
 

@@ -2,6 +2,8 @@
 
 Para nuestros desarrollos en ruby utilizamos el manejador de versiones [rbenv](https://github.com/rbenv/rbenv) y algunos plugins.
 
+### OSX
+
 ```bash
 # Instala rbenv y ruby-build
 brew install rbenv ruby-build
@@ -16,7 +18,7 @@ Luego debes cargar rbenv en tu shell para que puedas acceder a las diferentes ve
 eval "$(rbenv init -)"
 ```
 
-### Instalando versiones de ruby
+#### Instalando versiones de ruby
 
 Para instalar nuevas versiones de ruby puedes usar el plugin [ruby-build](https://github.com/rbenv/ruby-build)
 
@@ -37,7 +39,7 @@ brew upgrade ruby-build
 
 > **TIP**: El paquete `rbenv-default-gems` tiene como objetivo instalar gemas automáticamente cuando instalas una nueva version de ruby. Para esto crea un archivo en `~/.rbenv/default-gems` y agrega línea por línea el nombre de las gemas que quieres que se instalen. Buenos candidatos son `bundler` y `rails`
 
-### Ruby Aliases
+#### Ruby Aliases
 
 Como estandar en Platanus usamos aliases para definir las versiones de ruby que utilizan los proyectos. De esta manera nos evitamos tener que actualizar los proyectos cada vez que instalas una nueva version de ruby. Esto nos ayuda en menos manteción y en menos uso de espacio en disco.
 
@@ -53,3 +55,11 @@ rbenv alias
 2.3 => 2.3.4
 2.4 => 2.4.1
 ```
+
+### Windows
+
+TODO
+
+### Linux
+
+TODO
