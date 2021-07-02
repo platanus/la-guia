@@ -1,7 +1,11 @@
-## NodeJS Setup
+## Node
 
 Para el uso de node utilizamos el manejador de versiones [nodenv](https://github.com/nodenv/nodenv) y algunos plugins.
 Siempre usamos la versión LTS, poniendo la `major` en el archivo `.node-version`. Es decir, se debe preferir escribir 10 en vez de 10.12.1.
+
+### OSX
+
+#### Instalación
 
 ```bash
 # Instalar nodenv y node-build
@@ -24,3 +28,13 @@ eval "$(nodenv init -)"
 ```
 
 Nodenv es realmente un clone de rbenv pero para node, por lo que funciona muy parecido. Toda la información de la sección de ruby aplica para node.
+
+### Windows
+
+TODO
+
+
+### Linux
+
+TODO
+
