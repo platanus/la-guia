@@ -50,10 +50,16 @@ TODO
 sudo apt install rbenv -y
 ```
 
-Luego debes cargar rbenv en tu shell para que puedas acceder a las diferentes versiones. Para esto debes agregar la siguiente linea en tu `.bashrc` o `.zshrc` dependiendo del shell que uses.
+Luego debes cargar rbenv en tu shell para que puedas acceder a las diferentes versiones. Para esto debes agregar la siguiente linea en tu `.bashrc` o `.zshrc` (este archivo está normalmente en el directorio `$HOME`) dependiendo del shell que uses.
 
 ```bash
 eval "$(rbenv init -)"
+```
+
+Puedes agregarlo con cualquier editor o hacerlo así (reemplaza `~/.bashrc` por `~/.zshrc` si usas zsh en lugar de bash):
+
+```bash
+tee -a ~/.bashrc <<< "eval \"\$(rbenv init -)\""
 ```
 
 Cierra la ventana del terminal y abre una nueva para que los cambios surjan efecto.
