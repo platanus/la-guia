@@ -1,7 +1,8 @@
 ## Docker
 ### OSX
 
-TODO
+Para instalar Docker en Mac encuentras las instrucciones [aquí](https://docs.docker.com/docker-for-mac/install/). 
+Pon atención a la versión de procesador que tienes en tu Mac (Intel Chip o Apple Chip), porque las instrucciones cambian. 
 
 ### Windows
 #### Instalación
