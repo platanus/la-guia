@@ -31,10 +31,61 @@ Nodenv es realmente un clone de rbenv pero para node, por lo que funciona muy pa
 
 ### Windows
 
-TODO
+Para instalar `nodenv` con WSL2, sigue las instrucciones de Linux y en el paso 2 preocupate de usar el comando especial para WSL. 
 
 
 ### Linux
+Las instrucciones para instalar `nodenv` se obtuvieron del [repositorio oficial](https://github.com/nodenv/nodenv#basic-github-checkout) por si tienes alguna duda. 
+1. Clonar `nodenv`
+```bash
+git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+```
+2.  Agrega `~/.nodenv/bin` a tu $PATH para usar los comando en la shell. 
+    * Si usas bash:  
+    ```bash
+    echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bash_profile
+    ```
+    * Si usas Zsh: 
+    ```bash
+    echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.zshrc
+    ```
+    * Si usas Windows con WSL:
+      ```bash
+      echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc
+      ```
+3. Configura `nodenv` en tu shell
+```bash
+~/.nodenv/bin/nodenv init
+```
+Con este comando deberías ver el siguiente mensaje: 
+  ```bash
+  # Load nodenv automatically by appending
+  # the following to ~/.bashrc: 
+  eval "$(nodenv init -)"
 
-TODO
+```
 
+4. Reinicia tu shell para que se apliquen todos los cambios. 
+5. Verifica que `nodev` se instaló correctamente con el siguiente script llamado nodenv-doctor: 
+```bash
+curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
+```
+Con este script deberías ver algo así: 
+<img src="../assets/nodenv-doctor.png" />
+
+6. Instalar plugins necesarios
+   * [nodenv-vars](https://github.com/nodenv/nodenv-vars#installation): 
+   ```bash
+    mkdir -p $(nodenv root)/plugins
+    cd $(nodenv root)/plugins
+    git clone https://github.com/nodenv/nodenv-vars.git
+   ```
+   * [nodenv-aliases](https://github.com/nodenv/nodenv-aliases#installation): 
+   ```bash
+   git clone https://github.com/nodenv/nodenv-aliases.git $(nodenv root)/plugins/nodenv-aliases
+   ```
+   * [node-build](https://github.com/nodenv/node-build#installation):
+   ```bash
+   mkdir -p "$(nodenv root)"/plugins
+   git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+   ```
