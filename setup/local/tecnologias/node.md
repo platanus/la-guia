@@ -105,15 +105,15 @@ Con este comando deberías ver el siguiente mensaje:
   # Load nodenv automatically by appending
   # the following to ~/.bashrc: 
   eval "$(nodenv init -)"
-
-```
+  ```
 
 4. Reinicia tu shell para que se apliquen todos los cambios. 
 5. Verifica que `nodev` se instaló correctamente con el siguiente script llamado nodenv-doctor: 
 ```bash
 curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
 ```
-Con este script deberías ver algo así: 
+Con este script deberías ver algo así:
+
 <img src="../assets/nodenv-doctor.png" />
 
 6. Instalar plugins necesarios
