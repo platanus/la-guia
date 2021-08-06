@@ -56,6 +56,7 @@
     * [Comunicación](setup/local/herramientas/comunicacion/README.md)
       * [Slack](setup/local/herramientas/comunicacion/slack.md)
     * [Control de Versiones (Git)](setup/local/herramientas/git.md)
+  * [Tecnologías](setup/local/tecnologias/README.md)
 * [Proyectos](setup/proyectos/README.md)
   * [Heroku](setup/proyectos/heroku.md)
   * [Rails](setup/proyectos/rails.md)
