@@ -80,12 +80,13 @@ rbenv install 2.4.1
 
 ### Windows
 
-TODO
+Para instalar `rbenv` con WSL2, sigue las instrucciones de Linux.
 
-### Linux
+### Linux (Ubuntu)
 
 ```bash
-# Instala rbenv y ruby-build
+# Instala rbenv
+sudo apt update
 sudo apt install rbenv -y
 ```
 
@@ -102,6 +103,7 @@ tee -a ~/.bashrc <<< "eval \"\$(rbenv init -)\""
 ```
 
 Cierra la ventana del terminal y abre una nueva para que los cambios surjan efecto.
+
 rbenv tiene varios [plugins](https://github.com/rbenv/rbenv/wiki/Plugins). Para instalarlos basta con dejarlos en `~/.rbenv/plugins/`. Recomendamos instalar los siguientes plugins: [`rbenv-vars`](https://github.com/rbenv/rbenv-vars), [`rbenv-aliases`](https://github.com/tpope/rbenv-aliases), [`rbenv-default-gems`](https://github.com/rbenv/rbenv-default-gems):
 
 ```bash
@@ -125,14 +127,14 @@ git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/
 Para instalar nuevas versiones de ruby:
 
 ```bash
+# Actualizar las versiones de ruby disponibles para instalar
+cd $(rbenv root)/plugins/ruby-build && git pull
+
 # Listar todos las versiones disponibles para instalar
 rbenv install --list
 
 # Instalar una version en particular
 rbenv install 2.7.4
-
-# Actualizar las versiones de ruby disponibles para instalar
-cd $(rbenv root)/plugins/ruby-build && git pull
 ```
 
 > **Recomendación**: Define alguna version de ruby que quieras para tener como global haciendo `rbenv global 2.7.4`  De esta manera no estarás usando la version de ruby que trae el sistema operativo. Esto hace que sea más seguro ya que no necesitas usar `sudo` para instalar gemas.
