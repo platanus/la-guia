@@ -9,4 +9,4 @@
 * [Pry](pry.md): es la gema que utilizamos para debuggear mientras desarrollamos y como la consola por defecto.
 * [Strong Migrations](strong_migrations.md): es la gema que utilizamos para forzar prácticas seguras a la hora de modificar el schema de la base de datos.
 * [Data Migrate](data_migrate.md): es la gema que utilizamos para separar las migraciones de data de las de schema.
-* [Sidekiq](sidekiq.md): es la gema que usamos para correr tareas de manera asíncrona.
+* [ActiveJob](active_job.md): es la gema que usamos para correr tareas de manera asíncrona.
