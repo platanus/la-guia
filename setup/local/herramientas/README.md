@@ -5,6 +5,4 @@ Encontrarás tips, plugins, configuraciones, etc.
 
 * [Linters](linters.md)
 * [Editores](ide/README.md)
-* [Diseño](design/README.md)
-* [Comunicación](comunicacion/README.md)
 * [Control de Versiones (Git)](git.md)
