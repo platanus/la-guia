@@ -49,3 +49,13 @@ La Vicky, nuestra chef, nos hace almuerzo todos los días. Pero no para todos. L
 ¿Cómo se decide quiénes almuerzan cada día?
 
 Con un bot que funciona en Slack. [Ham](https://github.com/platanus/lita-lunch-reminder)!
+
+### Slack
+
+Usamos [Slack](https://slack.com/) para conversar.
+
+* Pregunta, pregunta, pregunta. Para cualquier duda técnica, tenemos el canal `#techi-banana` dónde estamos todos los devs de Platanus.
+* No eres un héroe solitario al resolver en 1 hora un problema con el que un compañero te hubiera ayudado en 5 minutos.
+* Jamás serás criticado por no saber algo.
+* Recibirás la [piedra de la verguenza](https://thelonious9.files.wordpress.com/2011/08/piedra.jpg) cuando no reconozcas tu ignorancia.
+* Se deben mantener las conversaciones privadas al mínimo, y utilizar los canales de proyectos para conversaciones relacionadas a los proyectos.
