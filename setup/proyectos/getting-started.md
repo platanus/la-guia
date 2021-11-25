@@ -50,6 +50,5 @@ Ahora, cada vez que quieras levantar o volver a trabajar en el proyecto, puede q
     {% hint style="info" %}
 Para chequear si el container efectivamente está prendido, puedes correr `docker container ls`. Si quieres una alternativa más "visual" puedes usar [Captain](https://getcaptain.co/) en OSX
     {% endhint %}
-1. Si hiciste un PR y te pidieron cambios, por lo general aplicamos esos cambios usando rebase. [En este post](https://plata.news/blog/manteniendo-la-historia-limpia-usando-git-rebase/) tenemos más info sobre rebase y cómo lo usamos para mantener la historia limpia
-1. Si los puntos anteriores no aplican y solo quieres volver a levantar el proyecto, basta con que repitas el paso 5 anterior (`bin/rails s`, 
-`bin/webpack-dev-server` y `bundle exec guard`), no debes correr el `bin/setup` de nuevo ni nada
+1. Si hiciste un PR y te pidieron cambios, por lo general aplicamos esos cambios usando rebase. [En este post de nuestro blog](https://plata.news/blog/manteniendo-la-historia-limpia-usando-git-rebase/) tenemos más info sobre rebase y cómo lo usamos para mantener la historia limpia. También revisa [este post](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html) sobre fixup, otra herramienta del rebase que usamos para esto
+1. Si los puntos anteriores no aplican y solo quieres volver a levantar el proyecto, basta con que repitas el paso 5 anterior (`bin/rails s`, `bin/webpack-dev-server` y `bundle exec guard`), no debes correr el `bin/setup` de nuevo ni nada
