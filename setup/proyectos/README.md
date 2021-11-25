@@ -1,5 +1,6 @@
 ## Configuración de Proyectos
 
+* [Getting Started](getting-started.md)
 * [Heroku](heroku.md)
 * [Rails](rails.md)
 * [Integración Continua](continous-integration.md)

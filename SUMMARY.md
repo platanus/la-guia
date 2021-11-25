@@ -57,6 +57,7 @@
     * [Node](setup/local/tecnologias/node.md)
     * [Docker](setup/local/tecnologias/docker.md)
 * [Proyectos](setup/proyectos/README.md)
+  * [Getting Started](setup/proyectos/getting-started.md)
   * [Heroku](setup/proyectos/heroku.md)
   * [Rails](setup/proyectos/rails.md)
   * [Integración Continua](setup/proyectos/continuous-integration.md)

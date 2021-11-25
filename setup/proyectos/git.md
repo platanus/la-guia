@@ -64,4 +64,4 @@ This commit adds an asynchronous validation when typing on the field so the user
 
 ### Rebase
 
-Para ordenar un poco los commits, usamos fixups y rebase. Puedes leer sobre eso [acá](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html).
+Para ordenar un poco los commits, usamos fixups y rebase. [En este post de nuestro blog](https://plata.news/blog/manteniendo-la-historia-limpia-usando-git-rebase/) puedes leer sobre rebase y cómo lo usamos para mantener la historia limpia. También revisa [este post](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html) sobre fixup, otra herramienta del rebase que usamos para esto.
