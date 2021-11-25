@@ -28,6 +28,20 @@ Esto es solo posible gracias a [filter_run_when_matching](https://relishapp.com/
         {% endhint %}
     - `bin/rails c`: abre la consola de rails. En ella puedes probar cosas, por ejemplo, buscar o crear records. Puedes correr cualquier código Ruby/Rails, llamar a modelos/jobs/clients definidos en el proyecto, etc. No es estrictamente necesario, pero puede ser muy útil
 
+{% hint style="info" %}
+Es posible que haciendo el setup te encuentres con un error como el siguiente:
+> gyp verb 'which' failed Error: not found: python2
+
+Si te ocurre, puede que tengas `yarn` instalado con `brew`, y en ese caso no se le puede indicar que use `python2`. Para solucionarlo, puedes instalar yarn a través de `npm` corriendo lo siguiente:
+
+```
+npm config set python /usr/bin/python
+brew uninstall yarn
+npm install -g yarn
+nodenv rehash
+```
+{% endhint %}
+
 Ahora, cada vez que quieras levantar o volver a trabajar en el proyecto, puede que tengas que hacer alguna de estas cosas:
 
 1. Si alguien agregó cambios nuevos a master, es bueno traerlos frecuentemente a tu rama, así se resuelven periódicamente los conflictos que puedan aparecer. Para esto, usa rebase. Corre **en tu rama** `git pull origin master` para traerte los últimos cambios, y luego `git rebase -i master`. Esto te mostrará los commits que has agregado en tu rama y que quedarían sobre los de master. Si se encuentra un conflicto, el rebase para en el commit que lo contiene y te deja corregirlo antes de indicarle que siga
