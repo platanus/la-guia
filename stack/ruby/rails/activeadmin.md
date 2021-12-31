@@ -523,6 +523,104 @@ filter :user_name_cont
 
 Aquí `_cont` indica que se entregarán los resultados que contengan el valor dado. Podríamos haber usado `_eq` si quisieramos un match perfecto, por ejemplo.
 
+### Utilizando Vue
+
+Muchas veces lo que se puede hacer con AA es un poco riguroso en cuanto a las necesidades del cliente, por lo que pueden haber situaciones en las cuales necesitemos incorporar Vue.js en AA. A continuación se explica una guía paso a paso de cómo agregar este en AA.
+
+Para esto tenemos 2 opciones:
+
+1. Hacer una vista custom como se mencionó anteriormente y ahí usar Vue.
+2. Usar directamente un componente en la vista de admin o si queremos usar ruby directamente.
+
+#### Primer caso.
+
+
+1. Se crea el componente vue que queremos utilizar, por ejemplo `massive-edit.vue`.
+
+2. Luego debemos registrar el componente globalmente. Acá necesitamos usar un archivo diferente al `application.js` que utilizamos normalmente, para este caso usaremos un archivo llamado `admin_application.js`, la forma de registrar el componente es en `snake_case`, siguiendo con el ejemplo anterior el archivo se vería así:
+   
+```js
+    import Vue from 'vue/dist/vue.esm';
+    import MassiveEdit from '../views/products/massive-edit.vue';
+    
+    Vue.component('massive_edit', MassiveEdit);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      if (document.getElementById('wrapper') !== null) {
+        return new Vue({
+          el: '#wrapper',
+        });
+      }
+
+      return null;
+    });
+```   
+
+3. Si queremos utilizar filtros, i18n o tailwind en los archivos Vue que utilizaremos en AA, debemos importarlos en este archivo también, tal como lo hacemos normalmente. Cabe destacar que si tenemos algo importado en `application.js` no va a funcionar en los componentes que se utilicen en AA, si no que debemos importarlos nuevamente en `admin_application.js`, acá un ejemplo del archivo completo:
+
+```js
+    import { camelizeKeys } from 'humps'; // filtro camelize
+    import Vue from 'vue/dist/vue.esm';
+    import MassiveEdit from '../views/products/massive-edit.vue';
+    import i18n from '../plugins/i18n'; // i18n
+    import '../css/application.css'; // tailwind
+
+    Vue.component('massive_edit', MassiveEdit);
+    Vue.filter('camelizeKeys', camelizeKeys);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      if (document.getElementById('wrapper') !== null) {
+        return new Vue({
+          el: '#wrapper',
+          i18n,
+        });
+      }
+
+      return null;
+    });
+```
+
+4. Luego podemos ir a cualquier vista dentro de `app/views/admin` y usar el componente como lo hacemos normalmente:
+
+```html
+    <massive_edit :props="@props.to_json"> </massive_edit>
+```
+
+#### Segundo caso.
+
+1. Hacer los mismos pasos anteriores.
+   
+2. Instalar la gema `vue_component` desde nuestra gema potassium. Esto agrega un par de inicializadores a nuestra app. Se debe escribir `potassium install` y escoger `vue_component`.
+   
+3. Luego en el archivo `initializers/active_admin.rb` debemos importar `vue_componment` y hacer build del componente registrado anteriormente:
+
+```ruby
+    require "vue_component.rb"
+
+    AUTO_BUILD_ELEMENTS = %i{
+      massive_edit
+    }
+
+    component_creator(AUTO_BUILD_ELEMENTS)
+```
+
+La función component_creator recibe los nombres de los componentes y los convierte a html que puede procesar AA mediante la gema [Arbre](https://github.com/activeadmin/arbre). Lo anterior se debe poner fuera del ```ActiveAdmin.setup```.
+
+4. Utilizar el componente en la vista, puede ser de las siguientes formas:
+   1. html.erb:
+      ```html
+        <massive_edit :props="@props.to_json"> </massive_edit>
+    ```
+   2. html.arb:
+      ```ruby
+        massive_edit(prop1: prop1, prop2: prop2)
+      ```
+   3. admin
+   ```ruby
+        index do
+          massive_edit(prop1: prop1, prop2: prop2)
+        end
+    ```
 
 ### Recursos útiles
 
