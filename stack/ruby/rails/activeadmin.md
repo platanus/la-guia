@@ -530,14 +530,14 @@ Muchas veces lo que se puede hacer con AA es un poco riguroso en cuanto a las ne
 Para esto tenemos 2 opciones:
 
 1. Hacer una vista custom como se mencionó anteriormente y ahí usar Vue.
-2. Usar directamente un componente en la vista de admin o si queremos usar ruby directamente.
+2. Usar directamente un componente en la vista de admin o en un vista html.arb.
 
 #### Primer caso.
 
 
 1. Se crea el componente vue que queremos utilizar, por ejemplo `massive-edit.vue`.
 
-2. Luego debemos registrar el componente globalmente. Acá necesitamos usar un archivo diferente al `application.js` que utilizamos normalmente, para este caso usaremos un archivo llamado `admin_application.js`, la forma de registrar el componente es en `snake_case`, siguiendo con el ejemplo anterior el archivo se vería así:
+2. Luego debemos registrar el componente globalmente. Acá necesitamos usar un archivo diferente al `application.js` que utilizamos normalmente, para este caso usaremos un archivo llamado `admin_application.js` que se debe encontrar en la misma carpeta que el `application.js`, si no se encuentra debe crearlo, la convención para registrar los componentes que se usan en admin es de `snake_case`, siguiendo con el ejemplo anterior el archivo se vería así:
    
 ```js
     import Vue from 'vue/dist/vue.esm';
@@ -607,15 +607,12 @@ Para esto tenemos 2 opciones:
 La función component_creator recibe los nombres de los componentes y los convierte a html que puede procesar AA mediante la gema [Arbre](https://github.com/activeadmin/arbre). Lo anterior se debe poner fuera del ```ActiveAdmin.setup```.
 
 4. Utilizar el componente en la vista, puede ser de las siguientes formas:
-   1. html.erb:
-      ```html
-        <massive_edit :props="@props.to_json"> </massive_edit>
-    ```
-   2. html.arb:
+   
+   a. html.arb:
       ```ruby
         massive_edit(prop1: prop1, prop2: prop2)
       ```
-   3. admin
+   b. admin
    ```ruby
         index do
           massive_edit(prop1: prop1, prop2: prop2)
