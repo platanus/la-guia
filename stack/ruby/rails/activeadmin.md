@@ -583,7 +583,8 @@ Para esto tenemos 2 opciones:
 4. Luego podemos ir a cualquier vista dentro de `app/views/admin` y usar el componente como lo hacemos normalmente:
 
 ```html
-    <massive_edit :props="@props.to_json"> </massive_edit>
+    <massive_edit :products="<%= SerializeUtils.map_to_json(@products, serializer: Api::Admin::ProductSerializer ) %> | camelizeKeys">
+    </massive_edit>
 ```
 
 #### Segundo caso.
