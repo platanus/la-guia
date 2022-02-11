@@ -590,7 +590,7 @@ Para esto tenemos 2 opciones:
 
 1. Hacer los mismos pasos anteriores.
    
-2. Instalar la gema `vue_component` desde nuestra gema potassium. Esto agrega un par de inicializadores a nuestra app. Se debe escribir `potassium install` y escoger `vue_component`.
+2. Instalar la clase `vue_component` desde nuestra gema potassium. Esto agrega un par de inicializadores a nuestra app. Se debe escribir `potassium install` y escoger `vue_component`.
    
 3. Luego en el archivo `initializers/active_admin.rb` debemos importar `vue_componment` y hacer build del componente registrado anteriormente:
 
