@@ -139,6 +139,147 @@ Esta vez vamos a correr solamente este test, para ahorrarnos un poquito de tiemp
 
 <img src="./assets/rspec-specific-test.png" />
 
+
+### Testeo de observers
+
+Cuando corramos tests los observers deben ser apagados. Acá podemos ver una ventaja de desacoplar estas diferentes lógicas, ya que en ambiente de tests no queremos que cada vez que se cree un usuario se envíe un mail por ejemplo.
+
+Además cuando testeamos un observer, la entidad que se está observando no debe ser creada a partir de la factory sino con doubles, los cuales nos van a permitir generar los estados que necesitamos facilmente en la instancia, mientras que al usar la factory probablemente nos tomaría un par de comandos inncesarios. 
+
+A continuación mostaremos ejemplos de como hacerlo, como se forzaría usando la factory y observers encendidos, cuales son sus problemas y como se hace usando doubles con observers apagados.
+
+
+#### **Observers encendidos y factory**
+
+1. Supongamos que tenemos este modelo, con el atributo `current_stock` y `status`:
+   
+   ```ruby
+    class Product
+      include PowerTypes::Observable
+
+      def valid_stock?
+        return current_stock === 0
+      end
+    end
+   ```
+
+2. Y que además tenemos un observer que cada vez que se guarda el objeto revisa si el stock está en 0 para mandar un mail al usuario.
+
+  ```ruby
+    class ProductObserver 
+      after_update: :send_sold_out_mail
+
+      def send_sold_out_mail
+        if object.valid_stock?
+          ProductMailer.with(user: user).sold_out.deliver_later
+        end
+      end
+    end
+  ```
+
+3. También supongamos que la factory de `Product` parte con stock 10 siempre. Si hicieramos el test sin doubles sería de la siguiente manera:
+  ```ruby
+
+  describe ProductObserver do
+    let(:product) { create(:product) }
+    let(:product_mailer) { instance_double('ProductMailer', sold_out: message_delivery) }
+    let(:mesage_delivery) do
+      instance_double('ActionMailer::MessageDelivery', deliver_later: nil)
+    end
+
+    before do 
+      product.update!(current_stock: 0)
+      allow(ProductMailer).to receive(:with).and_return(product_mailer)
+    end
+
+    describe 'after_update: :send_sold_out_mail' do
+      context "when product has valid stock" do 
+        it 'sends mail to user' do
+          expect(product_mailer).to have_received(:sold_out)
+          expect(message_delivery).to have_received(:deliver_later)
+        end
+      end
+    end
+  end
+  ```
+
+Lo que pasa con esta solución es que tenemos que hacer el setup manualmente, imagina lo que se checkea dentro de la función `valid_stock?` son varios atributos además de checkear una función de algún objeto de una relación, por ejemplo:
+
+```ruby
+  def valid_stock?
+    return current_stock == 0 && status == :in_sale && user.inactive?
+  end
+```
+
+Acá para tener las condiciones necesarias para que `valid_stock?` retorne `true` tendríamos que crear el producto, cambiarle el stock a 0, el status a `:in_sale` o acceder al usuario y hacer el setup para que `user.inactive?`. En este caso el test quedaría de la siguiente forma y podría complejizarse más el setup, mientras más condiciones se tengan en la función `valid_stock?`.
+
+  ```ruby
+
+  describe ProductObserver do
+    let(:product) { create(:product) }
+    let(:user) { product.user }
+    let(:product_mailer) { instance_double('ProductMailer', sold_out: message_delivery) }
+    let(:mesage_delivery) do
+      instance_double('ActionMailer::MessageDelivery', deliver_later: nil)
+    end
+
+    before do 
+      product.update!(current_stock: 0, status: :in_sale)
+      user.update!(status: :inactive)
+      allow(ProductMailer).to receive(:with).and_return(product_mailer)
+    end
+
+    describe 'after_update: :send_sold_out_mail' do
+      context "when product has valid stock" do 
+        it 'sends mail to user' do
+          expect(product_mailer).to have_received(:sold_out)
+          expect(message_delivery).to have_received(:deliver_later)
+        end
+      end
+    end
+  end
+  ```
+
+
+Es por todo esto que al usar doubles nos ahorramos este trabajo innecesario de setup.
+
+#### **Observers apagados y doubles**
+
+Ahora mostraremos un ejemplo de como hacerlo de la manera correcta con doubles y sin los observers activados:
+
+```ruby
+
+ describe ProductObserver do
+    def trigger(type, event, object)
+      described_class.trigger(type, event, object)
+    end
+
+    describe 'after_update: :send_sold_out_mail' do
+      context 'when product has valid stock' do
+        let(:product) do
+          instance_double(
+            "Product",
+            valid_stock?: true, # hacemos que la funcón por si sola retorne true
+          )
+        end
+        let(:product_mailer) { instance_double('ProductMailer', sold_out: message_delivery) }
+        let(:mesage_delivery) do
+          instance_double('ActionMailer::MessageDelivery', deliver_later: nil)
+        end
+
+        before do
+          allow(ProductMailer).to receive(:with).and_return(product_mailer)
+        end
+
+        it 'sends mail to user' do
+          trigger(:after, :update, product) # desencadenamos el evento manualmente y no debemos hacer update! del objeto
+          expect(product_mailer).to have_received(:sold_out)
+          expect(message_delivery).to have_received(:deliver_later)
+        end
+      end
+    end
+  end
+```
 ### Recursos Útiles
 
 - [RSpec cheat sheet](https://devhints.io/rspec): una lista resumen de cosas útiles que se pueden hacer con RSpec, y de qué manera se pueden testear las condiciones que queremos.
