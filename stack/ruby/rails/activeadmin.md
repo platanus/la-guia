@@ -432,29 +432,7 @@ Suponiendo que el blog tiene un archivo `image`:
 
 #### JavaScript en una vista
 
-Si necesitas agregar alguna pequeña inteligencia en una vista de Active Admin puedes:
-
-1. Agregar el archivo js en `/app/assets/javascripts/admin/`
-
-  ```js
-  // example.js
-  $(document).ready(function(){
-    if($('.preview').length > 0) {
-      alert('HOLA!');
-    }
-  });
-  ```
-
-  Puede ser útil revisar el DOM para activar/desactivar la funcionalidad matcheando alguna clase del body. En nuestro ejemplo ejecutaremos el código siempre que exista la clase `.preview`.
-
-  <img src="./assets/active-admin-inspect.png" />
-
-2. Referenciar el archivo en `/app/assets/javascripts/active_admin.js`:
-
-  ```js
-  //= require active_admin/base
-  //= require admin/example
-  ```
+Si necesitas agregar alguna pequeña inteligencia en una vista de Active Admin revisa nuestra guía sobre [AlpineJS](../stack/../../js/alpine/README.md).
 
 #### Active Admin Addons
 
