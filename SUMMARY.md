@@ -29,6 +29,7 @@
   * [Vue](stack/js/vue/README.md)
     * [General](stack/js/vue/general.md)
     * [Testing](stack/js/vue/tests.md)
+  * [AlpineJS](stack/js/alpine/README.md)
 * [CSS](stack/css/README.md)
   * [Tailwind CSS](stack/css/tailwind.md)
   * [BEM](stack/css/bem.md)
