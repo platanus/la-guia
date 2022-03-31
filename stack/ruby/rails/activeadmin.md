@@ -395,7 +395,7 @@ Hay veces que necesitamos agregar nuevos endpoints con HTML a medida. Para hacer
 
 #### Link de download para archivos
 
-> Para manejo de archivos se supone el uso de [Shrine](shrine.md)
+> Para manejo de archivos se supone el uso de [Shrine](shrine/README.md)
 
 Suponiendo que el blog tiene un archivo `image`:
 
