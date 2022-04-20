@@ -91,18 +91,18 @@ Vamos a procesar la imagen para tener dos tamaños aparte del original: `small` 
 Como prerequisito necesitamos agregar la gema [image_processing](https://github.com/janko/image_processing). Luego podemos definir las `derivatives` para los tamaños `small` y `medium`:
 
 ```
-require "image_processing/mini_magick"
+require "image_processing/vips"
 
 ...
 
 plugin :derivatives
 
 Attacher.derivatives do |original|
-  magick = ImageProcessing::MiniMagick.source(original)
+  vips = ImageProcessing::Vips.source(original)
 
   { 
-    small:  magick.resize_to_limit!(300, 300),
-    medium: magick.resize_to_limit!(500, 500),
+    small:  vips.resize_to_limit!(300, 300),
+    medium: vips.resize_to_limit!(500, 500),
   }
 end
 ```
@@ -129,7 +129,7 @@ User.last.profile_picture_url(:small)
 Con todo esto, nuestro `Uploader` que hereda de `ImageUploader` quedaría así:
 
 ```
-require "image_processing/mini_magick"
+require "image_processing/vips"
 
 class ProfilePictureUploader < ImageUploader
   plugin :default_url
@@ -145,11 +145,11 @@ class ProfilePictureUploader < ImageUploader
   end
 
   Attacher.derivatives do |original|
-    magick = ImageProcessing::MiniMagick.source(original)
+    vips = ImageProcessing::Vips.source(original)
 
     {
-      small:  magick.resize_to_limit!(300, 300),
-      medium: magick.resize_to_limit!(500, 500)
+      small:  vips.resize_to_limit!(300, 300),
+      medium: vips.resize_to_limit!(500, 500)
     }
   end
 end
