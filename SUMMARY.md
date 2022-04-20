@@ -21,6 +21,7 @@
     * [Active Admin](stack/ruby/rails/activeadmin.md)
     * [Shrine](stack/ruby/rails/shrine/README.md)
       * [General](stack/ruby/rails/shrine/general.md)
+      * [Manejo de imágenes](stack/ruby/rails/shrine/image_handling.md)
     * [Pry](stack/ruby/rails/pry.md)
     * [Strong Migrations](stack/ruby/rails/strong_migrations.md)
     * [Data Migrate](stack/ruby/rails/data_migrate.md)
