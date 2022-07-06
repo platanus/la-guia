@@ -235,15 +235,15 @@ f.input :description, wrapper_html: {
 
 [ActiveAdmin Addons](https://github.com/platanus/activeadmin_addons) transforma todos los `select` para que usen Select2, para facilitar el uso de colección grandes o tags. Sin embargo, AlpineJS no tiene idea qué hacer con los elementos de Select2 y viceversa.
 
-Para que funcionen los elementos `select` con atributos `x-model` tenemos que instalar [active-admin-alpine-fixes](https://www.npmjs.com/package/active-admin-alpinejs-fixes).
+Para que funcionen los elementos `select` con atributos `x-model` tenemos que instalar [active-admin-alpinejs-fixes](https://www.npmjs.com/package/active-admin-alpinejs-fixes).
 
 ```bash
-yarn add active-admin-alpine-fixes
+yarn add active-admin-alpinejs-fixes
 ```
 Después tenemos que agregar el fix a la variable `window` para que esté disponible en la página de ActiveAdmin
 
 ```javascript
-import { select2 } from 'active-admin-alpine-fixes';
+import { select2 } from 'active-admin-alpinejs-fixes';
 
 window.alpineFixes = { select2 };
 ```
@@ -261,15 +261,15 @@ end
 
 ActiveAdmin nos permite tener formularios anidados cuando un recurso tiene un `has_many`. Pero cuando hacemos click en el botón para crear un recurso nuevo en este formulario anidado ActiveAdmin usa jQuery para crear los campos nuevos y AlpineJS se confunde.
 
-Para que funcionen tenemos que instalar [active-admin-alpine-fixes](https://www.npmjs.com/package/active-admin-alpinejs-fixes).
+Para que funcionen tenemos que instalar [active-admin-alpinejs-fixes](https://www.npmjs.com/package/active-admin-alpinejs-fixes).
 
 ```bash
-yarn add active-admin-alpine-fixes
+yarn add active-admin-alpinejs-fixes
 ```
 Después tenemos que agregar el fix a la variable `window` para que esté disponible en la página de ActiveAdmin
 
 ```javascript
-import { hasMany } from 'active-admin-alpine-fixes';
+import { hasMany } from 'active-admin-alpinejs-fixes';
 
 window.alpineFixes = { hasMany };
 ```
@@ -343,7 +343,7 @@ form do |f|
 
     f.input :active_admin_amount, input_html: {
       'x-model': 'active_admin_amount',
-      # We can use currencyFormat and numberCleaner directly since the are available inside 
+      # We can use currencyFormat and numberCleaner directly since the are available inside
       # the data object returned by the complexExample function.
       'x-on:input': '
         active_admin_amount = currencyFormat.format(numberCleaner($event.target.value));
