@@ -2,14 +2,15 @@
 
 AlpineJS es una excelente alternativa para agregar algo de inteligencia a nuestras vistas de ActiveAdmin. En la mayoría de los casos podemos definir todo lo que usamos directamente en nuestro recurso de ActiveAdmin, sin necesidad de archivos JS externos.
 
-- [Instalando AlpineJS](#instalando-alpinejs)
-- [Intro](#intro)
-- [Formatear el valor de un campo al escribir](#formatear-el-valor-de-un-campo-al-escribir)
-- [Validar un campo](#validar-un-campo)
-- [Esconder y mostrar un campo](#esconder-y-mostrar-un-campo)
-- [Campos Select2](#campos-select2)
-- [Has Many](#has-many)
-- [Formularios Complejos (Alpine.data)](#formularios-complejos-alpinedata)
+- [ActiveAdmin + AlpineJS](#activeadmin--alpinejs)
+  - [Instalando AlpineJS](#instalando-alpinejs)
+  - [Intro](#intro)
+  - [Formatear el valor de un campo al escribir](#formatear-el-valor-de-un-campo-al-escribir)
+  - [Validar un campo](#validar-un-campo)
+  - [Esconder y mostrar un campo](#esconder-y-mostrar-un-campo)
+  - [Campos Select2](#campos-select2)
+  - [Has Many](#has-many)
+  - [Formularios Complejos (Solo AlpineJS 3 - Alpine.data)](#formularios-complejos-solo-alpinejs-3---alpinedata)
 
 ## Instalando AlpineJS
 
