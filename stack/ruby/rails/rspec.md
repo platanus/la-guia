@@ -280,6 +280,56 @@ Ahora mostraremos un ejemplo de como hacerlo de la manera correcta con doubles y
     end
   end
 ```
+
+## Testeo Services
+
+El testeo en los services funciona casi como cualquier test, con la única diferencia de que primero se debe instanciar la clase y luego hacer un describe por cada método del  service que se quiere testear. A continuación te mostramos el esqueleto de un ejemplo:
+
+Sigamos con el ejemplo dado en la sección de power api.
+
+```ruby
+class BsaleService < PowerTypes::Service.new(:order)
+  def create_commercial_invoice
+    # code
+  end
+
+  def create_credit_note
+    # code
+  end
+
+  private
+
+  # acá sus métodos privados
+end
+```
+
+Su respectivo test sería el siguiente:
+
+```ruby
+describe BsaleService do 
+	let(:order) { create(:order) }
+
+	def service
+		describled_class.new(order: order)
+	end
+
+	describe "#create_commercial_invoice" do 
+		def perform
+			service.create_commercial_invoice
+		end
+
+		# Cosas que se deben testear del método
+	end
+
+	describe "#create_credit_note" do 
+		def perform
+			service.create_credit_note
+		end
+
+		# Cosas que se deben testear del otro método
+	end
+end
+```
 ### Recursos Útiles
 
 - [RSpec cheat sheet](https://devhints.io/rspec): una lista resumen de cosas útiles que se pueden hacer con RSpec, y de qué manera se pueden testear las condiciones que queremos.
