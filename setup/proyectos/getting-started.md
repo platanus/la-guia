@@ -17,7 +17,7 @@ Esto es lo que queremos responder con esta sección:
     - `make restore-from-staging` toma el último backup de staging y lo copia en tu base de datos local
 1. Si todo salió bien, con esto deberías estar listo para correr el proyecto. Corre los siguientes comandos en paralelo en pestañas separadas:
     - `bin/rails s`: levanta el servidor. Si vas a `localhost:3000` en el navegador verías la página
-    - `bin/webpack-dev-server`: permite que cada vez que se guarde un archivo js/vue, se recargue la página automáticamente
+    - `bin/webpack-dev-server` o `bin/webpacker-dev-server` en proyectos más nuevos: permite que cada vez que se guarde un archivo js/vue, se recargue la página automáticamente
     - `bundle exec guard`: cada vez que guardas un archivo ruby se ejecutan los tests correspondientes a ese archivo. Alternativamente, puedes correr todos los tests de manera manual usando `bin/rspec`
         - Si quieres correr un `it`, `context` o `describe` en particular, ignorando otros archivos y los demás ejemplos en el mismo archivo, puedes agregar una `f` al comienzo de este. Esto bunciona tanto para `guard` como para `rspec`. Esto es solo posible gracias a [filter_run_when_matching](https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering/filter-run-when-matching), por lo que debe estar configurado en el proyecto para poder usarlo
     - `bin/rails c`: abre la consola de rails. En ella puedes probar cosas, por ejemplo, buscar o crear records. Puedes correr cualquier código Ruby/Rails, llamar a modelos/jobs/clients definidos en el proyecto, etc. No es estrictamente necesario, pero puede ser muy útil
