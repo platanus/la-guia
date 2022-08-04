@@ -112,7 +112,7 @@ git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-va
 ```
 ```bash
 # rbenv-aliases
-git clone git://github.com/tpope/rbenv-aliases.git $(rbenv root)/plugins/rbenv-aliases
+git clone https://github.com/tpope/rbenv-aliases.git $(rbenv root)/plugins/rbenv-aliases
 
 rbenv alias --auto
 ```
