@@ -8,13 +8,15 @@ Poco a poco Visual Studio Code ha superado a Sublime como el editor de texto má
 
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph)
-- [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+- Vue: qué extensión usar depende de la versión de Vue del proyecto. Activa una de estas dos:
+  - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) para proyectos en Vue 2
+  - [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar) para Vue 3
 - [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 - [MJML](https://marketplace.visualstudio.com/items?itemName=attilabuti.vscode-mjml)
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): los proyectos vienen con un `.editorconfig` que nos ayuda a tener algunas configuraciones básicas consistentes. Este plugin se encarga de leerlo y aplicar esas configuraciones a tu editor
 - [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - [Tailwind Docs](https://marketplace.visualstudio.com/items?itemName=austenc.tailwind-docs)
-- [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) (VS Code): Estandariza el orden de las clases de Tailwind al guardar.
+- [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) (*Deprecada*): Estandariza el orden de las clases de Tailwind al guardar. Está desactualizada, no incluye todas las clases de las versiones actuales de tailwind. Para proyectos que tienen el plugin de tailwind de eslint, puedes usar el autocorrect, [explicado en la sección de linters](../linters.md#vscode)
   > Por defecto Headwind no detecta las clases que se agregan a helpers de rails en un `.erb` usando `class:`. Para permitir esto se puede editar [la configuración de la extensión](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind#headwind.classregex) en el `settings.json` de VSCode y poner el siguiente regex en la sección de `html`:
   >
   >`\\bclass\\s*[=:]\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\']`
