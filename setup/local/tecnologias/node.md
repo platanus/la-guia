@@ -12,10 +12,6 @@ Nodenv es realmente un clone de rbenv pero para node, por lo que funciona muy pa
 ```bash
 # Instalar nodenv y node-build
 brew install nodenv node-build
-
-# Instalar el plugin de node-build
-$ mkdir -p "$(nodenv root)"/plugins
-$ git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
 ```
 
 #### TAPS
@@ -30,11 +26,6 @@ brew tap nodenv/nodenv
 ```
 brew install nodenv-vars nodenv-aliases
 ```
-
-#### Actualizar las versiones de node disponibles para instalar
-brew upgrade node-build
-
-
 
 Luego debes cargar nodenv en tu shell para que puedas acceder a las diferentes versiones. Para esto debes agregar la siguiente linea en tu `.bash_profile` o `.zshrc` dependiendo del shell que uses. Hay dos formas de hacerlo:
 
@@ -52,24 +43,6 @@ Luego debes cargar nodenv en tu shell para que puedas acceder a las diferentes v
 
 ```bash
 eval "$(nodenv init -)"
-```
-
-#### Instalando versiones de node
-
-Para instalar nuevas versiones de node:
-
-```bash
-# Listar todos las versiones disponibles para instalar
-nodenv install --list
-
-# Instalar una version en particular
-nodenv install 12.19.1
-
-# Actualizar las versiones de ruby disponibles para instalar
-cd $(nodenv root)/plugins/ruby-build && git pull
-
-# Establecer una version global de node
-nodenv global 12.19.1
 ```
 
 ### Windows
@@ -132,3 +105,23 @@ Con este script deberías ver algo así:
    mkdir -p "$(nodenv root)"/plugins
    git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
    ```
+
+### Instalando versiones de node
+
+Para instalar nuevas versiones de node:
+
+```bash
+# Actualizar las versiones de node disponibles para instalar
+cd $(nodenv root)/plugins/node-build && git pull
+# o en OSX
+brew upgrade node-build
+
+# Listar todos las versiones disponibles para instalar
+nodenv install --list
+
+# Instalar una version en particular
+nodenv install 12.19.1
+
+# Establecer una version global de node
+nodenv global 12.19.1
+```
