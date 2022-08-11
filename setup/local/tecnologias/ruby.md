@@ -1,6 +1,6 @@
 ## Ruby Setup
 
-Para nuestros desarrollos en ruby utilizamos el manejador de versiones [rbenv](https://github.com/rbenv/rbenv) y algunos plugins.
+Para nuestros desarrollos en ruby utilizamos el manejador de versiones [rbenv](https://github.com/rbenv/rbenv) y algunos plugins. La versión que usa cada proyecto está indicada en el `.ruby-version`
 
 ### OSX
 
@@ -25,7 +25,7 @@ y si dice que no existe, tu computador está listo para la instalación, y si ap
 brew install rbenv
 
 # Instala plugins
-brew install rbenv-vars rbenv-aliases rbenv-default-gems
+brew install ruby-build rbenv-vars rbenv-aliases rbenv-default-gems
 ```
 
 Luego debes cargar rbenv en tu shell para que puedas acceder a las diferentes versiones. Para esto debes agregar la siguiente linea en tu `.bash_profile` o `.zshrc` dependiendo del shell que uses. Hay dos formas de hacerlo:
@@ -57,27 +57,6 @@ Debiera aparecer la versión de rbenv instalada y los comandos que hay para ejec
 #### Posibles errores
 Un posible error al instalar `rbenv` es no tener bien configurado el PATH de la shell.
 
-
-#### Instalando versiones de ruby
-
-Para instalar nuevas versiones de ruby puedes usar el plugin [ruby-build](https://github.com/rbenv/ruby-build) o usar los siguientes comandos:
-
-```bash
-# Listar todos las versiones de ruby disponibles para instalar
-rbenv install --list
-
-# Instalar una version de ruby en particular
-rbenv install 2.4.1
-```
-
-> **Recomendación**: Define alguna version de ruby que quieras para tener como global haciendo `rbenv global 2.4.1`  De esta manera no estarás usando la version de ruby que trae el sistema operativo. Esto hace que sea más seguro ya que no necesitas usar `sudo` para instalar gemas.
-
-> **Warning**: Si no puedes usar `rbenv` o instalar gemas sin sudo, es muy probable que hayas dado los permisos equivocados en algún paso de la instalación. Esto no es seguro, por lo tanto te recomendamos eliminar todo y volver a hacer los pasos sin dar permisos de super usuario.
-
-> **TIP**: Las versiones de ruby quedan instaladas en `$HOME/.rbenv/versions`
-
-> **TIP**: El paquete `rbenv-default-gems` tiene como objetivo instalar gemas automáticamente cuando instalas una nueva version de ruby. Para esto crea un archivo en `~/.rbenv/default-gems` y agrega línea por línea el nombre de las gemas que quieres que se instalen. Buenos candidatos son `bundler` y `rails`
-
 ### Windows
 
 Para instalar `rbenv` con WSL2, sigue las instrucciones de Linux.
@@ -104,31 +83,32 @@ tee -a ~/.bashrc <<< "eval \"\$(rbenv init -)\""
 
 Cierra la ventana del terminal y abre una nueva para que los cambios surjan efecto.
 
-rbenv tiene varios [plugins](https://github.com/rbenv/rbenv/wiki/Plugins). Para instalarlos basta con dejarlos en `~/.rbenv/plugins/`. Recomendamos instalar los siguientes plugins: [`rbenv-vars`](https://github.com/rbenv/rbenv-vars), [`rbenv-aliases`](https://github.com/tpope/rbenv-aliases), [`rbenv-default-gems`](https://github.com/rbenv/rbenv-default-gems):
+rbenv tiene varios [plugins](https://github.com/rbenv/rbenv/wiki/Plugins). Para instalarlos basta con dejarlos en `~/.rbenv/plugins/`. Recomendamos instalar los siguientes plugins: [`ruby-build`](https://github.com/rbenv/ruby-build), [`rbenv-vars`](https://github.com/rbenv/rbenv-vars), [`rbenv-aliases`](https://github.com/tpope/rbenv-aliases), [`rbenv-default-gems`](https://github.com/rbenv/rbenv-default-gems):
 
 ```bash
+# ruby-build
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
 # rbenv-vars
 git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars
-```
-```bash
+
 # rbenv-aliases
 git clone https://github.com/tpope/rbenv-aliases.git $(rbenv root)/plugins/rbenv-aliases
-
 rbenv alias --auto
-```
-```bash
+
 # rbenv-default-gems
 git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
-
 ```
 
-#### Instalando versiones de ruby
+### Instalando versiones de ruby
 
-Para instalar nuevas versiones de ruby:
+Para instalar nuevas versiones de ruby, el plugin `ruby-build` nos permite usar el comando `rbenv install`:
 
 ```bash
 # Actualizar las versiones de ruby disponibles para instalar
 cd $(rbenv root)/plugins/ruby-build && git pull
+# o en OSX
+brew upgrade rbenv-build
 
 # Listar todos las versiones disponibles para instalar
 rbenv install --list
@@ -138,6 +118,8 @@ rbenv install 2.7.4
 ```
 
 > **Recomendación**: Define alguna version de ruby que quieras para tener como global haciendo `rbenv global 2.7.4`  De esta manera no estarás usando la version de ruby que trae el sistema operativo. Esto hace que sea más seguro ya que no necesitas usar `sudo` para instalar gemas.
+
+> **Warning**: Si no puedes usar `rbenv` o instalar gemas sin sudo, es muy probable que hayas dado los permisos equivocados en algún paso de la instalación. Esto no es seguro, por lo tanto te recomendamos eliminar todo y volver a hacer los pasos sin dar permisos de super usuario.
 
 > **TIP**: Las versiones de ruby quedan instaladas en `~/.rbenv/versions`.
 
