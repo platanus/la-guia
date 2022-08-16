@@ -14,7 +14,7 @@ Todos estamos invitados a aportar en la construcción de esta [Guía maestra](ht
 
 ### Credits
 
-Thank you [contributors](https://github.com/platanus/la-guía/graphs/contributors)!
+Thank you [contributors](https://github.com/platanus/la-guia/graphs/contributors)!
 
 <img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="250"/>
 
