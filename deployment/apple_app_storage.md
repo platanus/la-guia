@@ -20,6 +20,6 @@ Para esto, el product-owner debe seguir los siguientes pasos:
 
 * Enviar la aplicación a review con el botón *Submit for Review*.
 
-<img src='assets/apple-app-storage-1.gif'/>
-
 El proceso de revisión por parte de Apple toma algunos días, en general menos de una semana.
+
+<img src='assets/apple-app-storage-1.gif'/>

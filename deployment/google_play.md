@@ -55,12 +55,10 @@ Es importante enviar esta versión al grupo de testers y al Product Owner. Luego
 
 * Publicar la nueva versión con el botón *Start Rollout*.
 
-<img src='assets/google-play-1.gif'/>
-
 Links útiles:
 
 * [Upload an app](https://support.google.com/googleplay/android-developer/answer/113469?hl=en)
 
 * [Prepare & roll out releases](https://support.google.com/googleplay/android-developer/answer/7159011)
 
-
+<img src='assets/google-play-1.gif'/>
