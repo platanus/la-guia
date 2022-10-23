@@ -73,3 +73,15 @@ class SalesObserver
   end
 end
 ```
+
+### **¿Qué son y cuándo usar los callbacks after commit?**
+
+Los modelos de ActiveRecord tienen [callbacks de transacción](https://guides.rubyonrails.org/active_record_callbacks.html#transaction-callbacks) dentro de los que está el callback `after_commit`. Este puede ser ejecutado después del `create`, `update` o `save`, asegurando que su ejecución sea después de que los cambios hayan sido guardados efectivamente en la base de datos, es decir, después del commit.
+
+PowerTypes permite utilizar estos callbacks dentro de los observers. Se llaman `after_create_commit`, `after_update_commit` y `after_save_commit`.
+
+La recomendación es usar estos callbacks cuando se ejecute algo que deberá volver a buscar el objeto a la base de datos. Por ejemplo, si en un callback `after_save` se encola un job que recibe el objeto como parámetro, y este job es ejecutado instantáneamente por Sidekiq, ocurrirá que irá a buscar la instancia a la base de datos justo antes de que se haga el commit de los cambios, generando una ejecución inconsistente del job ya que se utilizó la versión no actualizada del objeto. En la siguiente imagen se muestra un ejemplo:
+
+<img src='assets/observers-1.png'/>
+
+En el ejemplo anterior, el callback `after_save` es ejecutado antes de que el objeto sea guardado en la base de datos, mientras que el `after_save_commit` es ejecutado después del commit, asegurando que los cambios ya están guardados en la base de datos.
