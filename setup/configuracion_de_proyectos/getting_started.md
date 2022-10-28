@@ -9,11 +9,11 @@ Esto es lo que queremos responder con esta sección:
 1. Clona el repositorio y muevete a la nueva carpeta:
 
     ```bash
-    git clone <https://github.com/platanus/><project-name>.git
+    git clone https://github.com/platanus/<project-name>.git
     cd project-name
     ```
 
-1. Corre `bin/setup`. Esto te deja instaladas las gemas y paquetes que necesite el paquete, además de correr el setup de la base de datos. Puedes revisar el archivo para ver qué exactamente se está corriendo
+1. Corre `bin/setup`. Esto te deja instaladas las gemas y paquetes que necesite el proyecto, además de correr el setup de la base de datos. Puedes revisar el archivo para ver qué exactamente se está corriendo
 
     * A veces puede salir el error `Error: remote staging not found in git remotes` después de correr `bin/setup`. Si te aparece, probablemente es porque no tienes acceso al heroku del proyecto. Pídele acceso al encargado del proyecto y cuando lo tengas corre `bin/setup_heroku` para reintentar el paso que falló
 

@@ -98,17 +98,17 @@ rbenv tiene varios [plugins](https://github.com/rbenv/rbenv/wiki/Plugins). Para 
 
 ```bash
 # ruby-build
-git clone <https://github.com/rbenv/ruby-build.git> "$(rbenv root)"/plugins/ruby-build
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
 # rbenv-vars
-git clone <https://github.com/rbenv/rbenv-vars.git> $(rbenv root)/plugins/rbenv-vars
+git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars
 
 # rbenv-aliases
-git clone <https://github.com/tpope/rbenv-aliases.git> $(rbenv root)/plugins/rbenv-aliases
+git clone https://github.com/tpope/rbenv-aliases.git $(rbenv root)/plugins/rbenv-aliases
 rbenv alias --auto
 
 # rbenv-default-gems
-git clone <https://github.com/rbenv/rbenv-default-gems.git> $(rbenv root)/plugins/rbenv-default-gems
+git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
 ```
 
 ## Instalando versiones de ruby

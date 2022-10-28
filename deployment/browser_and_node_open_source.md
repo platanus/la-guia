@@ -32,7 +32,7 @@ Puedes agregar como autor a Platanus y a ti como colaborador:
 ```json
 "author": {
     "name": "Platanus",
-    "url": "<https://platan.us>"
+    "url": "https://platan.us"
   },
 "contributors": [
   {

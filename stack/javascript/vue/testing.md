@@ -9,7 +9,7 @@ En proyectos nuevos Potassium ya incluye los archivos y la configuración necesa
 ```
 
 ```json
-// <https://vue-test-utils.vuejs.org/guides/#testing-single-file-components-with-jest>
+// https://vue-test-utils.vuejs.org/guides/#testing-single-file-components-with-jest
 package.json
   "scripts": {
     "test": "jest",
