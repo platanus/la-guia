@@ -284,7 +284,7 @@
 
 * **Por definir: **Qué hacer con variables globales que vienen desde Rails (ej, current user) y se necesitan en Vue
 
-* [DRAFT] En Vue 3, poner primero el `<script>`, luego el `<template>` y al final `<style>` si es que hay
+* En Vue 3, poner primero el `<script>`, luego el `<template>` y al final `<style>` si es que hay
 
 ## State Management (Pinia, Vuex)
 
