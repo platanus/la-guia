@@ -170,11 +170,13 @@
 
         * Si es que se hace inmanejable la cantidad de componentes, lo más probable es que la aplicación en si sea lo suficientemente grande como para dividir en engines, en cuyo caso los componentes deberían ir en sus carpetas de engine respectivas.
 
-    * Si un componente es global y básico (inputs, botones) usar prefijo `Base`. Ejemplos: `BaseInput`, `BaseModal`. [Fuente](https://vuejs.org/style-guide/rules-strongly-recommended.html#tightly-coupled-component-names)
+    * Si un componente es global y básico (inputs, botones) usar prefijo `base`. Ejemplos: `base-input`, `base-modal`. [Fuente](https://vuejs.org/style-guide/rules-strongly-recommended.html#tightly-coupled-component-names)
 
-    * Si es un componente que se usa una sola vez (headers, footers, etc) usar prefijo `The`. Ejemplos: `TheHeader`, `TheContactForm` [Fuente](https://vuejs.org/style-guide/rules-strongly-recommended.html#tightly-coupled-component-names)
+    * Si es un componente que se usa una sola vez (headers, footers, etc) usar prefijo `The`. Ejemplos: `the-header`, `the-contact-form` [Fuente](https://vuejs.org/style-guide/rules-strongly-recommended.html#tightly-coupled-component-names)
 
-    * Componentes que solo se van a usar en otro componente, tienen de prefijo el nombre de ese componente. Ejemplo: `TheHeaderNavBar`. [Fuente](https://vuejs.org/style-guide/rules-strongly-recommended.html#tightly-coupled-component-names)
+    * Componentes que solo se van a usar en otro componente, tienen de prefijo el nombre de ese componente. Ejemplo: `the-header-nav-bar`. [Fuente](https://vuejs.org/style-guide/rules-strongly-recommended.html#tightly-coupled-component-names)
+
+    * Usar `kebab-case` en vez de `PascalCase` ya que usamos el DOM template en las vistas de Rails. [Fuente](https://vuejs.org/style-guide/rules-strongly-recommended.html#component-name-casing-in-templates)
 
 * Usar `href` en vez de `@click` cuando la única acción que se quiere realizar es cambiar de página.
 
