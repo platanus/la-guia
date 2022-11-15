@@ -2,7 +2,9 @@
 
 ## Rails
 
-* Las variables de ambiente deberían ser definidas como métodos en un módulo para agruparlas y para que sea más fácil hacer mock de ellas. ()
+* Las variables de ambiente deberían ser definidas como métodos en un módulo para agruparlas y para que sea más fácil hacer mock de ellas. ([Ejemplo: Módulo para variables de entorno](guia_de_estilo/ejemplo_modulo_para_variables_de_entorno.md)) 
+
+
 
     ```ruby
     # ❌
@@ -363,3 +365,5 @@ PR de ejemplo: https://github.com/platanus/ventures-nest/pull/322/files
 Usar act-as-taggable-on
 
 
+
+[Ejemplo: Módulo para variables de entorno](guia_de_estilo/ejemplo_modulo_para_variables_de_entorno.md)
