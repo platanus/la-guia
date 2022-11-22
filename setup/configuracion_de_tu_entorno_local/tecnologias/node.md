@@ -63,7 +63,7 @@ Las instrucciones para instalar `nodenv` se obtuvieron del [repositorio oficial]
 1. Clonar `nodenv`
 
     ```plain text
-    git clone <https://github.com/nodenv/nodenv.git> ~/.nodenv
+    git clone https://github.com/nodenv/nodenv.git ~/.nodenv
     ```
 
 1. Agrega `~/.nodenv/bin` a tu $PATH para usar los comando en la shell.
@@ -105,7 +105,7 @@ eval "$(nodenv init -)"
 1. Verifica que `nodev` se instaló correctamente con el siguiente script llamado nodenv-doctor:
 
     ```bash
-    curl -fsSL <https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor> | bash
+    curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
     ```
 
     Con este script deberías ver algo así:
@@ -119,20 +119,20 @@ eval "$(nodenv init -)"
         ```bash
          mkdir -p $(nodenv root)/plugins
          cd $(nodenv root)/plugins
-         git clone <https://github.com/nodenv/nodenv-vars.git>
+         git clone https://github.com/nodenv/nodenv-vars.git
         ```
 
     * [nodenv-aliases](https://github.com/nodenv/nodenv-aliases#installation):
 
         ```bash
-        git clone <https://github.com/nodenv/nodenv-aliases.git> $(nodenv root)/plugins/nodenv-aliases
+        git clone https://github.com/nodenv/nodenv-aliases.git $(nodenv root)/plugins/nodenv-aliases
         ```
 
     * [node-build](https://github.com/nodenv/node-build#installation):
 
         ```bash
         mkdir -p "$(nodenv root)"/plugins
-        git clone <https://github.com/nodenv/node-build.git> "$(nodenv root)"/plugins/node-build
+        git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
         ```
 
 ## Instalando versiones de node
