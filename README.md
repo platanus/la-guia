@@ -4,8 +4,9 @@ Esta es La Guía de Platanus. Acá encontrarás una suerte de mandamientos, line
 
 # Secciones
 
-## [Guía de Estilo](guia_de_estilo.md)
-* [Ejemplo: Módulo para variables de entorno](guia_de_estilo/ejemplo_modulo_para_variables_de_entorno.md)
+## [Acuerdos](acuerdos.md)
+* [Guía de Estilo](acuerdos/guia_de_estilo.md)
+    * [Ejemplo: Módulo para variables de entorno](acuerdos/guia_de_estilo/ejemplo_modulo_para_variables_de_entorno.md)
 ## [Stack](stack.md)
 * [Getting Started](stack/getting_started.md)
 * [Ruby/Rails](stack/ruby_rails.md)
