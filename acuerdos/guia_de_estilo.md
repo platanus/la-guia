@@ -51,25 +51,26 @@
     # ❌
     
     class BookController
-    	def index
-    		respond_with Book.all
-    	end
-    	
-    	def chapters
-    		respond_with Chapter.all
-    	end
+      def index
+        respond_with Book.all
+      end
+    
+      def chapters
+        respond_with Chapter.all
+      end
+    end
     
     # ✅
     class BookController
-    	def index
-    		respond_with Book.all
-    	end
+      def index
+    	  respond_with Book.all
+      end
     end
     
     class ChapterController
-    	def index
-    		respond_with Chapter.all
-    	end
+      def index
+        respond_with Chapter.all
+      end
     end
     ```
 

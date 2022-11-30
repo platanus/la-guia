@@ -19,7 +19,7 @@ end
 
 # se acceden así: 
 MyModule.my_number
-MyModule.my_boolean?
+	MyModule.my_boolean?
 ```
 
 Definimos un módulo en donde los fetch de las variables de entorno están fuera de los métodos (de esta manera si una variable de entorno no está definida fallará el build). Dentro de los métodos sólo se encuentra el formateo de las variables
@@ -32,3 +32,5 @@ config.before_configuration do
    require Rails.root.join("lib/my_module.rb")
 end
 ```
+
+
