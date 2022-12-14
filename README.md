@@ -4,10 +4,10 @@ Esta es La Guía de Platanus. Acá encontrarás una suerte de mandamientos, line
 
 # Secciones
 
-## [Acuerdos](acuerdos.md)
+## Acuerdos
 * [Guía de Estilo](acuerdos/guia_de_estilo.md)
     * [Ejemplo: Módulo para variables de entorno](acuerdos/guia_de_estilo/ejemplo_modulo_para_variables_de_entorno.md)
-## [Stack](stack.md)
+## Stack
 * [Getting Started](stack/getting_started.md)
 * [Ruby/Rails](stack/ruby_rails.md)
     * [Potassium](stack/ruby_rails/potassium.md)
@@ -40,7 +40,7 @@ Esta es La Guía de Platanus. Acá encontrarás una suerte de mandamientos, line
     * [Redux](stack/mobile/redux.md)
     * [Styling](stack/mobile/styling.md)
     * [Recursos](stack/mobile/recursos.md)
-## [Setup](setup.md)
+## Setup
 * [Configuración de tu entorno local](setup/configuracion_de_tu_entorno_local.md)
     * [Instalación Base](setup/configuracion_de_tu_entorno_local/instalacion_base.md)
         * [OSX](setup/configuracion_de_tu_entorno_local/instalacion_base/osx.md)
@@ -78,14 +78,14 @@ Esta es La Guía de Platanus. Acá encontrarás una suerte de mandamientos, line
         * [Google Ads](setup/configuracion_de_proyectos/google_tag_manager_analytics_search_console_etc/google_ads.md)
     * [Crear un bucket de S3](setup/configuracion_de_proyectos/crear_un_bucket_de_s3.md)
     * [SlackBot](setup/configuracion_de_proyectos/slackbot.md)
-## [Deployment](deployment.md)
+## Deployment
 * [Rails](deployment/rails.md)
 * [Ruby Gems](deployment/ruby_gems.md)
 * [Mobile Resources](deployment/mobile_resources.md)
 * [Browser and Node (Open Source)](deployment/browser_and_node_open_source.md)
 * [Apple App Storage](deployment/apple_app_storage.md)
 * [Google Play](deployment/google_play.md)
-## [Upgrades](upgrades.md)
+## Upgrades
 * [Upgrade de Vue 2 a Vue 3](upgrades/upgrade_de_vue_2_a_vue_3.md)
 * [Migración Hound → reviewdog](upgrades/migracion_hound_reviewdog.md)
 * [Upgrade de Postgresql](upgrades/upgrade_de_postgresql.md)
