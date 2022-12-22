@@ -333,6 +333,39 @@
 
 * [VueUse](https://vueuse.org/) para utilidades varias usando la Composition API.
 
+
+
+## Typescript
+
+Las interfaces que definen cosas que vienen del backend deberían ir en la carpeta `api/`, aun si definen cosas que no tienen un endpoint especifico o no tienen endpoint todavía. Por ejemplo si están haciendo un `Form` pero este `Form` tiene `FormCategory` y `FormField`, las tres irían en un mismo archivo `api/form.ts` y se exportarían hacia los componentes desde ahí.
+
+```typescript
+// api/form.ts
+export interface FormCategory {
+  id: number;
+  name: string;
+}
+
+export interface FormField {
+  id: number;
+  label: string;
+  inputType: string;
+}
+
+export interface Form {
+  id: number;
+  title: string;
+  formCategory: FormCategory;
+  formFields: FormField[];
+}
+
+export default {
+  createForm(...
+}
+```
+
+Las interfaces que definen cosas internas que solo se usan en en un mismo componente deberían ir dentro de `<script setup>`. Si es algo que usan varios componentes, definir en la carpeta `/types`, de preferencia como exports. En *algunos* casos puede ser preferible usar interfaces globales pero en general evitar para no causar confusiones del tipo “de donde salió este type”.
+
 ## Tailwind
 
 * Extraer clases repetidas a componentes o iterar templates (con `.each` o `v-for`)
