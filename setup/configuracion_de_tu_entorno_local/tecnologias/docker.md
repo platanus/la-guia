@@ -19,7 +19,22 @@ Pon atención a la versión de procesador que tienes en tu Mac (Intel Chip o App
 
         <img src='assets/docker-1.png'/>
 
-## Linux
+🛑 **Observación**: En el caso que tengas algún problema al momento usar Docker Desktop con WSL, [es importante dejar como por default la imagen de Ubuntu](https://docs.docker.com/desktop/windows/wsl/#enabling-docker-support-in-wsl-2-distros). Para poder realizarlo hay que hacer lo siguiente:
+
+```bash
+# Listamos las imagenes que tenemos en WSL
+wsl.exe -l -v
+
+# Poner por defecto la imagen que vamos a utilizar
+wsl --set-default <distro-name>
+
+# En el caso de que estés usando Ubuntu para WSL podrías utilizar:
+wsl --set-default ubuntu
+```
+
+
+
+##  Linux
 
 Aquí encuentras las instrucciones para Ubuntu, pero si tienes otro SO basado en linux puedes buscar las instrucciones [aquí](https://docs.docker.com/engine/install/)
 
@@ -104,12 +119,18 @@ Si no funciona intenta reiniciando tu computador.
 
 **Instalar docker-compose**
 
+Lo primero es revisar cuál es la última versión disponible en los [releases](https://github.com/docker/compose/releases) del repositorio oficial de docker-compose.
+
+En la última actualización de esta guía, la última versión estable es la v2.14.2. Deberás reemplazar esta versión en la URL del siguiente comando:
+
 ```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.14.2/docker-compose-"$(uname -s | tr '[:upper:]' '[:lower:]')"-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
 ```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-Si quieres mas información sobre docker-compose la encuentras [aquí](https://docs.docker.com/compose/)
+Si quieres mas información sobre docker-compose la encuentras [aquí](https://docs.docker.com/compose/).
+
+

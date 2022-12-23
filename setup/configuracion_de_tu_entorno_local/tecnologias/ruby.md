@@ -105,11 +105,16 @@ git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-va
 
 # rbenv-aliases
 git clone https://github.com/tpope/rbenv-aliases.git $(rbenv root)/plugins/rbenv-aliases
+# configuramos el alias automático (ver posibles errores)
 rbenv alias --auto
 
 # rbenv-default-gems
 git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
 ```
+
+### Posibles errores
+
+Para configurar los aliases automáticos del plugin `rbenv-aliases`, primero debemos instalar una versión de ruby utilizando `rbenv`. Si al ejecutar el comando `rbenv alias --auto` recibes un error relacionado a que la carpeta `versions` no existe, sigue con el último paso y luego ejecuta de nuevo el comando.
 
 ## Instalando versiones de ruby
 

@@ -52,6 +52,8 @@ Luego debes cargar nodenv en tu shell para que puedas acceder a las diferentes v
     eval "$(nodenv init -)"
     ```
 
+1. Instalar yarn (`npm install -g yarn` o [https://github.com/pine/nodenv-yarn-install](https://github.com/pine/nodenv-yarn-install) para no tener que instalarlo a mano con cada versión de node)
+
 ## Windows
 
 Para instalar `nodenv` con WSL2, sigue las instrucciones de Linux y en el paso 2 preocupate de usar el comando especial para WSL.
@@ -92,7 +94,7 @@ Las instrucciones para instalar `nodenv` se obtuvieron del [repositorio oficial]
 ~/.nodenv/bin/nodenv init
 ```
 
-Con este comando deberías ver el siguiente mensaje:
+Te deberá aparecer un mensaje similar a este, que se hará en el siguiente paso:
 
 ```bash
 # Load nodenv automatically by appending
@@ -100,9 +102,44 @@ Con este comando deberías ver el siguiente mensaje:
 eval "$(nodenv init -)"
 ```
 
+1. Añade `~/.nodenv/bin` a `$PATH`
+
+    * En **Ubuntu 20.04** y **WSL2**:
+
+        `$ echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc`
+
+    * En **bash**:
+
+        `$ echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bash_profile`
+
+    * En **Zsh**:
+
+        `$ echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.zshrc`
+
+    * En **Fish shell**:
+
+        `$ set -Ux fish_user_paths $HOME/.nodenv/bin $fish_user_paths`
+
+1. Instalar **node build**
+
+    ```shell
+    # https://github.com/nodenv/node-build#installation
+    # macOS
+    $ brew install node-build
+    
+    # Cualquiera de las 2 opciones siguientes debería servir para Ubuntu 20.04+ y WSL2
+    # As a nodenv plugin
+    $ mkdir -p "$(nodenv root)"/plugins
+    $ git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+    
+    # As a standalone program
+    $ git clone https://github.com/nodenv/node-build.git
+    $ PREFIX=/usr/local ./node-build/install.sh
+    ```
+
 1. Reinicia tu shell para que se apliquen todos los cambios.
 
-1. Verifica que `nodev` se instaló correctamente con el siguiente script llamado nodenv-doctor:
+1. Verifica que `nodenv` se instaló correctamente con el siguiente script llamado nodenv-doctor:
 
     ```bash
     curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
@@ -112,7 +149,9 @@ eval "$(nodenv init -)"
 
     <img src='assets/node-1.png'/>
 
-1. Instalar plugins necesarios
+    Si se encuentra algún error de instalación, refiere a la documentación oficial.
+
+1. Instalar plugins necesarios (es posible que ya se te hayan instalado algunos)
 
     * [nodenv-vars](https://github.com/nodenv/nodenv-vars#installation):
 
@@ -135,6 +174,8 @@ eval "$(nodenv init -)"
         git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
         ```
 
+    1. Instalar yarn (npm install -g yarn o [https://github.com/pine/nodenv-yarn-install](https://github.com/pine/nodenv-yarn-install) para no tener que instalarlo a mano con cada versión de node)
+
 ## Instalando versiones de node
 
 Para instalar nuevas versiones de node:
@@ -154,3 +195,5 @@ nodenv install 12.19.1
 # Establecer una version global de node
 nodenv global 12.19.1
 ```
+
+

@@ -76,10 +76,14 @@ Para más información, mirar aquí: [https://code.visualstudio.com/docs/getstar
 
 ### Windows
 
-### WSL 2
+[https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
-Se puede conectar de manera "nativa" a WSL 2, sin tener que preocuparse de paths, compatibilidad de extensiones o performance, usando la extensión [Remote-WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
+    ### WSL 2
+
+    Se puede conectar de manera "nativa" a WSL 2, sin tener que preocuparse de paths, compatibilidad de extensiones o performance, usando la extensión [Remote-WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
 
 ### Linux
 
-TODO
+[https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+
+

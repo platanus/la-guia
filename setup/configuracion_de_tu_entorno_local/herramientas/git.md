@@ -10,6 +10,4 @@ Configuralo  para que se pueda autenticar con GitHub y para tener permisos en lo
 
 > TIP: Siempre clona los repositorios usando https y no ssh. De esta manera usaras el puerto 80 que esta abierto en todas partes, me ha pasado mas de una vez que en cafés o coworks esta cerrado el puerto 22.
 
-> TIP: En vez de guardar el password en el Keychain, usa un personal token de tu usuario. De esta manera, aunque tengas habilitado el 2FA en GitHub, podrás acceder a tus repositorio de manera transparente.
-
-
+ 

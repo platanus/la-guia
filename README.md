@@ -45,6 +45,7 @@ Esta es La Guía de Platanus. Acá encontrarás una suerte de mandamientos, line
     * [Instalación Base](setup/configuracion_de_tu_entorno_local/instalacion_base.md)
         * [OSX](setup/configuracion_de_tu_entorno_local/instalacion_base/osx.md)
         * [Windows](setup/configuracion_de_tu_entorno_local/instalacion_base/windows.md)
+        * [Linux](setup/configuracion_de_tu_entorno_local/instalacion_base/linux.md)
     * [Tecnologías](setup/configuracion_de_tu_entorno_local/tecnologias.md)
         * [Ruby](setup/configuracion_de_tu_entorno_local/tecnologias/ruby.md)
         * [Docker](setup/configuracion_de_tu_entorno_local/tecnologias/docker.md)

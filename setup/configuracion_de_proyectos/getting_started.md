@@ -23,7 +23,7 @@ Esto es lo que queremos responder con esta sección:
 
     * `make restore-from-staging` toma el último backup de staging y lo copia en tu base de datos local
 
-1. Si todo salió bien, con esto deberías estar listo para correr el proyecto. Corre los siguientes comandos en paralelo en pestañas separadas:
+1. Si todo salió bien, con esto debe>
 
     * `bin/rails s`: levanta el servidor. Si vas a `localhost:3000` en el navegador verías la página
 
