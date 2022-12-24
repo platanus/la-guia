@@ -23,6 +23,7 @@
     * [Data Migrate](stack/ruby_rails/data_migrate.md)
     * [Active Job](stack/ruby_rails/active_job.md)
     * [Gems](stack/ruby_rails/gems.md)
+    * [Engines - Modularización en Rails](stack/ruby_rails/engines_modularizacion_en_rails.md)
 * [JavaScript](stack/javascript.md)
     * [Vue](stack/javascript/vue.md)
         * [General](stack/javascript/vue/general.md)

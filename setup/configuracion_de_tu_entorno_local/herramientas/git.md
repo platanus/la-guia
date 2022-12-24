@@ -10,4 +10,4 @@ Configuralo  para que se pueda autenticar con GitHub y para tener permisos en lo
 
 > TIP: Siempre clona los repositorios usando https y no ssh. De esta manera usaras el puerto 80 que esta abierto en todas partes, me ha pasado mas de una vez que en cafés o coworks esta cerrado el puerto 22.
 
- 
+    > NOTE: Alternativamente se puede usar un VPN, como Tailscale para circunventar este tipo de situaciones ([https://tailscale.com/](https://tailscale.com/): La instalación no dura más de 10 minutos).

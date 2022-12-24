@@ -88,8 +88,11 @@ eval "$(rbenv init -)"
 
 Puedes agregarlo con cualquier editor o hacerlo así (reemplaza `~/.bashrc` por `~/.zshrc` si usas zsh en lugar de bash):
 
-```plain text
-tee -a ~/.bashrc <<< "eval \\"\\$(rbenv init -)\\""
+```shell
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(nodenv init -)"' >> ~/.bashrc
 ```
 
 Cierra la ventana del terminal y abre una nueva para que los cambios surjan efecto.
