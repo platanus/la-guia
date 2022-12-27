@@ -31,25 +31,25 @@ Esto es lo que queremos responder con esta sección:
 
     * `bundle exec guard`: cada vez que guardas un archivo ruby se ejecutan los tests correspondientes a ese archivo. Alternativamente, puedes correr todos los tests de manera manual usando `bin/rspec`
 
-        * Si quieres correr un `it`, `context` o `describe` en particular, ignorando otros archivos y los demás ejemplos en el mismo archivo, puedes agregar una `f` al comienzo de este. Esto bunciona tanto para `guard` como para `rspec`. Esto es solo posible gracias a [filter_run_when_matching](https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering/filter-run-when-matching), por lo que debe estar configurado en el proyecto para poder usarlo
+        * Si quieres correr un `it`, `context` o `describe` en particular, ignorando otros archivos y los demás ejemplos en el mismo archivo, puedes agregar una `f` al comienzo de este. Esto funciona tanto para `guard` como para `rspec`. Esto es solo posible gracias a [filter_run_when_matching](https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering/filter-run-when-matching), por lo que debe estar configurado en el proyecto para poder usarlo. Recuerda borrar la `f` antes de hacer el PR!
 
     * `bin/rails c`: abre la consola de rails. En ella puedes probar cosas, por ejemplo, buscar o crear records. Puedes correr cualquier código Ruby/Rails, llamar a modelos/jobs/clients definidos en el proyecto, etc. No es estrictamente necesario, pero puede ser muy útil
 
-{% hint style="info" %}
-Es posible que haciendo el setup te encuentres con un error como el siguiente:
 
-> gyp verb 'which' failed Error: not found: python2
+> 💡 Es posible que haciendo el setup te encuentres con un error como el siguiente:
 
-Si te ocurre, puede que tengas `yarn` instalado con `brew`, y en ese caso no se le puede indicar que use `python2`. Para solucionarlo, puedes instalar yarn a través de `npm` corriendo lo siguiente:
+    > gyp verb 'which' failed Error: not found: python2
 
-```bash
-npm config set python /usr/bin/python
-brew uninstall yarn
-npm install -g yarn
-nodenv rehash
-```
+    Si te ocurre, puede que tengas `yarn` instalado con `brew`, y en ese caso no se le puede indicar que use `python2`. Para solucionarlo, puedes instalar yarn a través de `npm` corriendo lo siguiente:
 
-{% endhint %}
+    ```bash
+    npm config set python /usr/bin/python
+    brew uninstall yarn
+    npm install -g yarn
+    nodenv rehash
+    ```
+
+
 
 Ahora, cada vez que quieras levantar o volver a trabajar en el proyecto, puede que tengas que hacer alguna de estas cosas:
 
@@ -59,7 +59,7 @@ Ahora, cada vez que quieras levantar o volver a trabajar en el proyecto, puede q
 
     * Para ver cuáles containers están prendidos, puedes correr `docker container ls`. Si quieres una alternativa más "visual" puedes usar [Captain](https://getcaptain.co/) en OSX
 
-1. Si alguien agregó cambios nuevos a master, es bueno traerlos frecuentemente a tu rama, así se resuelven periódicamente los conflictos que puedan aparecer. Para esto, usa rebase. Corre **en tu rama** `git pull origin master` para traerte los últimos cambios, y luego `git rebase -i master`. Esto te mostrará los commits que has agregado en tu rama y que quedarídockeran sobre los de master. Si se encuentra un conflicto, el rebase para en el commit que lo contiene y te deja corregirlo antes de indicarle que siga
+1. Si alguien agregó cambios nuevos a master, es bueno traerlos frecuentemente a tu rama, así se resuelven periódicamente los conflictos que puedan aparecer. Para esto, usa rebase. Corre **en tu rama** `git pull origin master` para traerte los últimos cambios, y luego `git rebase -i master`. Esto te mostrará los commits que has agregado en tu rama y que quedarían sobre los de master. Si se encuentra un conflicto, el rebase para en el commit que lo contiene y te deja corregirlo antes de indicarle que siga
 
 1. Si alguien más está trabajando en el proyecto, puede que se hayan agregado nuevas gemas o paquetes. Para eso tendrías que correr `bundle install` y/o `yarn install`
 

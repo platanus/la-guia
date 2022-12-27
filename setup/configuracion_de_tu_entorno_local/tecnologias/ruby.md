@@ -142,7 +142,7 @@ rbenv install 2.7.4
 
 > TIP: Las versiones de ruby quedan instaladas en ~/.rbenv/versions.
 
-> TIP: El plugin rbenv-default-gems tiene como objetivo instalar gemas automáticamente cuando instalas una nueva version de ruby. Para esto crea un archivo en ~/.rbenv/default-gems y agrega línea por línea el nombre de las gemas que quieres que se instalen. Buenos candidatos son bundler y rails.
+> TIP: El plugin rbenv-default-gems tiene como objetivo instalar gemas automáticamente cuando instalas una nueva version de ruby. Para esto crea un archivo de texto ~/.rbenv/default-gems y agrega línea por línea el nombre de las gemas que quieres que se instalen. Buenos candidatos son bundler y rails.
 
 ### Ruby Aliases
 
