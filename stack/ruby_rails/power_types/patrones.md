@@ -9,3 +9,5 @@
 [Values](patrones/values.md)
 
 [Observers](patrones/observers.md)
+
+[Clients](patrones/clients.md)

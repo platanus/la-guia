@@ -6,9 +6,11 @@
 
 [Power Types](ruby_rails/power_types.md)
 
-
+[Power API](ruby_rails/power_api.md)
 
 [Active Admin](ruby_rails/active_admin.md)
+
+[Pundit](ruby_rails/pundit.md)
 
 [Shrine](ruby_rails/shrine.md)
 
@@ -23,3 +25,9 @@
 [Gems](ruby_rails/gems.md)
 
 [Engines - Modularización en Rails](ruby_rails/engines_modularizacion_en_rails.md)
+
+[Sentry](ruby_rails/sentry.md)
+
+[State Machine AASM](ruby_rails/state_machine_aasm.md)
+
+
