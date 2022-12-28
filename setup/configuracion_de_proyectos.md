@@ -31,3 +31,5 @@
 [Crear un bucket de S3](configuracion_de_proyectos/crear_un_bucket_de_s3.md)
 
 [SlackBot](configuracion_de_proyectos/slackbot.md)
+
+[Google BigQuery](configuracion_de_proyectos/google_bigquery.md)

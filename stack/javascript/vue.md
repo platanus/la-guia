@@ -2,6 +2,6 @@
 
 [General](vue/general.md)
 
-[Vuex](vue/vuex.md)
+[Pinia](vue/pinia.md)
 
 [Testing](vue/testing.md)

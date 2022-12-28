@@ -53,7 +53,7 @@ Esto es lo que queremos responder con esta sección:
 
 Ahora, cada vez que quieras levantar o volver a trabajar en el proyecto, puede que tengas que hacer alguna de estas cosas:
 
-1. Debes asegurarte de tener la DB corriendo. En Platanus tenemos las bases de datos de nuestros proyectos dockeridas. Esto quiere decir que no corre en el `postgres` que tengas directamente instalado en tu computador, si no que corre en un postgres que está dentro de un container de docker. Para correr el container debes usar el comando `docker-compose up -d`
+1. Debes asegurarte de tener la DB corriendo. En Platanus tenemos las bases de datos de nuestros proyectos dockeridas. Esto quiere decir que no corre en el `postgres` que tengas directamente instalado en tu computador, si no que corre en un postgres que está dentro de un container de docker. Para correr el container debes usar el comando 
 
     * Este paso no lo tuviste que hacer en el setup inicial explícitamente ya que está incluído dentro de las cosas que hace el `bin/setup`
 
