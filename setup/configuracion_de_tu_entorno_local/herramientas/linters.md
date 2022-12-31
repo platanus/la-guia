@@ -33,16 +33,13 @@ Para correr los linters de manera más cómoda, podemos instalar los siguientes 
     Para evitar esto (sin borrar el archivo del `root`) se puede modificar los settings de la extensión para el proyecto e incluir lo siguiente:
 `"ruby.rubocop.configFilePath": "./.rubocop.yml"`
 
-{% hint style="info" %}
-Con la extensión de eslint, puedes hacer que al guardar un archivo .js/.vue se autocorrijan la mayoría de las infracciones, incluyendo el orden de las clases de tailwind si el proyecto incluye el plugin correspondiente. Para que esto funcione, debes incluir lo siguiente en el `settings.json` de tu VSCode (hint: para abrirlo presiona `cmd+shift+p` y busca el comando "Preferences: Open Settings (JSON)):
+> 💡 Con la extensión de eslint, puedes hacer que al guardar un archivo .js/.vue se autocorrijan la mayoría de las infracciones, incluyendo el orden de las clases de tailwind si el proyecto incluye el plugin correspondiente. Para que esto funcione, debes incluir lo siguiente en el `settings.json` de tu VSCode (hint: para abrirlo presiona `cmd+shift+p` y busca el comando "Preferences: Open Settings (JSON)):
 
-```plain text
 "editor.codeActionsOnSave": {
   "source.fixAll.eslint": true
 },
-```
 
-{% endhint %}
+
 
 ### Sublime
 
