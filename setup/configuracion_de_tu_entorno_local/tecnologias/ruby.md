@@ -64,6 +64,20 @@ Luego debes cargar rbenv en tu shell para que puedas acceder a las diferentes ve
 
     Debiera aparecer la versión de rbenv instalada y los comandos que hay para ejecutar.
 
+1. Abrir `.bash_profile` o `.zshrc` y agregar la linea en el archivo usando el editor de preferencia:
+
+    ```plain text
+    eval "$(rbenv init -)"
+    ```
+
+    Te sugerimos, reiniciar la shell para que se apliquen los cambios. Para comprobar que tenemos `rbenv` instalado correctamente, escribe en tu consola la siguiente linea:
+
+    ```bash
+    rbenv
+    ```
+
+    Debiera aparecer la versión de rbenv instalada y los comandos que hay para ejecutar.
+
 ### Posibles errores
 
 Un posible error al instalar `rbenv` es no tener bien configurado el PATH de la shell.
