@@ -115,9 +115,11 @@
 
 ## ActiveAdmin
 
-*  No tener lógica directo en el DSL de active admin. Usar jobs o servicios.
+* No tener lógica directo en el DSL de active admin. Usar jobs o servicios.
 
 * Si se usan componentes de Vue, se pueden llamar a los endpoint de AA directamente con `.json` usando query params de Ransack si es necesario
+
+* A veces se necesita hacer una vista custom para ActiveAdmin, ya sea por un `member_action` o algo como un form custom. Si la vista requiere mucho html, se puede usar un `.erb`, pero si está más cargado al ruby, preferir usar un `.arb` , qué nos permite usar la misma sintáxis que se usan en ActiveAdmin. Considerar también que es posible utilizar componentes Vue en estos templates de ActiveAdmin.
 
 ## Modelos: ActiveRecord
 
