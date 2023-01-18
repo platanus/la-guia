@@ -22,6 +22,8 @@ Poco a poco Visual Studio Code ha superado a Sublime como el editor de texto má
 
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): los proyectos vienen con un `.editorconfig` que nos ayuda a tener algunas configuraciones básicas consistentes. Este plugin se encarga de leerlo y aplicar esas configuraciones a tu editor
 
+* [Expo Tools](https://marketplace.visualstudio.com/items?itemName=byCedric.vscode-expo): esta herramienta provee autocompletado para los archivos de configuración en proyectos mobile con Expo 
+
 * [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 * [Tailwind Docs](https://marketplace.visualstudio.com/items?itemName=austenc.tailwind-docs)
