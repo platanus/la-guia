@@ -198,9 +198,7 @@ onMounted(() => {
 </template>
 ```
 
-{% hint style="info" %}
-Notar que estamos seteando un tamaño fijo de 32px para el canvas. Esto es porque se necesita un tamaño explícito para decodificar el blurhash y renderearlo en el canvas, pero de todas maneras después se puede cambiar su tamaño con css. Por otro lado, usar un canvas pequeño ayuda con el performance. [Esto es lo que recomienda blurhash](https://github.com/woltapp/blurhash#how-fast-is-encoding-decoding)
-{% endhint %}
+> 💡 Notar que estamos seteando un tamaño fijo de 32px para el canvas. Esto es porque se necesita un tamaño explícito para decodificar el blurhash y renderearlo en el canvas, pero de todas maneras después se puede cambiar su tamaño con css. Por otro lado, usar un canvas pequeño ayuda con el performance. [Esto es lo que recomienda blurhash](https://github.com/woltapp/blurhash#how-fast-is-encoding-decoding)
 
 ## Transición de blurhash a imagen
 
@@ -260,8 +258,6 @@ const isLoaded = ref(false);
 </template>
 ```
 
-{% hint style="info" %}
-El `loading="lazy"` es un atributo del `<img>` que le dice al browser que solo cargue la imagen si es actualmente visible, o está cerca de serlo. [Acá más información sobre lazy loading](https://web.dev/browser-level-image-lazy-loading/)
-{% endhint %}
+> 💡 El `loading="lazy"` es un atributo del `<img>` que le dice al browser que solo cargue la imagen si es actualmente visible, o está cerca de serlo. [Acá más información sobre lazy loading](https://web.dev/browser-level-image-lazy-loading/)
 
 Con esto ya podemos usar este componente para renderear nuestras imágenes de una manera más amigable.

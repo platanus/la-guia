@@ -2,9 +2,7 @@
 
 [Es un framework que viene con Rails](https://guides.rubyonrails.org/active_job_basics.html) y nos permite definir tareas (jobs) para ejecutar en un "queuing backend".
 
-{% hint style="info" %}
-Puedes ver la [presentación sobre Jobs](https://www.youtube.com/watch?v=P-Vqh5z5418) que hicimos en Platanus o continuar leyendo sobre el tema aquí en la guía.
-{% endhint %}
+> 💡 Puedes ver la [presentación sobre Jobs](https://www.youtube.com/watch?v=P-Vqh5z5418) que hicimos en Platanus o continuar leyendo sobre el tema aquí en la guía.
 
 ### ¿Para qué los usamos?
 
@@ -72,9 +70,7 @@ end
 
 Con lo anterior logramos encapsular la lógica de creación del reporte y evitar que modelos como `User` o `BankMovement` empiecen a crecer y a tener múltiples responsabilidades.
 
-{% hint style="info" %}
-Vale la pena aclarar que hasta no hace mucho tiempo atrás usábamos [comandos de power types](https://github.com/platanus/power-types#commands) para resolver este asunto pero, actualmente, dejamos de utilizarlos por considerar que podíamos lograr lo mismo usando solamente los jobs de Rails.
-{% endhint %}
+> 💡 Vale la pena aclarar que hasta no hace mucho tiempo atrás usábamos [comandos de power types](https://github.com/platanus/power-types#commands) para resolver este asunto pero, actualmente, dejamos de utilizarlos por considerar que podíamos lograr lo mismo usando solamente los jobs de Rails.
 
 ### ¿Cómo los usamos?
 

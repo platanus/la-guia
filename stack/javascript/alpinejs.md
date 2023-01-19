@@ -33,9 +33,7 @@ import '@activeadmin/activeadmin';
 import 'alpinejs'
 ```
 
-{% hint style="info" %}
-Todos los ejemplos en esta guía y el repositorio asociado usan AlpineJS 3 pero deberían funcionar en AlpineJS 2.
-{% endhint %}
+> 💡 Todos los ejemplos en esta guía y el repositorio asociado usan AlpineJS 3 pero deberían funcionar en AlpineJS 2.
 
 ## Intro
 
@@ -53,17 +51,11 @@ f.inputs 'x-data':  CGI.escapeHTML("{...#{f.resource.attributes.to_json}}") do
 end
 ```
 
-{% hint style="info" %}
-Tenemos que usar `CGI.escapeHTML` para evitar que el objeto producido por Rails no escape del atributo `x-data`, lo que normalmente pasa por una comilla doble.
-{% endhint %}
+> 💡 Tenemos que usar `CGI.escapeHTML` para evitar que el objeto producido por Rails no escape del atributo `x-data`, lo que normalmente pasa por una comilla doble.
 
-{% hint style="info" %}
-`f.resource.attributes` nos da acceso a todos los atributos del modelo. En vez de usarlo, también puedes declarar los valores a mano, siempre recordando que el resultado final debe ser un objeto válido de javascript.
-{% endhint %}
+> 💡 `f.resource.attributes` nos da acceso a todos los atributos del modelo. En vez de usarlo, también puedes declarar los valores a mano, siempre recordando que el resultado final debe ser un objeto válido de javascript.
 
-{% hint style="tip" %}
-Si un ejemplo en la guía no incluye el atributo `x-data`, de todas maneras se asume que fue declarado
-{% endhint %}
+> 💡 Si un ejemplo en la guía no incluye el atributo `x-data`, de todas maneras se asume que fue declarado
 
 Una vez que hemos inicializado el componente con `x-data` podemos empezar a usar las otras directivas de AlpineJS.
 
@@ -95,9 +87,7 @@ window.formatters = {
 
 Después, dentro de nuestro recurso en ActiveAdmin, podemos usar `x-on-input` (o `@input`) para formatear el valor cada vez que escribimos un valor en el campo de texto.
 
-{% hint style="info" %}
-Para este ejemplo en especifico, tenemos que limpiar el número (para obtener `1000` en vez de `1.000`), asi que ejecutamos `numberCleaner` antes de `format.
-{% endhint %}
+> 💡 Para este ejemplo en especifico, tenemos que limpiar el número (para obtener `1000` en vez de `1.000`), asi que ejecutamos `numberCleaner` antes de `format.
 
 ```ruby
 f.input :amount, input_html: {
@@ -128,9 +118,7 @@ class FormatFieldExample < ApplicationRecord
 end
 ```
 
-{% hint style="info" %}
-`attr_accessor` es necesario ya que ActiveAdmin no permite mostrar valores que no existen como campos en su formulario.
-{% endhint %}
+> 💡 `attr_accessor` es necesario ya que ActiveAdmin no permite mostrar valores que no existen como campos en su formulario.
 
 Después, en el archivo de ActiveAdmin, agregamos `amount` directamente y además agregamos el campo `active_admin_amount` formateado a `x-data`.
 
@@ -217,9 +205,7 @@ f.input :description, wrapper_html: {
 }
 ```
 
-{% hint style="tip" %}
-Tenemos que usar `wrapper_html` en vez de `input_html` para esconder toda la fila, tanto el `label` como el `input`.
-{% endhint %}
+> 💡 Tenemos que usar `wrapper_html` en vez de `input_html` para esconder toda la fila, tanto el `label` como el `input`.
 
 [ejemplo](https://github.com/platanus/activeadmin-alpinejs-examples/blob/main/app/admin/toggle_field_examples.rb)
 
@@ -322,9 +308,7 @@ Alpine.start();
 
 Una vez hecho lo anterior, podemos usar `complexExample` en nuestro `x-data`, el que recibe los atributos que necesitamos para inicializar el objeto que usa Alpine.
 
-{% hint style="info" %}
-Como complexExample todavía no se ejecuta, currencyFormat todavía no está disponible para ser usado en x-data. Puedes agregar la función a la variable window, procesar los atributos dentro de complexExample o, como en este caso, usar Ruby para lograr el mismo resultado.
-{% endhint %}
+> 💡 Como complexExample todavía no se ejecuta, currencyFormat todavía no está disponible para ser usado en x-data. Puedes agregar la función a la variable window, procesar los atributos dentro de complexExample o, como en este caso, usar Ruby para lograr el mismo resultado.
 
 ```ruby
 form do |f|

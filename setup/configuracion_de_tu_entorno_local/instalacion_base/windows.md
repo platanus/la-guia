@@ -10,17 +10,11 @@ Para instalar Windows Terminal, sigue las instrucciones [aquí](https://docs.mic
 
 ### Instalando WSL 2
 
-{% hint style="info" %}
-Si estás leyendo esto en el futuro (o estás dentro del Windows Insiders Program) instalar wsl puede ser tan fácil como ejecutar `wsl --install` en una consola con permisos de Administrador.
-{% endhint %}
+> 💡 Si estás leyendo esto en el futuro (o estás dentro del Windows Insiders Program) instalar wsl puede ser tan fácil como ejecutar `wsl --install` en una consola con permisos de Administrador.
 
-{% hint style="info" %}
-Antes de empezar, asegúrate de tener una versión de Windows mayor o igual a **1903** o **Build 18362**. Puedes chequear esto ejecutando con `winver` en el buscador del menu de Windows.
+> 💡 Antes de empezar, asegúrate de tener una versión de Windows mayor o igual a **1903** o **Build 18362**. Puedes chequear esto ejecutando con `winver` en el buscador del menu de Windows.
 
-<img src='assets/windows-1.png'/>
-
-
-{% endhint %}
+    <img src='assets/windows-1.png'/>
 
 1. Activa WSL ejecutando lo siguiente en una consola de powershell con permisos de administrador:
 
@@ -72,22 +66,16 @@ La mayoría de los proyectos de Platanus modernos usan Docker para los servicios
 
 * dependencia para la gema pg (`sudo apt install libpq-dev`)
 
-{% hint style="info" %}
-Si tienes Git for Windows instalado (con scoop: `scoop install git`) puedes usar Git Credential Manager de Windows para que se encargue de recordar tus credenciales de GitHub en WSL.
+> 💡 Si tienes Git for Windows instalado (con scoop: `scoop install git`) puedes usar Git Credential Manager de Windows para que se encargue de recordar tus credenciales de GitHub en WSL.
 `git config --global credential.helper /mnt/c/Users/TU_USUARIO/scoop/apps/git/current/mingw64/libexec/git-core/git-credential-manager-core.exe`
-{% endhint %}
 
-{% hint style="info" %}
-A pesar que WSL 2 lo permite, no te recomendamos clonar los proyectos dentro del filesystem de Windows (`/mnt/c` o similar) por temas de performance. Lo mejor es mantener los proyectos dentro del filesystem de Linux (`~/`). Si necesitas entrar a estas carpetas con File Explorer puedes hacerlo ejecutando `explorer.exe . ` en la carpeta correspondiente o navegando a `\\\\wsl$\\Ubuntu-20.04\\home\\TU_USUARIO\\`. En Windows Terminal puedes configurar que siempre se abra en tu home en las opciones.
-{% endhint %}
+> 💡 A pesar que WSL 2 lo permite, no te recomendamos clonar los proyectos dentro del filesystem de Windows (`/mnt/c` o similar) por temas de performance. Lo mejor es mantener los proyectos dentro del filesystem de Linux (`~/`). Si necesitas entrar a estas carpetas con File Explorer puedes hacerlo ejecutando `explorer.exe . ` en la carpeta correspondiente o navegando a `\\\\wsl$\\Ubuntu-20.04\\home\\TU_USUARIO\\`. En Windows Terminal puedes configurar que siempre se abra en tu home en las opciones.
 
 ### Instalando Utilidades
 
 Aparte de WSL 2, para instalar utilidades nativas de Windows puedes usar [scoop](https://scoop.sh/), un instalador para la linea de comando que hace muy fácil instalar binarios (como imagemagick, ffmpeg, etc) para que queden disponibles en el PATH de Windows.
 
-{% hint style="info" %}
-En teoría es posible usar scoop y Docker para instalar todo lo necesario ejecutar los proyectos sin necesidad de WSL 2 pero se aleja del setup estandar que usamos en Platanus y no podremos ayudarte si tienes algún problema.
-{% endhint %}
+> 💡 En teoría es posible usar scoop y Docker para instalar todo lo necesario ejecutar los proyectos sin necesidad de WSL 2 pero se aleja del setup estandar que usamos en Platanus y no podremos ayudarte si tienes algún problema.
 
 ## Links de Referencia
 
