@@ -149,8 +149,7 @@ module Recruiting
     # ...
 ```
 
-Ese método se encarga de aislar controllers, models, routes, etc. dentro de un namespace para evitar colisiones de nombres y overrides.
-Por ejemplo, al crear un nuevo modelo, este se creará dentro del namespace y la tabla tendrá como prefijo el nombre del engine.
+Ese método se encarga de aislar controllers, models, routes, etc. dentro de un namespace para evitar colisiones de nombres y overrides. Por ejemplo, al crear un nuevo modelo, este se creará dentro del namespace y la tabla tendrá como prefijo el nombre del engine.
 
 Se creará:
 
