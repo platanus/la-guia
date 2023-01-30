@@ -108,7 +108,7 @@ eval "$(nodenv init -)"
 
         `$ echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc`
 
-    * En **bash**:
+    * En **bash**:w
 
         `$ echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bash_profile`
 
