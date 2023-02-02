@@ -79,7 +79,7 @@ Lo que se hace aquí es ejecutar el job deploy siempre que se cree un nuevo tag 
 
 Una vez configurado CircleCI en la gema tenemos que:
 
-1. Cambiar `VERSION` en `lib/my_new_gem/version.rb` para que apunte a la nueva verisón.
+1. Cambiar `VERSION` en `lib/my_new_gem/version.rb` para que apunte a la nueva versión.
 
 1. Cambiar el título `Unreleased` a la versión nueva en el `CHANGELOG.md`.
 
