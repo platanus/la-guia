@@ -17,7 +17,7 @@ class MyModelObserver < PowerTypes::Observer
   def puts_hello
     puts 'hello'
   end
-	end
+end
 ```
 
 Luego en `MyModel` debemos añadir:
