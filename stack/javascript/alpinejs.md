@@ -8,10 +8,10 @@ AlpineJS es una excelente alternativa para agregar algo de inteligencia a nuestr
 
 ```bash
 # Si estamos usando Shakapacker, Webpack 5+ u otro bundler moderno
-yarn add alpine
+yarn add alpinejs
 
 # Si estamos usando Webpacker
-yarn add alpine@2
+yarn add alpinejs@2
 ```
 
 Después tenemos que agregar lo siguiente al archivo donde ActiveAdmin se inicializa, normalmente el que tiene la linea `import '@activeadmin/activeadmin';`
