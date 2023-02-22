@@ -20,6 +20,7 @@ De todos modos, estamos abiertos a recibir propuestas y sugerencias que puedes h
         * [General](stack/ruby_rails/power_types/general.md)
         * [Patrones](stack/ruby_rails/power_types/patrones.md)
             * [Commands](stack/ruby_rails/power_types/patrones/commands.md)
+            * [Utils](stack/ruby_rails/power_types/patrones/utils.md)
             * [Services](stack/ruby_rails/power_types/patrones/services.md)
             * [Values](stack/ruby_rails/power_types/patrones/values.md)
             * [Observers](stack/ruby_rails/power_types/patrones/observers.md)
