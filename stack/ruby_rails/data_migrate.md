@@ -40,13 +40,37 @@ Si se corrieran las migraciones por separado usando `rake db:migrate` y luego `r
 
 ### Posibles problemas relacionados al deploy
 
-Hay algunos casos en que pueden haber problemas con la aplicación en staging o producción. Uno de estos casos es cuando ocurre un problema y es necesario restaurar un backup y correr las migraciones que se hayan generado entre la fecha del backup y el presente. Esto puede generar problemas con las migraciones de datos si en ellas se accede a cosas que existían a nivel de código cuando se generó el backup pero con la versión actual del código ya no existen. Este no es un problema exclusivo de la gema, siempre que se manipule data en migraciones puede suceder esto.
+Hay algunos casos en que pueden haber problemas con la aplicación en staging o producción:
 
-Para evitar lo anterior hay un par de alternativas:
+1. Cuando ocurre un problema y es necesario restaurar un backup y correr las migraciones que se hayan generado entre la fecha del backup y el presente. Esto puede generar problemas con las migraciones de datos si en ellas se accede a cosas que existían a nivel de código cuando se generó el backup pero con la versión actual del código ya no existen. Este no es un problema exclusivo de la gema, siempre que se manipule data en migraciones puede suceder esto.
 
-* Definir un modelo "temporal" en la migración de data, asociado a la tabla que se use, y usar este exclusivamente. Esto nos independiza del modelo real, y nos obliga a usar solo lo que esté efectivamente definido en la tabla al momento de correr la migración de data. Es decir, no se correrán validaciones ni callbacks del modelo original, ni tampoco se podrán usar scopes definidos ahí. Este es el *approach* que mencionan en la [guía de estilo de rails de rubocop](https://github.com/rubocop-hq/rails-style-guide#define-model-class-migrations).
+    Para evitar lo anterior hay un par de alternativas:
 
-    Como ejemplo, digamos que tenemos un usuario que pasa de tener una columna `boolean` que indica si es gerente o no, a tener un string `role`:
+    * Definir un modelo "temporal" en la migración de data, asociado a la tabla que se use, y usar este exclusivamente. Esto nos independiza del modelo real, y nos obliga a usar solo lo que esté efectivamente definido en la tabla al momento de correr la migración de data. Es decir, no se correrán validaciones ni callbacks del modelo original, ni tampoco se podrán usar scopes definidos ahí. Este es el *approach* que mencionan en la [guía de estilo de rails de rubocop](https://github.com/rubocop-hq/rails-style-guide#define-model-class-migrations).
+
+        Como ejemplo, digamos que tenemos un usuario que pasa de tener una columna `boolean` que indica si es gerente o no, a tener un string `role`:
+
+        ```ruby
+        class BackfillRoleInUsers < ActiveRecord::Migration[6.0]
+          class MigrationUser < ApplicationRecord
+            self.table_name = :users
+          end
+        
+          def up
+            MigrationUser.all.each do |user|
+              user.update!(role: user.is_manager ? 'manager' : 'worker')
+            end
+          end
+        
+          def down
+            raise ActiveRecord::IrreversibleMigration
+          end
+        end
+        ```
+
+    * Usar `ActiveRecord::Base.connection.execute(query)` para correr una consulta SQL directamente, donde `query` es el string con esa query. Esto también nos obligaría a usar solo lo que existe en DB al momento de correr la migración.
+
+1. Cuando se corre una migración que crea una nueva columna, y una migración de data a continuación que hace backfill de esa columna. A veces pasa que la migración de data se corre sin problemas, pero los cambios en verdad no se aplicaron. Este problema es esppecialmente peligroso, porque es posible que en local este problema no ocurra, pero si en staging/production. Esto pasa porque Rails cachea la información de las columnas al empezar las migraciones, y en la migración de datos se usa ese cache, por lo que el modelo no tiene esa nueva columna, entonces no sabe como guardar ese valor, pero tampoco falla porque si existe la columna a nivel de DB (esta es una deducción de lo que hemos podido observar en casos que esto ha ocurrido). Esto puede ocurrir incluso si se hace el modelo temporal del paso anterior (suponemos que esto implica que el cache es a nivel de la tabla, no del modelo). Para evitar este problema, la recomendación es **siempre empezar las migraciones de datos reseteando la información de las columnas de todos los modelos que vayamos a usar, usando **[**reset_column_information**](https://api.rubyonrails.org/classes/ActiveRecord/ModelSchema/ClassMethods.html#method-i-reset_column_information). Con esto, la migración del punto anterior quedaría así:
 
     ```ruby
     class BackfillRoleInUsers < ActiveRecord::Migration[6.0]
@@ -55,6 +79,7 @@ Para evitar lo anterior hay un par de alternativas:
       end
     
       def up
+        MigrationUser.reset_column_information 
         MigrationUser.all.each do |user|
           user.update!(role: user.is_manager ? 'manager' : 'worker')
         end
@@ -63,10 +88,8 @@ Para evitar lo anterior hay un par de alternativas:
       def down
         raise ActiveRecord::IrreversibleMigration
       end
-    end
+    end	
     ```
-
-* Usar `ActiveRecord::Base.connection.execute(query)` para correr una consulta SQL directamente, donde `query` es el string con esa query. Esto también nos obligaría a usar solo lo que existe en DB al momento de correr la migración.
 
 ### Recursos útiles
 
