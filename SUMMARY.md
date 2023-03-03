@@ -16,6 +16,7 @@
             * [Observers](stack/ruby_rails/power_types/patrones/observers.md)
     * [Active Admin](stack/ruby_rails/active_admin.md)
         * [General](stack/ruby_rails/active_admin/general.md)
+    * [Pundit](stack/ruby_rails/pundit.md)
     * [Shrine](stack/ruby_rails/shrine.md)
         * [General](stack/ruby_rails/shrine/general.md)
         * [Manejo y procesamiento de imágenes](stack/ruby_rails/shrine/manejo_y_procesamiento_de_imagenes.md)
