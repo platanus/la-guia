@@ -1,5 +1,7 @@
 # Guía de Estilo
 
+
+
 ## Rails
 
 * Las variables de ambiente deberían ser definidas como métodos en un módulo para agruparlas y para que sea más fácil hacer mock de ellas. ([Ejemplo: Módulo para variables de entorno](guia_de_estilo/ejemplo_modulo_para_variables_de_entorno.md)) 
