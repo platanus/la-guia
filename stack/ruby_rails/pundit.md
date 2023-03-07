@@ -310,16 +310,141 @@ si como un admin user intento acceder a `/admin/blog_posts/3`, no podré hacerlo
 
 > ℹ️ Dependiendo del tipo de aplicación y lo sensible que sea el tema seguridad en la misma, nos convendrá o no hacer que las clases base sean más o menos restrictivas.
 
-### Recursos útiles
+### Preguntas frecuentes
+
+**¿Cómo manejar un admin que puede ver todo y otro que tiene acceso restringido?**
+
+Supongamos que tenemos el modelo `BlogPost` que tiene un atributo `deleted_at` que se llena cuando alguien borra el blog. Supongamos además que queremos que desde la back office, un `AdminUser` con rol “super admin” pueda ver absolutamente todos los blogs pero uno con rol “supervisor” solo pueda ver aquellos que no fueron borrados. Para lograr esto haremos lo siguiente:
+
+1. Agregar scopes a `BlogPost` para poder obtener fácilmente recursos borrados.
+
+    ```ruby
+    class BlogPost < ApplicationRecord
+      scope :published, -> { where(deleted_at: nil) }
+    end
+    ```
+
+1. Definir un atributo rol en el modelo `AdminUser` así:
+
+    ```ruby
+    class AdminUser < ApplicationRecord
+      enum role: { supervisor: 0, super_admin: 1 }, _default: 'supervisor', _prefix: true
+    end
+    ```
+
+1. Modificar la policy para definir las reglas de acceso para cada rol:
+
+    ```ruby
+    class BackOffice::BlogPostPolicy < BackOffice::DefaultPolicy
+      def show?
+    		scope = admin_user.role_supervisor? ? :published : :all
+    		BlogPost.send(scope).where(id: record.id).any?
+    	end
+    end
+    ```
+
+    En el código anterior se puede ver que se buscará el blog post (`record`) específico en la colección completa en el caso de que el `AdminUser` logueado (`admin_user`) sea un `super_admin` o en la colección filtrada (solo aquellos que no fueron borrados) en el caso de que sea `supervisor`.
+
+**¿Cómo testear una policy con RSpec?**
+
+Tomemos como ejemplo la policy de la pregunta anterior:
+
+```ruby
+class BackOffice::BlogPostPolicy < BackOffice::DefaultPolicy
+  def show?
+		scope = admin_user.role_supervisor? ? :published : :all
+		BlogPost.send(scope).where(id: record.id).any?
+	end
+end
+```
+
+Pasos a seguir:
+
+1. Agregar `require "pundit/rspec"` al archivo `spec/rails_helper.rb` para tener los helpers de RSpec específicos de Pundit si es que no viene ya con Potassium.
+
+1. Agregar la policy en `spec/policies/back_office/blog_post_policy_spec.rb`
+
+1. Definir en `let`s todo aquellos que puede variar:
+
+    1. `admin_user`
+
+    1. `record`
+
+    ```ruby
+    describe BackOffice::BlogPostPolicy do
+      subject { described_class }
+    
+      let(:role) { "super_admin" }
+      let(:admin_user) { create(:admin_user, role: role) }
+      let(:deleted_at) { nil }
+      let(:record) { create(:block_post, deleted_at: deleted_at) }
+    
+      # ...
+    end
+    ```
+
+1. Probar los permisos sobre una acción variando los `let`s.
+
+    ```ruby
+    describe BackOffice::BlogPostPolicy do
+      subject { described_class }
+    
+      let(:role) { "super_admin" }
+      let(:admin_user) { create(:admin_user, role: role) }
+      let(:deleted_at) { nil }
+      let(:record) { create(:block_post, deleted_at: deleted_at) }
+    
+      permissions :show? do
+        context "with super_admin role" do
+          let(:role) { "super_admin" }
+    
+          it { expect(subject).to permit(admin_user, record) }
+    
+          context "with deleted record" do
+            let(:deleted_at) { DateTime.current }
+    
+            it { expect(subject).to permit(admin_user, record) }
+          end
+        end
+    
+        context "with supervisor role" do
+          let(:role) { "supervisor" }
+    
+          it { expect(subject).to permit(admin_user, record) }
+    
+          context "with deleted record" do
+            let(:deleted_at) { DateTime.current }
+    
+            it { expect(subject).not_to permit(admin_user, record) }
+          end
+        end
+      end
+    end
+    ```
+
+**¿Qué significa el error ****`Pundit::NotDefinedError`****?**
+
+<img src='assets/pundit-6.png'/>
+
+Significa que nos falta agregar la policy para el recurso que acabamos de agregar. Se arregla agregando la policy y definiendo permisos para todas las acciones (que pueden ser las que vienen por default de `BackOffice::DefaultPolicy`)
+
+```ruby
+class BackOffice::TeamMemberPolicy < BackOffice::DefaultPolicy
+end
+```
+
+**¿Por qué en active admin no puedo acceder a un recurso?**
+
+<img src='assets/pundit-7.png'/>
+
+Posiblemente porque el permiso está evaluando `false`. Por ej si vemos el error al entrar a `/admin/team_members/666` debemos revisar en `BackOffice::TeamMemberPolicy` si el permiso en `show?` está evaluando `true` o `false`. Si resulta que la acción no está definida en esa policy habrá que revisar `BackOffice::DefaultPolicy`
+
+## Recursos útiles
 
 * [Github de Pundit](https://github.com/varvet/pundit)
 
 * [Receta](https://github.com/platanus/potassium/blob/master/lib/potassium/recipes/pundit.rb) de potassium (puede ser útil para ver qué se instala)
 
 ## Ejemplos
-
-* En el admin que dos usuarios puedan ver cosas distintas. Por ej un admin ve todo y otro ve solo lo que le compete.
-
-* testear policy
 
 * me sale error en la member action que no tienen la policy (como pregunta frecuente)
