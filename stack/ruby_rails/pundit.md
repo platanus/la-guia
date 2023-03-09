@@ -337,9 +337,9 @@ Supongamos que tenemos el modelo `BlogPost` que tiene un atributo `deleted_at` q
     ```ruby
     class BackOffice::BlogPostPolicy < BackOffice::DefaultPolicy
       def show?
-    		scope = admin_user.role_supervisor? ? :published : :all
-    		BlogPost.send(scope).where(id: record.id).any?
-    	end
+        scope = admin_user.role_supervisor? ? :published : :all
+        BlogPost.send(scope).where(id: record.id).any?
+      end
     end
     ```
 
@@ -352,9 +352,9 @@ Tomemos como ejemplo la policy de la pregunta anterior:
 ```ruby
 class BackOffice::BlogPostPolicy < BackOffice::DefaultPolicy
   def show?
-		scope = admin_user.role_supervisor? ? :published : :all
-		BlogPost.send(scope).where(id: record.id).any?
-	end
+    scope = admin_user.role_supervisor? ? :published : :all
+    BlogPost.send(scope).where(id: record.id).any?
+  end
 end
 ```
 
@@ -444,7 +444,3 @@ Posiblemente porque el permiso está evaluando `false`. Por ej si vemos el error
 * [Github de Pundit](https://github.com/varvet/pundit)
 
 * [Receta](https://github.com/platanus/potassium/blob/master/lib/potassium/recipes/pundit.rb) de potassium (puede ser útil para ver qué se instala)
-
-## Ejemplos
-
-* me sale error en la member action que no tienen la policy (como pregunta frecuente)
