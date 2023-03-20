@@ -38,7 +38,7 @@
     * [Redux](stack/mobile/redux.md)
     * [Styling](stack/mobile/styling.md)
     * [Recursos](stack/mobile/recursos.md)
-* [Resolviendo problemas (debugging)](stack/resolviendo_problemas_debugging.md)
+* [Resolviendo problemas - Debugging](stack/resolviendo_problemas_debugging.md)
 ## Setup
 * [Configuración de tu entorno local](setup/configuracion_de_tu_entorno_local.md)
     * [Instalación Base](setup/configuracion_de_tu_entorno_local/instalacion_base.md)

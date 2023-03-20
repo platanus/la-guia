@@ -1,4 +1,4 @@
-# Resolviendo problemas (debugging)
+# Resolviendo problemas - Debugging
 
 A veces un `puts` o `console.log` no es la mejor manera de debuggear o ver qué está pasando en una parte del código. En esta sección veremos algunas herramientas que te pueden servir cuando estés desarrollando o buscando el origen de un bug escondido. 
 
@@ -72,8 +72,12 @@ Así como en Ruby está el `puts`, probablemente te suena que en javascript est�
 
 https://devtools.vuejs.org/guide/installation.html
 
-Con esta extensión se agrega una nueva pestaña al devtools del navegador. En ella se puede ver el árbol de componentes presente en la vista actual, y detalles de cada componente (props, computed, etc.)
+Con esta extensión se agrega una nueva pestaña al devtools del navegador. En ella se puede ver el árbol de componentes presente en la vista actual, y detalles de cada componente (props, computed, etc.).
 
 <img src='assets/resolviendo-problemas-debugging-3.png'/>
+
+También puedes ver los eventos que han sido emitidos con sus parámetros en la tab Timeline:
+
+<img src='assets/resolviendo-problemas-debugging-4.png'/>
 
 
