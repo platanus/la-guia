@@ -60,6 +60,48 @@ heroku run bundle exec rails c -a nombre-de-la-app
 
 > 🚨 Ojo que las cosas que corras aquí van a afectar tu ambiente de staging/production, no es un ambiente sandbox inofensivo. Si creas records por ejemplo, eso se verá reflejado en la base de datos de la app
 
+### Monkeypatching en la consola
+
+Ruby permite hacer fácilmente *monkeypatching* de una clase, en otras palabras, redefinir partes de esa clase “desde afuera” de dónde se define originalmente. Podemos usar eso para probar cosas en la consola de staging, poniendo puts para debuggear por ejemplo (la gema `pry` no está en ambientes de producción por si acaso). Una forma fácil de hacer eso es definir la clase nuevamente en consola, y redefinir solo los métodos que quiero modificar. El resto de la definición de la clase que no toqué (otros métodos, constantes, etc.) se mantendrán intactos.
+
+Veamos un ejemplo. Digamos que tenemos la siguiente clase
+
+```ruby
+class MyJob < ApplicationJob
+  def perform
+    do_something
+    do_something_else
+  end
+
+  private
+
+  def do_something
+    # do_something implementation
+  end
+
+  def do_something_else
+    # do_something_else implementation
+  end
+end
+```
+
+Digamos que hay un error y sospecho que está en el método `do_something_else`. Puedo pegar en consola algo así:
+
+```ruby
+class MyJob < ApplicationJob
+  private
+
+  def do_something_else
+	  puts 'Some message to help me debug'
+    # do_something_else implementation
+  end
+end
+```
+
+Luego puedo correr el Job en consola y se verá el puts o los cambios que haya hecho. Notar que no se necesitó redefinir el resto de la clase, pero si tengo que mantener la implementación de `do_something_else`.
+
+> 💡 Los cambios que se hagan de esta manera solo se mantendrán **dentro de esa sesión de la consola de rails.** Osea que esos cambios no se verán reflejados en la aplicación cuando lo usen los usuarios. Los cambios viven y mueren con ese `heroku run bundle exec rails c -a nombre-de-la-app`
+
 # Front
 
 ## Debugger

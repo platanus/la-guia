@@ -24,6 +24,7 @@ De todos modos, estamos abiertos a recibir propuestas y sugerencias que puedes h
             * [Services](stack/ruby_rails/power_types/patrones/services.md)
             * [Values](stack/ruby_rails/power_types/patrones/values.md)
             * [Observers](stack/ruby_rails/power_types/patrones/observers.md)
+    * [Power API](stack/ruby_rails/power_api.md)
     * [Active Admin](stack/ruby_rails/active_admin.md)
         * [General](stack/ruby_rails/active_admin/general.md)
     * [Pundit](stack/ruby_rails/pundit.md)
