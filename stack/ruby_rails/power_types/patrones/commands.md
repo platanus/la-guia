@@ -1,5 +1,7 @@
 # Commands
 
+> 🚨 En Platanus dejamos de usar comandos. Ahora estamos usando Active Job como lugar para la lógica de negocio
+
 Los *Comandos* son clases destinadas a realizar operaciones acotadas e
 independientes. Se implementan a través de un método `perform` que recibe
 argumentos y realiza operaciones con ellos entregando un resultado. También

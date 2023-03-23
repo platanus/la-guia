@@ -1,4 +1,4 @@
-# Resolviendo problemas - Debugging
+# Resolviendo problemas (debugging)
 
 A veces un `puts` o `console.log` no es la mejor manera de debuggear o ver qué está pasando en una parte del código. En esta sección veremos algunas herramientas que te pueden servir cuando estés desarrollando o buscando el origen de un bug escondido. 
 
@@ -119,7 +119,3 @@ Con esta extensión se agrega una nueva pestaña al devtools del navegador. En e
 <img src='assets/resolviendo-problemas-debugging-3.png'/>
 
 También puedes ver los eventos que han sido emitidos con sus parámetros en la tab Timeline:
-
-<img src='assets/resolviendo-problemas-debugging-4.png'/>
-
-

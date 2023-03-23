@@ -4,6 +4,8 @@ En esta sección podrás ver nuestro stack tecnológico. Herramientas usadas, pa
 
 [Getting Started](stack/getting_started.md)
 
+[Nuestro MVC extendido](stack/nuestro_mvc_extendido.md)
+
 [Ruby/Rails](stack/ruby_rails.md)
 
 [JavaScript](stack/javascript.md)
@@ -12,4 +14,4 @@ En esta sección podrás ver nuestro stack tecnológico. Herramientas usadas, pa
 
 [Mobile](stack/mobile.md)
 
-[Resolviendo problemas - Debugging](stack/resolviendo_problemas_debugging.md)
+[Resolviendo problemas (debugging)](stack/resolviendo_problemas_debugging.md)

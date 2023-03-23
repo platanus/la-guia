@@ -27,6 +27,7 @@ De todos modos, estamos abiertos a recibir propuestas y sugerencias que puedes h
     * [Power API](stack/ruby_rails/power_api.md)
     * [Active Admin](stack/ruby_rails/active_admin.md)
         * [General](stack/ruby_rails/active_admin/general.md)
+        * [Active Admin Addons](stack/ruby_rails/active_admin/active_admin_addons.md)
     * [Pundit](stack/ruby_rails/pundit.md)
     * [Shrine](stack/ruby_rails/shrine.md)
         * [General](stack/ruby_rails/shrine/general.md)
@@ -49,7 +50,7 @@ De todos modos, estamos abiertos a recibir propuestas y sugerencias que puedes h
     * [Redux](stack/mobile/redux.md)
     * [Styling](stack/mobile/styling.md)
     * [Recursos](stack/mobile/recursos.md)
-* [Resolviendo problemas - Debugging](stack/resolviendo_problemas_debugging.md)
+* [Resolviendo problemas (debugging)](stack/resolviendo_problemas_debugging.md)
 ## Setup
 * [Configuración de tu entorno local](setup/configuracion_de_tu_entorno_local.md)
     * [Instalación Base](setup/configuracion_de_tu_entorno_local/instalacion_base.md)
