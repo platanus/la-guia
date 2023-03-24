@@ -92,7 +92,7 @@ class MyJob < ApplicationJob
   private
 
   def do_something_else
-	  puts 'Some message to help me debug'
+    puts 'Some message to help me debug'
     # do_something_else implementation
   end
 end
@@ -100,7 +100,7 @@ end
 
 Luego puedo correr el Job en consola y se verá el puts o los cambios que haya hecho. Notar que no se necesitó redefinir el resto de la clase, pero si tengo que mantener la implementación de `do_something_else`.
 
-> 💡 Los cambios que se hagan de esta manera solo se mantendrán **dentro de esa sesión de la consola de rails.** Osea que esos cambios no se verán reflejados en la aplicación cuando lo usen los usuarios. Los cambios viven y mueren con ese `heroku run bundle exec rails c -a nombre-de-la-app`
+> 💡 Los cambios que se hagan de esta manera solo se mantendrán **dentro de esa sesión de la consola de rails.** O sea que esos cambios no se verán reflejados en la aplicación cuando la usen los usuarios. Los cambios viven y mueren con ese `heroku run bundle exec rails c -a nombre-de-la-app`
 
 # Front
 
