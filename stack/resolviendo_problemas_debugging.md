@@ -119,3 +119,5 @@ Con esta extensión se agrega una nueva pestaña al devtools del navegador. En e
 <img src='assets/resolviendo-problemas-debugging-3.png'/>
 
 También puedes ver los eventos que han sido emitidos con sus parámetros en la tab Timeline:
+
+

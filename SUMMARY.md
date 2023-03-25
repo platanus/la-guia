@@ -4,8 +4,8 @@
     * [Ejemplo: Módulo para variables de entorno](acuerdos/guia_de_estilo/ejemplo_modulo_para_variables_de_entorno.md)
 ## Stack
 * [Getting Started](stack/getting_started.md)
+* [Nuestro MVC extendido](stack/nuestro_mvc_extendido.md)
 * [Ruby/Rails](stack/ruby_rails.md)
-    * [Potassium](stack/ruby_rails/potassium.md)
     * [Power Types](stack/ruby_rails/power_types.md)
         * [General](stack/ruby_rails/power_types/general.md)
         * [Patrones](stack/ruby_rails/power_types/patrones.md)
@@ -14,6 +14,7 @@
             * [Services](stack/ruby_rails/power_types/patrones/services.md)
             * [Values](stack/ruby_rails/power_types/patrones/values.md)
             * [Observers](stack/ruby_rails/power_types/patrones/observers.md)
+    * [Potassium](stack/ruby_rails/potassium.md)
     * [Power API](stack/ruby_rails/power_api.md)
     * [Active Admin](stack/ruby_rails/active_admin.md)
         * [General](stack/ruby_rails/active_admin/general.md)
@@ -80,6 +81,7 @@
         * [Google Ads](setup/configuracion_de_proyectos/google_tag_manager_analytics_search_console_etc/google_ads.md)
     * [Crear un bucket de S3](setup/configuracion_de_proyectos/crear_un_bucket_de_s3.md)
     * [SlackBot](setup/configuracion_de_proyectos/slackbot.md)
+    * [Google BigQuery](setup/configuracion_de_proyectos/google_bigquery.md)
 ## Deployment
 * [Rails](deployment/rails.md)
 * [Ruby Gems](deployment/ruby_gems.md)

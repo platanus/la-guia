@@ -2,9 +2,9 @@
 
 [Rails](setup/configuracion_de_proyectos/rails.md)
 
-[Potassium](ruby_rails/potassium.md)
-
 [Power Types](ruby_rails/power_types.md)
+
+[Potassium](ruby_rails/potassium.md)
 
 [Power API](ruby_rails/power_api.md)
 
