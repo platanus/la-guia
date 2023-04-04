@@ -141,7 +141,7 @@ Para instalar nuevas versiones de ruby, el plugin `ruby-build` nos permite usar 
 # Actualizar las versiones de ruby disponibles para instalar
 cd $(rbenv root)/plugins/ruby-build && git pull
 # o en OSX
-brew upgrade rbenv-build
+brew upgrade ruby-build
 
 # Listar todos las versiones disponibles para instalar
 rbenv install --list
