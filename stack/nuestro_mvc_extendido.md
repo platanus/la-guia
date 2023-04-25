@@ -45,3 +45,5 @@ En este diagrama se muestran más o menos las interacciones descritas:
 <img src='assets/nuestro-mvc-extendido-1.svgz'/>
 
 https://app.diagrams.net/#G16C9xcj5y6dPcNtThtR819z8DFbTTasOe
+
+
