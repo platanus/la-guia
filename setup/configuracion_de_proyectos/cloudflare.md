@@ -22,7 +22,7 @@ Si tienes que configurar un nuevo dominio, estos son los pasos:
 
 **Nic.cl**
 
-Si es un dominio .cl, vas a tener que hacer un truquito antes. En [nic.cl](http://nic.cl) configura los siguientes nameservers:
+    Si es un dominio .cl, vas a tener que hacer un truquito antes. En [nic.cl](http://nic.cl) configura los siguientes nameservers:
 
     1. [alex.ns.cloudflare.com](http://alex.ns.cloudflare.com/)
 
