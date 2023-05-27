@@ -95,10 +95,11 @@ De todos modos, estamos abiertos a recibir propuestas y sugerencias que puedes h
 ## Deployment
 * [Rails](deployment/rails.md)
 * [Ruby Gems](deployment/ruby_gems.md)
-* [Mobile Resources](deployment/mobile_resources.md)
 * [Browser and Node (Open Source)](deployment/browser_and_node_open_source.md)
-* [Apple App Storage](deployment/apple_app_storage.md)
-* [Google Play](deployment/google_play.md)
+* [Mobile](deployment/mobile.md)
+    * [Mobile Resources](deployment/mobile/mobile_resources.md)
+    * [Apple App Storage](deployment/mobile/apple_app_storage.md)
+    * [Google Play](deployment/mobile/google_play.md)
 ## Upgrades
 * [Upgrade de Vue 2 a Vue 3](upgrades/upgrade_de_vue_2_a_vue_3.md)
 * [Migración Hound → reviewdog](upgrades/migracion_hound_reviewdog.md)

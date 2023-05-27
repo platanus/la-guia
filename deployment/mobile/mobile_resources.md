@@ -24,9 +24,21 @@ Todos los recursos mencionados son obligatorios para la publicación de la aplic
 
 * [Template PSD](http://code.ionicframework.com/resources/splash.psd)
 
-### Recursos para publicar la aplicación
+
+
+
+
+## Recursos para publicar la aplicación
 
 ### General
+
+
+
+### [Google Play] Ícono de Vista Previa
+
+Se refiere al ícono que se ve en la vista previa de la Play Store en el perfil de la app.** Este icono es diferente al ícono de la app misma.** Debe cumplir los siguientes requisitos:
+
+Lo que se ve en la Google Play Store es lo que se encuentra dentro de ese cuadrado verde.
 
 ### Ícono en alta resolución
 
@@ -38,7 +50,7 @@ Todos los recursos mencionados son obligatorios para la publicación de la aplic
 
 ### Descripción corta (Google Play)
 
-* Máximo de 80 carácteres.
+* Rápida Sinopsis de los servicios que provee la app. Máximo de 80 carácteres.
 
 ### Descripción:
 
@@ -48,7 +60,9 @@ Todos los recursos mencionados son obligatorios para la publicación de la aplic
 
 ### Palabras clave (Apple)
 
-* Palabras que describan la aplicación.
+* Palabras que describan la aplicación. Esto es útil para el motor de búsqueda para que la aplicación pueda ser fácilmente descubierta.
+
+* Es importante considerar el equilibrio entre clasificar bien para términos menos comunes versus clasificar más bajo para términos populares. Los términos menos comunes generan menos tráfico, pero son menos competitivos.
 
 ### Sitio Web:
 
@@ -56,9 +70,13 @@ Todos los recursos mencionados son obligatorios para la publicación de la aplic
 
 ### (Opcional) Videos
 
+Se muestra antes que los screenshots. No es obligatorio, pero ambos Google y Apple lo recomiendan.
+
 ### iPhone (iOS) App Store
 
 * `1080x1920px` o `1920x1080px`
+
+
 
 * MOV o MP4
 
@@ -75,6 +93,8 @@ Todos los recursos mencionados son obligatorios para la publicación de la aplic
 ### iPhone (iOS) App Store
 
 ### Screenshots
+
+Los iPhones tienen diferentes dimensiones, por lo que las capturas de pantalla deben abarcar un rango de estas dimensiones. Las especificaciones de dimensiones se pueden encontrar [aquí](https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications).
 
 * Pueden llevar texto explicativo. [Ejemplo 1](https://i.imgur.com/qiI5wYV.jpg) - [Ejemplo 2](https://i.imgur.com/PvhLGqE.jpg) - [Ejemplo 3](https://i.imgur.com/8kLwz4w.jpg) (Ejemplos solo para contenido, no considerar para tamaño)
 
@@ -120,6 +140,12 @@ Todos los recursos mencionados son obligatorios para la publicación de la aplic
 
 * La imagen debe ser apta para todo tipo de pantallas por lo que no debería contener mucho texto.
 
-* Un ícono de reproducción aparecerá encima de la imagen si se ha agregado un video.
+* Si también se proporciona un video de vista previa, el feature graphic será algo así como el screenshot del video antes de que esté comience a reproducirse. Por lo tanto, es importante que el feature graphic sea llamativo y los usuarios al verlo quieran hacer click para que comience el video.
+
+## Disclaimer
+
+Los requerimientos descritos en esta página están sujetos a cambios sin previo aviso por parte de Apple y Google, por lo que igualmente deberían revisarse los requerimientos en sus páginas, para cersiorarse de que no hayan habido cambios en el sistema.
+
+
 
 
