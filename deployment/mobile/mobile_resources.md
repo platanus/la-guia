@@ -76,8 +76,6 @@ Se muestra antes que los screenshots. No es obligatorio, pero ambos Google y App
 
 * `1080x1920px` o `1920x1080px`
 
-
-
 * MOV o MP4
 
 * El video no puede contener precios o propaganda.
