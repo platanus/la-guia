@@ -1,8 +1,14 @@
 # Windows
 
-## Windows 10
-
 Estos días la mejor manera de tener un ambiente de desarrollo en Windows es usando WSL 2, que genera una instalación de Linux integrada a Windows sin tener que reiniciar.
+
+## Windows 11
+
+1. En Windows Terminal ejecuta `wsl --install`
+
+1. Instala Ubuntu desde la Windows Store [https://apps.microsoft.com/store/detail/ubuntu/9PDXGNCFSCZV](https://apps.microsoft.com/store/detail/ubuntu/9PDXGNCFSCZV)
+
+## Windows 10
 
 ### Instalando Windows Terminal
 
@@ -43,14 +49,20 @@ Para instalar Windows Terminal, sigue las instrucciones [aquí](https://docs.mic
 
 1. Para tener un terminal decente instala Windows Terminal desde la [Microsoft Store](https://aka.ms/terminal), desde [el repo](https://github.com/microsoft/terminal/releases) o usando scoop (`scoop install windows-terminal`) (ver [Instalando Utilidades](https://www.notion.so/platanus/Windows-a7204bb1aa4f4af597c4cb39fda4df6d#instalando-utilidades))
 
-1. Es posible que sea necesario limitar la cantidad de memoria que WSL usa. Esto se puede lograr editando (o creando) el archivo `C:\\Users\\TU_USUARIO\\.wslconfig` con lo siguiente:
+
+
+---
+
+
+
+Es posible que sea necesario limitar la cantidad de memoria que WSL usa. Esto se puede lograr editando (o creando) el archivo `C:\\Users\\TU_USUARIO\\.wslconfig` con lo siguiente:
 
     ```plain text
     [wsl2]
     memory=4GB
     ```
 
-### Ambiente de Desarrollo
+## Ambiente de Desarrollo
 
 Una vez instalado Windows Terminal, el ambiente de desarrollo funciona como cualquier otra instalación de Linux.
 
@@ -66,8 +78,10 @@ La mayoría de los proyectos de Platanus modernos usan Docker para los servicios
 
 * dependencia para la gema pg (`sudo apt install libpq-dev`)
 
+* dependencia vips (`sudo apt install libvips42 nip2-`)
+
 > 💡 Si tienes Git for Windows instalado (con scoop: `scoop install git`) puedes usar Git Credential Manager de Windows para que se encargue de recordar tus credenciales de GitHub en WSL.
-`git config --global credential.helper /mnt/c/Users/TU_USUARIO/scoop/apps/git/current/mingw64/libexec/git-core/git-credential-manager-core.exe`
+`git config --global credential.helper /mnt/c/Users/TU_USUARIO/scoop/apps/git/current/mingw64/bin/git-credential-manager.exe`
 
 > 💡 A pesar que WSL 2 lo permite, no te recomendamos clonar los proyectos dentro del filesystem de Windows (`/mnt/c` o similar) por temas de performance. Lo mejor es mantener los proyectos dentro del filesystem de Linux (`~/`). Si necesitas entrar a estas carpetas con File Explorer puedes hacerlo ejecutando `explorer.exe . ` en la carpeta correspondiente o navegando a `\\\\wsl$\\Ubuntu-20.04\\home\\TU_USUARIO\\`. En Windows Terminal puedes configurar que siempre se abra en tu home en las opciones.
 
