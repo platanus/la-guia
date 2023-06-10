@@ -49,6 +49,7 @@ De todos modos, estamos abiertos a recibir propuestas y sugerencias que puedes h
     * [Expo](stack/mobile/expo.md)
     * [React Navigation](stack/mobile/react_navigation.md)
     * [Redux](stack/mobile/redux.md)
+        * [Crear y conectar una slice en Redux](stack/mobile/redux/crear_y_conectar_una_slice_en_redux.md)
     * [Styling](stack/mobile/styling.md)
     * [Recursos](stack/mobile/recursos.md)
 * [Resolviendo problemas (debugging)](stack/resolviendo_problemas_debugging.md)
