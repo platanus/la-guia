@@ -38,6 +38,24 @@ Todos los recursos mencionados son obligatorios para la publicación de la aplic
 
 Se refiere al ícono que se ve en la vista previa de la Play Store en el perfil de la app.** Este icono es diferente al ícono de la app misma.** Debe cumplir los siguientes requisitos:
 
+* Archivo PNG de 32 bits
+
+
+
+* Tamaño de 512x512 píxeles
+
+* No puede superar un tamaño de 1024 KB
+
+* No puede ser engañoso para los usuarios
+
+* La forma debe ser de un cuadrado. Google Play se encarga de redondear los bordes
+
+* No agregar sombras en el ícono, Google Play se encarga de eso
+
+* Elegir un background-color para el ícono. No dejarlo transparente. Íconos transparentes aparecerán con el background-color de la UI de Google Play
+
+<img src='assets/mobile-resources-1.png'/>
+
 Lo que se ve en la Google Play Store es lo que se encuentra dentro de ese cuadrado verde.
 
 ### Ícono en alta resolución
