@@ -15,3 +15,5 @@ En esta sección podrás ver nuestro stack tecnológico. Herramientas usadas, pa
 [Mobile](stack/mobile.md)
 
 [Resolviendo problemas (debugging)](stack/resolviendo_problemas_debugging.md)
+
+[Machine Learning](stack/machine_learning.md)

@@ -2,6 +2,10 @@
 
 
 
+## General
+
+* No abreviar nombres de variables, clases, métodos, etc. Priorizar que algo sea fácil de leer y que se pueda entender rápidamente lo que hace o qué representa, sin importar si queda un nombre más largo de lo que a un@ le gustaría.
+
 ## Rails
 
 * Las variables de ambiente deberían ser definidas como métodos en un módulo para agruparlas y para que sea más fácil hacer mock de ellas. ([Ejemplo: Módulo para variables de entorno](guia_de_estilo/ejemplo_modulo_para_variables_de_entorno.md)) 
@@ -131,7 +135,7 @@
 
 * Preferir siempre métodos de ActiveRecord para las relaciones por sobre consultas con where o raw SQL. En otras palabras, no usar SQL “a mano”
 
-* En colecciones de ActiveRecord, preferir métodos de ActiveRecord sobre métodos de Ruby/Enumerable, para delegar el cálculo o búsqueda a la base de datos y no traer toda la colección a memoria innecesariamente. Una excepción puede ser cuando los elementos ya se cargaron previamente en m
+* En colecciones de ActiveRecord, preferir métodos de ActiveRecord sobre métodos de Ruby/Enumerable, para delegar el cálculo o búsqueda a la base de datos y no traer toda la colección a memoria innecesariamente. Una excepción puede ser cuando los elementos ya se cargaron previamente en memoria.
 
     ```ruby
     # ❌
