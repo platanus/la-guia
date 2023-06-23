@@ -15,7 +15,7 @@ Para agregar a un usuario del equipo platanus para poder administrar la cuenta
 de google play y publicar aplicaciones, puedes seguir los pasos en el siguiente
 recurso oficial:
 
-[https://support.google.com/googleplay/android-developer/answer/2528691?es-419](https://support.google.com/googleplay/android-developer/answer/2528691?es-419)
+[https://support.google.com/googleplay/android-developer/answer/2528691?es-419](https://support.google.com/googleplay/android-developer/answer/2528691?es-419=)
 
 ### Ingresar al Developer Console
 

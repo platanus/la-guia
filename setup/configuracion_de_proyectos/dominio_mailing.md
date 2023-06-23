@@ -12,7 +12,7 @@ Veamos los pasos para la parte del dominio en detalle:
 
     <img src='assets/dominio-mailing-1.png'/>
 
-1. Se busca y compra el dominio en un [registrar](https://en.wikipedia.org/wiki/Domain_name_registrar) como [name](https://www.name.com/), [namecheap](http://namecheap.com), [godaddy](http://godaddy.com), [nic.cl](http://nic.cl/), etc. Hay que tener en cuenta que algunos [TLD](https://en.wikipedia.org/wiki/Domain_name_registrar) (.com, .cl, .io, .so, etc.) solo son vendidos por algunos *registrar* así que a veces hay que abandonar el regalón. 
+1. Se busca y compra el dominio en un [registrar](https://en.wikipedia.org/wiki/Domain_name_registrar) como [name](https://www.name.com/), [namecheap](http://namecheap.com/), [godaddy](http://godaddy.com/), [nic.cl](http://nic.cl/), etc. Hay que tener en cuenta que algunos [TLD](https://en.wikipedia.org/wiki/Domain_name_registrar) (.com, .cl, .io, .so, etc.) solo son vendidos por algunos *registrar* así que a veces hay que abandonar el regalón. 
 
     <img src='assets/dominio-mailing-2.png'/>
 

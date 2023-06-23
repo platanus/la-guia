@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Muchas veces queremos recibir información desde nuestras aplicaciones a algún canal de Slack y para esto existe una [API](https://api.slack.com) que nos provee diversas funcionalidades. 
+Muchas veces queremos recibir información desde nuestras aplicaciones a algún canal de Slack y para esto existe una [API](https://api.slack.com/) que nos provee diversas funcionalidades. 
 
 ## Configuración
 
