@@ -1,31 +1,33 @@
 # Expo
 
-Todo el setup requerido se puede encontrar [en la documentación](https://docs.expo.io/get-started/installation/), de todas maneras aquí hay un resumen. Para poder desarrollar con Expo y React Native tendrás que instalar [Expo CLI](https://expo.io/tools#cli) con el comando
-
-```bash
-npm install expo-cli --global
-```
+Todo el setup requerido se puede encontrar [en la documentación](https://docs.expo.io/get-started/installation/), de todas maneras aquí hay un resumen. Para poder desarrollar con Expo y React Native debes tener Node instalado. Se recomienda  usar una versión LTS de Node (las versiones con números pares). Se recomieda usar [Nodenv](https://la-guia.platan.us/setup/configuracion_de_tu_entorno_local/tecnologias/node).
 
 Además de esto, necesitas un dispositivo en el que correr tu proyecto. Tienes dos opciones:
 
-* Ocupar un dispositivo físico, para lo que tendrás que descargar la aplicación [Expo Client](https://expo.io/tools#client).
+* Ocupar un dispositivo físico, para lo que tendrás que descargar la aplicación [Expo Go](https://expo.dev/client).
 
 * Ocupar un emulador. Si tienes un computador Apple, entonces al instalar Xcode ya instalaste el simulador de iOS. Si tienes otro computador o si quieres probar con un emulador Android en tu Mac, puedes ocupar [Android Studio](https://developer.android.com/studio). Si tienes cualquier problema puedes revisar la instalación detallada de [Apple aquí](https://docs.expo.io/workflow/ios-simulator/) o la de [Android Studio aquí](https://docs.expo.io/workflow/android-studio-emulator/).
 
-Para correr el proyecto, ejecuta el siguiente comando
+Para correr el proyecto, ejecuta el comando
 
 ```bash
-expo start
+yarn start
 ```
 
-Esto levantará un servidor que te permitirá correr tu aplicación mientras desarrollas. Se abrirá una página en tu explorador desde el cual podrás iniciar los emuladores que tengas instalados y mostrará un QR para poder escanearlo si es que quieres ocupar un dispositivo físico. Para iOS debes escanearlo con la cámara y para Android se hace en la misma aplicación Expo Client.
+o el comando 
+
+```bash
+npx expo start
+```
+
+Cualquiera de los comando anteriores levantará un servidor que te permitirá correr tu aplicación mientras desarrollas. Se abrirá una página en tu explorador desde el cual podrás iniciar los emuladores que tengas instalados y mostrará un QR para poder escanearlo si es que quieres ocupar un dispositivo físico. Para iOS debes escanearlo con la cámara y para Android se hace en la misma aplicación Expo Go.
 
 ## Crear un proyecto nuevo
 
-Para crear un proyecto, asegurate de tener la última versión del Expo CLI instalada. Luego puedes ocupar el comando
+Para crear un proyecto nuevo con la plantilla inicial de Typescript  usa el comando
 
 ```bash
-expo init <project-name>
+npx create-expo-app <project-name> --template expo-template-blank-typescript
 ```
 
 ## Proyecto existente
