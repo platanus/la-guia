@@ -41,6 +41,7 @@
     * [Redux](stack/mobile/redux.md)
         * [Crear y conectar una slice en Redux](stack/mobile/redux/crear_y_conectar_una_slice_en_redux.md)
     * [Styling](stack/mobile/styling.md)
+        * [Usando Tailwind en React Native](stack/mobile/styling/usando_tailwind_en_react_native.md)
     * [Recursos](stack/mobile/recursos.md)
 * [Resolviendo problemas (debugging)](stack/resolviendo_problemas_debugging.md)
 * [Machine Learning](stack/machine_learning.md)

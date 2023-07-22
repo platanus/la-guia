@@ -76,20 +76,7 @@ La política es lo que permite que el usuario que vamos a crear después pueda m
 1. Escribir lo siguiente, reemplazando lacatan por el nombre que corresponda:
 
     ```json
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "",
-                "Effect": "Allow",
-                "Action": "s3:*",
-                "Resource": [
-                    "arn:aws:s3:::lacatan-staging.platan.us/*",
-                    "arn:aws:s3:::lacatan-staging.platan.us"
-                ]
-            }
-        ]
-      }
+
     ```
 
 1. Siguiente y revisar (sin agregar etiquetas)
