@@ -24,7 +24,7 @@ Taps son repositorios de donde brew puede buscar aplicaciones. Brew viene con el
 brew tap nodenv/nodenv
 ```
 
-### Agregar plugines para nodenv
+### Agregar plugins para nodenv
 
 ```bash
 brew install nodenv-vars nodenv-aliases

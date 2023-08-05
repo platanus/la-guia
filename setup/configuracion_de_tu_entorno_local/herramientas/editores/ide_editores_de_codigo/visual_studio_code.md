@@ -6,15 +6,19 @@ Poco a poco Visual Studio Code ha superado a Sublime como el editor de texto má
 
 ### Relacionadas al stack
 
-* [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+* [Ruby](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp)
 
 * [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph)
 
 * Vue: qué extensión usar depende de la versión de Vue del proyecto. Activa una de estas dos:
 
-    * [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar) para Vue 3
+    * [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar) y [Sublime Text](sublime_text.md) para Vue 3
 
     * [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) para proyectos en Vue 2
+
+* [Vue 3 Snippets](https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets)
+
+* [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
 
 * [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 

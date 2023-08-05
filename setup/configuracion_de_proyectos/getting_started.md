@@ -23,11 +23,13 @@ Esto es lo que queremos responder con esta sección:
 
     * `make restore-from-staging` toma el último backup de staging y lo copia en tu base de datos local
 
-1. Si todo salió bien, con esto debe>
+1. Si todo salió bien, con esto deberías estar listo para correr el proyecto. Corre los siguientes comandos en paralelo en pestañas separadas:
 
     * `bin/rails s`: levanta el servidor. Si vas a `localhost:3000` en el navegador verías la página
 
-    * `bin/webpack-dev-server` o `bin/webpacker-dev-server` en proyectos más nuevos: permite que cada vez que se guarde un archivo js/vue, se recargue la página automáticamente
+    * `bin/webpack-dev-server` , `bin/webpacker-dev-server` en proyectos más nuevos, o `bin/vite dev` en proyector aún más nuevos: permite que cada vez que se guarde un archivo js/vue, se recargue la página automáticamente
+
+        > 💡 Puedes configurarte un alias para no tener que pensar en cual de los tres comando usar: `alias bds="bin/webpack-dev-server || bin/webpacker-dev-server || bin/vite dev"`
 
     * `bundle exec guard`: cada vez que guardas un archivo ruby se ejecutan los tests correspondientes a ese archivo. Alternativamente, puedes correr todos los tests de manera manual usando `bin/rspec`
 
@@ -53,13 +55,13 @@ Esto es lo que queremos responder con esta sección:
 
 Ahora, cada vez que quieras levantar o volver a trabajar en el proyecto, puede que tengas que hacer alguna de estas cosas:
 
-1. Debes asegurarte de tener la DB corriendo. En Platanus tenemos las bases de datos de nuestros proyectos dockeridas. Esto quiere decir que no corre en el `postgres` que tengas directamente instalado en tu computador, si no que corre en un postgres que está dentro de un container de docker. Para correr el container debes usar el comando 
+1. Debes asegurarte de tener la DB corriendo. En Platanus tenemos las bases de datos de nuestros proyectos dockeridas. Esto quiere decir que no corre en el `postgres` que tengas directamente instalado en tu computador, si no que corre en un postgres que está dentro de un container de docker. Para correr el container debes usar el comando `docker-compose up -d`
 
     * Este paso no lo tuviste que hacer en el setup inicial explícitamente ya que está incluído dentro de las cosas que hace el `bin/setup`
 
     * Para ver cuáles containers están prendidos, puedes correr `docker container ls`. Si quieres una alternativa más "visual" puedes usar [Captain](https://getcaptain.co/) en OSX
 
-1. Si alguien agregó cambios nuevos a master, es bueno traerlos frecuentemente a tu rama, así se resuelven periódicamente los conflictos que puedan aparecer. Para esto, usa rebase. Corre **en tu rama** `git pull origin master` para traerte los últimos cambios, y luego `git rebase -i master`. Esto te mostrará los commits que has agregado en tu rama y que quedarían sobre los de master. Si se encuentra un conflicto, el rebase para en el commit que lo contiene y te rdeja corregirlo antes de indicarle que siga
+1. Si alguien agregó cambios nuevos a master, es bueno traerlos frecuentemente a tu rama, así se resuelven periódicamente los conflictos que puedan aparecer. Para esto, usa rebase. Corre **en tu rama** `git pull origin master` para traerte los últimos cambios, y luego `git rebase -i master`. Esto te mostrará los commits que has agregado en tu rama y que quedarían sobre los de master. Si se encuentra un conflicto, el rebase para en el commit que lo contiene y te deja corregirlo antes de indicarle que siga
 
 1. Si alguien más está trabajando en el proyecto, puede que se hayan agregado nuevas gemas o paquetes. Para eso tendrías que correr `bundle install` y/o `yarn install`
 

@@ -2,7 +2,7 @@
 
 Utilizamos [git](https://git-scm.com/) para el control de versiones junto con [github](https://github.com/platanus)
 
-Configuralo  para que se pueda autenticar con GitHub y para tener permisos en los repositorios de Platanus:
+Configuralo para que se pueda autenticar con GitHub y para tener permisos en los repositorios de Platanus:
 
 * Configura tu username en Git para que los commits tengan el autor y commiter correcto [Github Guide](https://help.github.com/articles/setting-your-username-in-git/)
 

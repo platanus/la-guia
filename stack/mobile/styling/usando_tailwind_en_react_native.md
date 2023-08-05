@@ -83,7 +83,28 @@ Esto es mucho más cómodo que la primera opción y es por eso **la opción que 
 
 En los componentes se debe importar el hook `useTailwind` e invocarlo para obtener la variable `tailwind`. Finalmente, en la prop de `style` de los componentes se usa esta variable para poder usar las clases de tailwind en react native!
 
+```typescript
+import { View, Text } from 'react-native';
+import { useTailwind } from 'tailwind-rn';
+
+export default function MyTailwindComponent() {
+  const tailwind = useTailwind();
+
+  return (
+    <View style={tailwind('bg-gray-900 flex-1 items-center justify-center')}>
+      <View style={tailwind('bg-white h-40 w-40 p-2 rounded-full items-center justify-center')}>
+        <Text style={tailwind('text-lg font-black')}>
+          Tailwind in React Native!
+        </Text>
+      </View>
+    </View>
+  );
+}
+```
+
  
+
+<img src='assets/usando-tailwind-en-react-native-1.png'/>
 
 ## TLDR
 
