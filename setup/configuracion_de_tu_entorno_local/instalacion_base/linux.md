@@ -16,3 +16,5 @@ sudo apt upgrade
 
 
 En futuras ediciones se añadirán guías para más distros de linux. Por ahora, refiere a las documentaciones oficiales.
+
+
