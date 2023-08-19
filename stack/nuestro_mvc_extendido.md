@@ -18,7 +18,7 @@ Puedes encontrar explicaciones más detalladas de estas tecnologías en Stack , 
 
 * Pundit: introduce el concepto de **Policy, **clases que funcionan como una capa de **autorización **en los controllers y en Active Admin. Chequean si el usuario actual tiene permitido acceder a una acción en particular.
 
-* https://github.com/heartcombo/devise: funciona como una capa de **autenticación**, osea permite iniciar sesión y requerir que esta esté activa en ciertas acciones. Se usa en controllers y Active Admin
+* https://github.com/heartcombo/devise: funciona como una capa de **autenticación**, osea permite iniciar sesión y requerir que esta esté activa en ciertas acciones. Se usa en controllers y Active Admin.
 
 * https://github.com/rails-api/active_model_serializers: introducen el concepto de **Serializers**, clases que toman una instancia de un modelo y define qué atributos/métodos de éste se incluyen en un json.
 
