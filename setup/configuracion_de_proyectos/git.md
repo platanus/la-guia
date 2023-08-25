@@ -62,7 +62,7 @@ Nota: Esto es un extracto/traducción de [este documento](https://github.com/ang
 
 ## Branches y Pull-requests
 
-Los features los hacemos en un nuevo branch y hacemos un pull-request hacia master.
+Los features los hacemos en un nuevo branch y hacemos un pull-request hacia master.k
 
 ### Ejemplo
 
