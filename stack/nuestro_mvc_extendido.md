@@ -20,10 +20,6 @@ Puedes encontrar explicaciones más detalladas de estas tecnologías en Stack , 
 
 * https://github.com/heartcombo/devise: funciona como una capa de **autenticación**, osea permite iniciar sesión y requerir que esta esté activa en ciertas acciones. Se usa en controllers y Active Admin.
 
-* https://github.com/rails-api/active_model_serializers: introducen el concepto de **Serializers**, clases que toman una instancia de un modelo y define qué atributos/métodos de éste se incluyen en un json.
-
-    Se usan implícitamente en los controlers de API al llamar a `respond_with`. También los usamos explícitamente en vistas `.html.erb` cuando se necesita pasar un objeto como prop a un componente Vue, con el helper `serialize_resource` que nos facilita Power API.
-
 * https://github.com/drapergem/draper: introduce el concepto de **Decorators**, clases donde va la lógica de presentación asociada a un modelo, que puede ser usada en varias vistas. En otras palabras, métodos que podrían ser de instancia de un modelo en particular, pero que serían únicamente para ser usados en vistas, entonces lo separamos de la lógica propiamente tal en el modelo.
 
 * Active Job  y Services: los jobs son el principal lugar donde definimos la **lógica de negocios** (además de tareas que se deban encolar o requieran recurrencia), dado que el MVC tradicional no tiene un lugar obvio para ésta. Es común verlos en controllers con un `perform_now` encapsulando lógica que va más allá del CRUD simple y el manejo de la response/request que hace el controller. También es común verlo en Observers con un `perform_later`, gatillando algún side-effect debido al update o create de un record.
