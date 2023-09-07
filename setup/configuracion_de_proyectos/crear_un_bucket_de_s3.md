@@ -6,13 +6,13 @@ Para eso, necesitamos hacer 3 cosas: crear un bucket, crear un usuario para acce
 
 # Crear el bucket
 
-1. Ir directo a [https://s3.console.aws.amazon.com/s3/home](https://s3.console.aws.amazon.com/s3/home) o ir a S3 en el menú del sitio de AWS.
+1. [Ir acá](https://s3.console.aws.amazon.com/s3/home?region=us-east-1)
 
-1. Apretar el botón `Crear bucket`.
+1. Apretar el botón `Create bucket`.
 
 1. Poner el nombre usando la convención `proyecto.platan.us` y `proyecto-staging.platan.us`, por ejemplo `lacatan.platan.us`  y `lacatan-staging.platan.us`. Seguiré usando lacatan para el ejemplo.
 
-1. Dejar la región como está.
+1. Dejar la región como está. (generalmente es us-east-1)
 
 1. Desmarcar las opciones que dicen "Bloquear todo" (aparecerá un warning, aceptarlo).
 
@@ -102,33 +102,27 @@ La política es lo que permite que el usuario que vamos a crear después pueda m
 
 Ahora creamos un usuario (y las correspondientes credenciales) para usar la política y tener lo que poner en las vars de heroku
 
-1. Ir a IAM de nuevo ([https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home))
+1. Ir [acá](https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users).
 
-1. En la barra lateral ir a usuarios
+1. Darle a `Create User`
 
-1. Apretar agregar usuarios
+1. En el nombre poner `lacatan` o `lacatan-staging` y le damos a siguiente.
 
-1. En el nombre poner `lacatan` o `lacatan-staging`
-
-1. Seleccionar acceso mediante programación
+1. Le asignamos una Policy directamente y seleccionamos la que creamos anteriormente y vamos a siguiente.
 
     <img src='assets/crear-un-bucket-de-s3-2.png'/>
 
-1. En la parte de permisos arriba seleccionar asociar política
+1. En el siguiente paso le damos a crear
 
-    <img src='assets/crear-un-bucket-de-s3-3.png'/>
+1. Una vez creado, entramos al user recién creado a la sección de `security credentials` y ahí buscamos `Access Keys` y creamos una nueva.
 
-1. En el buscador buscar la recién creada `s3-lacatan-staging` y marcarla
+<img src='assets/crear-un-bucket-de-s3-3.png'/>
 
-1. No añadir etiquetas
+1. Elegimos la opción de `Application running outside AWS` y vamos al siguiente paso.
 
-1. Revisar y crear
+1. No le agregamos descripción y creamos la llave de acceso.
 
-1. Copiar el access y secret
-
-    <img src='assets/crear-un-bucket-de-s3-4.png'/>
-
-1. Cerrar
+1. IMPORTANTE acá ahora aparecerá la Access Key y Secret Access Key. Acá tenemos que guardar esos valores que nos saldrán para luego poder configurarlos en la aplicación. Abajo sale un botón de `Download CSV File`. Descarga y guarda el archivo.
 
 1. **Bonus: **ir a heroku a las vars de entorno y poner las credenciales correspondientes, junto al nombre del bucket. La región en general siempre es us-east-1.
 
