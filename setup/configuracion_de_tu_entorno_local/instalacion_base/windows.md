@@ -68,7 +68,7 @@ Una vez instalado Windows Terminal, el ambiente de desarrollo funciona como cual
 
 La mayoría de los proyectos de Platanus modernos usan Docker para los servicios como postgres o redis pero lo siguiente es una lista de los requisitos mínimos y como instalarlos desde Windows Terminal y la shell de Ubuntu:
 
-* git (`sudo apt install git`)
+* git (`g`it )
 
 * rbenv ([https://github.com/rbenv/rbenv-installer](https://github.com/rbenv/rbenv-installer)) y rbenv-aliases ([https://github.com/tpope/rbenv-aliases](https://github.com/tpope/rbenv-aliases))
 
