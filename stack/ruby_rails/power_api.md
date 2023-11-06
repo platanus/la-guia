@@ -428,3 +428,5 @@ Para ver el funcionamiento, puedes visitar el README de la gema pero en corto lo
 * [Responders](https://github.com/heartcombo/responders)
 
 * [Simple Token Authentication](https://github.com/gonzalo-bulnes/simple_token_authentication)
+
+
