@@ -20,6 +20,8 @@ Veamos los pasos para la parte del dominio en detalle:
 
 1. Los dominios y su DNS los manejamos en Cloudflare y hay una muy buena guía para hacerlo con un dominio comprado en nic. En otros servicios es parecido, lo que hay que hacer es configurar los nameservers que nos pide Cloudflare en el servicio. La guía está acá:
 
+    [Cloudflare](cloudflare.md)
+
 
 
 Una vez completados los pasos anteriores podemos acceder a nuestro dominio fancy y olvidarnos del `pl-super-banco-production.herokuapp.com`. Lo que falta es que ahora se manden mails desde `superbank.com` correctamente.
@@ -53,5 +55,7 @@ Este proceso se basa en harta criptografía (firmas digitales y demás) pero a g
 Sí, fue un poco largo, pero creo que es importante saber que uno puede mandar mails de dónde quiera, que primero serán *flaggeados* como spam, pero que hay un procedimiento para que todo ande sin alertas, con certeza de que no hay suplantación de identidad. Todo lo que queremos para nuestro nuevo producto recién lanzado.
 
 En la guía a continuación se ven 3 cosas, como configurar el addon o cuenta particular, qué variables de entorno usar y por qué, y finalmente cómo hacer el Sender Authentication.
+
+[Sendgrid](sendgrid.md)
 
 
