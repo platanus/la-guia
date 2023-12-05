@@ -124,6 +124,6 @@ Ahora creamos un usuario (y las correspondientes credenciales) para usar la pol�
 
 1. IMPORTANTE acá ahora aparecerá la Access Key y Secret Access Key. Acá tenemos que guardar esos valores que nos saldrán para luego poder configurarlos en la aplicación. Abajo sale un botón de `Download CSV File`. Descarga y guarda el archivo.
 
-1. **Bonus: **ir a heroku a las vars de entorno y poner las credenciales correspondientes, junto al nombre del bucket. La región en general siempre es us-east-1.
+1. **Bonus: **ir a heroku a las vars de entorno y poner las credenciales correspondientes, junto al nombre del bucket. La región en general siempre es us-east-1.4
 
 
