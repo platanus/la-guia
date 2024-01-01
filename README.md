@@ -109,7 +109,7 @@ De todos modos, estamos abiertos a recibir propuestas y sugerencias que puedes h
 * [Upgrade de Postgresql](upgrades/upgrade_de_postgresql.md)
 # License
 
-La Guia is © 2023 platanus, spa. It is free software and may be redistributed under the terms specified in the LICENSE file.
+La Guia is © 2024 platanus, spa. It is free software and may be redistributed under the terms specified in the LICENSE file.
 
 <img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="250"/>
 
