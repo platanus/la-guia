@@ -34,7 +34,7 @@ El tipo nos ayuda a clasificar los commits. Los tipos que usamos son:
 
 * **perf** Cambios en el código que sólo mejoran la performance
 
-* **test**: Agrega, corrige o mejora tests
+* **test**: Agrega, corrige o  tests
 
 * **chore**: Cambios al proceso de build y herramientas auxiliares
 
